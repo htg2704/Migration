@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:text="Choose why you want to enter"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tv1"
+        android:layout_marginTop="47dp"
+        android:background="@drawable/btn_draw1"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:text="Enter to register the details"
+        android:textColor="@color/pink">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btn_data"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/btn_register"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:textColor="@color/pink"
+        android:background="@drawable/btn_draw1"
+        android:text="Enter to access data">
+
+    </Button>
+    <Button
+        android:id="@+id/btn_stats"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/btn_data"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:textColor="@color/pink"
+        android:background="@drawable/btn_draw1"
+    android:text="Enter to access data">
+    </Button>
+</RelativeLayout>

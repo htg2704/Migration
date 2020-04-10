@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "811469435111",
+    "firebase_url": "https://kutumb-migration.firebaseio.com",
+    "project_id": "kutumb-migration",
+    "storage_bucket": "kutumb-migration.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:811469435111:android:b42a61664fdf06882f7242",
+        "android_client_info": {
+          "package_name": "com.example.migration"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "811469435111-22nu4uvm3rl394athj3lljmv77600tp6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.migration",
+            "certificate_hash": "43bf74cef90486340b4e2aa427fe81f1d7300094"
+          }
+        },
+        {
+          "client_id": "811469435111-i56t0apc9cdghedlcp8u17o09bolu69r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQKazoNZfyd470nuQhJDe2mpQu2kH091M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "811469435111-i56t0apc9cdghedlcp8u17o09bolu69r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

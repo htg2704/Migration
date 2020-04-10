@@ -24,8 +24,8 @@
         android:layout_below="@+id/tv1"
         android:layout_marginTop="47dp"
         android:background="@drawable/btn_draw1"
-        android:layout_marginLeft="70dp"
-        android:layout_marginRight="70dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginRight="68dp"
         android:text="Enter to register the details"
         android:textColor="@color/pink">
 
@@ -54,6 +54,6 @@
         android:layout_marginRight="70dp"
         android:textColor="@color/pink"
         android:background="@drawable/btn_draw1"
-    android:text="Enter to access data">
+    android:text="Enter to View Stats">
     </Button>
 </RelativeLayout>

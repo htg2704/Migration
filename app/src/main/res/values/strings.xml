@@ -3,4 +3,5 @@
     <string name="title_activity_survey">survey</string>
     <string name="tab_text_1">Tab 1</string>
     <string name="tab_text_2">Tab 2</string>
+    <string name="title_activity_questions">questions</string>
 </resources>

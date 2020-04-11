@@ -10,9 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".Questions.questions"
+            android:label="@string/title_activity_questions"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
             android:name=".Survey.survey"
             android:label="@string/title_activity_survey"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".data.data_main" />
         <activity android:name=".MainActivity">
             <intent-filter>

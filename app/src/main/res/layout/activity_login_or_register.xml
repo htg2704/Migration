@@ -15,50 +15,70 @@
 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Please tell us who you are!"
-            android:textSize="22sp" />
+            android:text="Please Login Or Register"
+            android:textSize="32sp" />
     </LinearLayout>
 
 
-    <Button
+    <EditText
         android:id="@+id/log_mail"
         android:layout_width="250dp"
         android:layout_height="50dp"
         android:layout_below="@+id/ll1"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/btn_draw1"
         android:layout_marginLeft="68dp"
         android:layout_marginRight="68dp"
-        android:text="Volunteer"
+        android:hint="Enter your email Id"
+        android:textAlignment="center"
         android:textColor="@color/pink">
 
-    </Button>
+    </EditText>
 
-    <Button
-        android:id="@+id/btn_cmob"
-        android:layout_marginTop="50dp"
+    <EditText
+        android:id="@+id/log_pwd"
+        android:layout_marginTop="22dp"
         android:layout_below="@+id/log_mail"
         android:layout_width="250dp"
         android:layout_height="50dp"
         android:layout_marginLeft="70dp"
         android:layout_marginRight="70dp"
-        android:textColor="@color/pink"
+        android:password="true"
+        android:textAlignment="center"
         android:background="@drawable/btn_draw1"
-        android:text="Community Mobiliser">
+        android:hint="Enter your password">
 
-    </Button>
+    </EditText>
+
     <Button
-        android:id="@+id/btn_ngo"
+        android:id="@+id/btn_login"
         android:layout_marginTop="50dp"
-        android:layout_below="@+id/btn_cmob"
+        android:layout_below="@+id/log_pwd"
         android:layout_width="250dp"
         android:layout_height="50dp"
         android:layout_marginLeft="70dp"
         android:layout_marginRight="70dp"
         android:textColor="@color/pink"
         android:background="@drawable/btn_draw1"
-        android:text="Agency/NGOs">
+        android:text="Log In">
     </Button>
+
+    <TextView
+        android:id="@+id/tv_reg"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="158dp"
+        android:layout_marginRight="100dp"
+        android:textStyle="italic"
+        android:clickable="true"
+        android:autoLink="none"
+        android:textAlignment="textEnd"
+        android:text="New User? Register here!">
+    </TextView>
+
+
 
 
 </RelativeLayout>

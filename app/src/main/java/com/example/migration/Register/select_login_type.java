@@ -33,7 +33,7 @@ public class select_login_type extends AppCompatActivity {
             public void onClick(View view) {
                 User.type=1;
 
-                Intent intent = new Intent(getApplicationContext(),com.example.migration.data.data_main.class);
+                Intent intent = new Intent(getApplicationContext(),com.example.migration.Questions.questions.class);
                 startActivity(intent);
 
             }

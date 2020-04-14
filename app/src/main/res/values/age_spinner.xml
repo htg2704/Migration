@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="age_array">
+        <item>Less than 18 years</item>
+        <item>18-25 years</item>
+        <item>26-35 years</item>
+        <item>36-45 years</item>
+        <item>Above 45 years</item>
+    </string-array>
+</resources>

@@ -34,7 +34,7 @@ public class PlaceholderFragment extends Fragment {
         return fragment;
     }
 
-    @Override
+ /*   @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         pageViewModel = ViewModelProviders.of(this).get(PageViewModel.class);
@@ -43,7 +43,7 @@ public class PlaceholderFragment extends Fragment {
             index = getArguments().getInt(ARG_SECTION_NUMBER);
         }
         pageViewModel.setIndex(index);
-    }
+    }*/
 
     @Override
     public View onCreateView(
@@ -54,12 +54,23 @@ public class PlaceholderFragment extends Fragment {
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getContext(), R.array.age_array, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
-        pageViewModel.getText().observe(this, new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
+        Spinner govt_spinner = (Spinner) root.findViewById(R.id.govt_id_spinner);
+        ArrayAdapter<CharSequence> govt_adapter = ArrayAdapter.createFromResource(getContext(), R.array.govt_id, android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        govt_spinner.setAdapter(govt_adapter);
+        Spinner edu_spinner = (Spinner) root.findViewById(R.id.education_spinner);
+        ArrayAdapter<CharSequence> edu_adapter = ArrayAdapter.createFromResource(getContext(), R.array.edu_lvl, android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        edu_spinner.setAdapter(edu_adapter);
+        Spinner dep_spinner = (Spinner) root.findViewById(R.id.no_of_dependent_spinner);
+        ArrayAdapter<CharSequence> dep_adapter = ArrayAdapter.createFromResource(getContext(), R.array.no_of_dep, android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        dep_spinner.setAdapter(dep_adapter);
+        Spinner city_spinner = (Spinner) root.findViewById(R.id.city_spinner);
+        ArrayAdapter<CharSequence> city_adapter = ArrayAdapter.createFromResource(getContext(), R.array.india_cities, android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        city_spinner.setAdapter(city_adapter);
 
-            }
-        });
         return root;
     }
 }

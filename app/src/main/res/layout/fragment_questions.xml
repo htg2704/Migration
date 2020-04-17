@@ -8,7 +8,7 @@
     tools:context=".Questions.ui.main.PlaceholderFragment">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:orientation="vertical">
         <LinearLayout
@@ -19,15 +19,16 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="Name"
-                android:textSize="30sp"
+                android:text="@string/name"
+                android:textSize="25sp"
                 />
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:hint="Enter name here"
-                android:layout_marginLeft="30dp"
-                />
+                android:hint="@string/enter_name_here"
+                android:layout_marginStart="30dp"
+                android:inputType="text"
+                android:autofillHints="" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -37,13 +38,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="Age"
-                android:textSize="30sp"
+                android:text="@string/age"
+                android:textSize="25sp"
                 />
             <Spinner
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp"
                 android:id="@+id/age_spinner"
                 />
         </LinearLayout>
@@ -60,24 +61,24 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Gender"
+                    android:text="@string/gender"
                     android:textSize="20sp"
                     />
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="30dp"
-                    android:text="Male"/>
+                    android:layout_marginStart="30dp"
+                    android:text="@string/male"/>
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
-                    android:text="Female"/>
+                    android:layout_marginStart="10dp"
+                    android:text="@string/female"/>
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
-                    android:text="Others"/>
+                    android:layout_marginStart="10dp"
+                    android:text="@string/others"/>
             </RadioGroup>
         </LinearLayout>
         <LinearLayout
@@ -93,36 +94,36 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Caste"
+                    android:text="@string/caste"
                     android:textSize="20sp"
                     />
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
-                    android:text="General"/>
+                    android:layout_marginStart="10dp"
+                    android:text="@string/general"/>
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
-                    android:text="OBC"/>
+                    android:layout_marginStart="10dp"
+                    android:text="@string/obc"/>
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginStart="10dp"
-                    android:text="SC" />
+                    android:text="@string/sc" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
-                    android:text="ST"/>
+                    android:layout_marginStart="10dp"
+                    android:text="@string/st"/>
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
-                    android:text="Minority"/>
+                    android:layout_marginStart="10dp"
+                    android:text="@string/minority"/>
             </RadioGroup>
         </LinearLayout>
         <LinearLayout
@@ -131,7 +132,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="Is the applicant a PWD"
+                android:text="@string/is_the_applicant_a_pwd"
                 android:layout_marginStart="20dp"
                 android:textSize="20sp"/>
             <Switch
@@ -144,18 +145,20 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
             >
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="No. of Dependents"
+                android:text="@string/no_of_dependents"
                 android:textSize="25sp"
                 />
             <Spinner
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp"
                 android:id="@+id/no_of_dependent_spinner"
                 />
         </LinearLayout>
@@ -167,13 +170,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="Education"
+                android:text="@string/education"
                 android:textSize="25sp"
                 />
             <Spinner
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp"
                 android:id="@+id/education_spinner"
                 />
         </LinearLayout>
@@ -186,16 +189,17 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="PIN Code\n(Permanent Address)"
-                android:textSize="20sp"
+                android:text="@string/pin_code_n_permanent_address"
+                android:textSize="14sp"
                 android:maxLines="3"
                 />
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:hint="Enter PIN code here"
-                android:layout_marginLeft="30dp"
-                />
+                android:hint="@string/enter_pin_code_here"
+                android:layout_marginStart="30dp"
+                android:autofillHints=""
+                android:inputType="numberDecimal" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -206,14 +210,35 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="Mobile No."
+                android:text="@string/mobile_no"
                 android:textSize="25sp"
                 />
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:hint="Enter mobile no. here"
-                android:layout_marginLeft="30dp"
+                android:hint="@string/enter_mobile_no_here"
+                android:layout_marginStart="30dp"
+                android:autofillHints=""
+                android:inputType="numberDecimal" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/city_district"
+                android:textSize="25sp"
+                />
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="30dp"
+                android:id="@+id/city_spinner"
                 />
         </LinearLayout>
         <LinearLayout
@@ -224,13 +249,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="Government ID"
+                android:text="@string/government_id"
                 android:textSize="25sp"
                 />
             <Spinner
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp"
                 android:id="@+id/govt_id_spinner"
                 />
         </LinearLayout>

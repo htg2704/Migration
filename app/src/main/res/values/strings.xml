@@ -10,4 +10,26 @@
     <string name="migration_profile">Migration Profile</string>
     <string name="awareness_profile">Awareness Profile</string>
     <string name="future_plan">Future Profile</string>
+    <string name="name">Name</string>
+    <string name="female">Female</string>
+    <string name="age">Age</string>
+    <string name="enter_name_here">Enter name here</string>
+    <string name="gender">Gender</string>
+    <string name="government_id">Government ID</string>
+    <string name="city_district">City/District</string>
+    <string name="enter_mobile_no_here">Enter mobile no. here</string>
+    <string name="male">Male</string>
+    <string name="minority">Minority</string>
+    <string name="mobile_no">Mobile No.</string>
+    <string name="pin_code_n_permanent_address">PIN Code\n(Permanent Address)</string>
+    <string name="enter_pin_code_here">Enter PIN code here</string>
+    <string name="education">Education</string>
+    <string name="others">Others</string>
+    <string name="caste">Caste</string>
+    <string name="general">General</string>
+    <string name="obc">OBC</string>
+    <string name="sc">SC</string>
+    <string name="st">ST</string>
+    <string name="is_the_applicant_a_pwd">Is the applicant a PWD</string>
+    <string name="no_of_dependents">No. of Dependents</string>
 </resources>

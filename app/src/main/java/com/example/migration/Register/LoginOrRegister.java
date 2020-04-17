@@ -11,6 +11,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.migration.Questions.questions;
 import com.example.migration.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -36,14 +37,17 @@ public class LoginOrRegister extends AppCompatActivity {
         log_sgnin=findViewById(R.id.btn_login);
         tvr=findViewById(R.id.tv_reg);
         mFirebaseAuth= FirebaseAuth.getInstance();
-        mAuthListener=new FirebaseAuth.AuthStateListener() {
-            @Override
-            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
+        //mAuthListener=new FirebaseAuth.AuthStateListener() {
+            //@Override
+          //  public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
                 FirebaseUser firebaseUser=mFirebaseAuth.getCurrentUser();
 
                 if(firebaseUser!=null)
                 {
                     Toast.makeText(LoginOrRegister.this,"You are Logged In",Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(getApplicationContext(), questions.class);
+                    startActivity(intent);
+
                     //Intent switching to Home Screen;
                 }
                 else
@@ -51,8 +55,8 @@ public class LoginOrRegister extends AppCompatActivity {
                     Toast.makeText(LoginOrRegister.this,"You are'nt Logged In",Toast.LENGTH_SHORT).show();
                     //Intent switching to Log In Screen;
                 }
-            }
-        };
+            //}
+        //};
 
         tvr.setOnClickListener(new View.OnClickListener()
         {
@@ -87,7 +91,9 @@ public class LoginOrRegister extends AppCompatActivity {
                                     if (task.isSuccessful()) {
                                         // Sign in success, update UI with the signed-in user's information
                                         Toast.makeText( LoginOrRegister.this,"LogIn:success",Toast.LENGTH_SHORT).show();
-                                        FirebaseUser user = mFirebaseAuth.getCurrentUser();
+                                        Intent intent = new Intent(getApplicationContext(), questions.class);
+                                        startActivity(intent);
+                                        //FirebaseUser user = mFirebaseAuth.getCurrentUser();
                                         //go to Home screen
                                     } else {
                                         Toast.makeText(LoginOrRegister.this, "LogIn failed.",

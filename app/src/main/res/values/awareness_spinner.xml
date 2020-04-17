@@ -37,7 +37,7 @@
 
          
             <item> After 1 to 3 Days  </item>
-            <item> Didn't know - What is lockdown</item>
+            <item> Did not know - What is lockdown</item>
     </string-array>
 
     <string-array name="resp_array">
@@ -48,7 +48,7 @@
 
          
 
-         <item>   Company didn’t give any support</item>
+         <item>   Company did not give any support</item>
 
          
             <item> Company did not take any call</item>
@@ -62,22 +62,22 @@
 </string-array>
 
    <string-array name="sprt_array">
-       <item>  Cooked food/ Ration</item>
+       <item>  Cooked food // Ration</item>
            <item>Medicine  </item>
-         <item>  Shelter/ Accommodation</item>
+         <item>  Shelter// Accommodation</item>
            <item>Transportation  </item>
            <item>Shared details but no support received</item>
           <item> Nobody responded to our call</item>
-          <item> Don't have contact of support agency</item>
+          <item> Do not have contact of support agency</item>
        <item> Any other</item>
    </string-array>
 
     <string-array name="need_array">
-        <item> Cooked food/ Ration</item>
+        <item> Cooked food// Ration</item>
          
-            <item>Money/ Cash  </item>
+            <item>Money// Cash  </item>
             <item>Medicine  </item>
-           <item> Shelter/ Accommodation</item>
+           <item> Shelter// Accommodation</item>
          
             <item> Any other</item>
     </string-array>

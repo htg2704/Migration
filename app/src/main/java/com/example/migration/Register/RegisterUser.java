@@ -53,20 +53,20 @@ public class RegisterUser extends AppCompatActivity {
                 }
                 else
                 {
-                    mFirebaseAuth.signInWithEmailAndPassword(reg_mail_str, reg_pwd_str)
+                    mFirebaseAuth.createUserWithEmailAndPassword(reg_mail_str, reg_pwd_str)
                             .addOnCompleteListener(RegisterUser.this, new OnCompleteListener<AuthResult>() {
                                 @Override
                                 public void onComplete(@NonNull Task<AuthResult> task) {
                                     if (task.isSuccessful()) {
                                         // Sign in success, update UI with the signed-in user's information
-                                        Toast.makeText( RegisterUser.this,"Login:success",Toast.LENGTH_SHORT).show();
+                                        Toast.makeText( RegisterUser.this,"Signup:success",Toast.LENGTH_SHORT).show();
                                         //FirebaseUser user = mFirebaseAuth.getCurrentUser();
                                         //Intent intent = new Intent(getApplicationContext(),com.example.migration.Register.LoginOrRegister.class);
                                         //startActivity(intent);
                                         //go to Home screen
                                     }
                                     else {
-                                        Toast.makeText(RegisterUser.this, "LogIn failed.",
+                                        Toast.makeText(RegisterUser.this, "Signup failed.",
                                                 Toast.LENGTH_SHORT).show();
 
                                     }

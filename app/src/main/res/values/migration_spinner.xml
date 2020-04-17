@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="work_array">
+        <item>Daily wage labour</item>
+        <item>Contract Worker in Company</item>
+        <item>Full time worker in Company</item>
+        <item>Self-employed</item>  
+        <item>Small Business  </item>
+        <item>Any other</item>
+    </string-array>
+
+    <string-array name="work_duration_array">
+        <item>Daily</item>
+            <item>Less than four months</item>
+            <item>5 to 9 months</item>  
+            <item>More than 9 months</item>
+    </string-array>
+
+    <string-array name="day_wage_array">
+        <item>Below Rs 250</item>
+    <item>Rs 250 to 350  </item>
+    <item>Rs 350 to 500  </item>
+    <item>Rs 500 and above</item>
+    </string-array>
+
+<string-array name="benefits_array">
+    <item>Shelter/Accommodation</item>
+     
+        <item>Food</item>
+        <item>Creche for children</item>  
+        <item>Education for children</item>
+
+     
+       <item> Health/ Medical Care</item>  
+      <item>  Getting ration in new city</item>
+
+     
+        <item>Leave  </item>
+        <item>Any other</item>
+</string-array>
+<string-array name="challenges_array">
+    <item>Lack of regular work</item>
+      <item>  Wages - not timely/ with holding</item>
+        <item>Poor living standard</item>  
+        <item>Low quality Food  </item>
+        <item>No career growth  </item>
+        <item>Engaging children in work</item>
+      <item>  Exploitation / Misbehaviour of Employer</item>
+        <item>Remittance </item> 
+        <item>Any other   </item>
+</string-array>
+</resources>
+

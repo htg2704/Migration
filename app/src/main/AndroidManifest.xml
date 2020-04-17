@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".Register.RegisterUser"></activity>
-        <activity android:name=".Register.LoginOrRegister" />
+        <activity android:name=".Register.LoginOrRegister"/>
         <activity
             android:name=".Questions.questions"
             android:label="@string/title_activity_questions"

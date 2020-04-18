@@ -20,7 +20,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="Are you aware of \nGovt. benefits?"
+            android:text="Nature of work"
             android:textSize="15sp"
             android:maxLines="10"
             />
@@ -28,8 +28,106 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginStart="30dp"
-            android:id="@+id/age_spinner"
+            android:id="@+id/nature_of_work_spinner"
             />
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Work location"
+            android:textSize="15sp"
+            android:maxLines="10"
+            />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="30dp"
+            android:id="@+id/location_spinner"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Period of Migration"
+            android:textSize="15sp"
+            android:maxLines="10"
+            />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="30dp"
+            android:id="@+id/period_spinner"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Daily Wage"
+            android:textSize="15sp"
+            android:maxLines="10"
+            />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="30dp"
+            android:id="@+id/wage_spinner"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Other benefits in Cities"
+            android:textSize="15sp"
+            android:maxLines="10"
+            />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="30dp"
+            android:id="@+id/other_spinner"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Challenges in the new place"
+            android:textSize="15sp"
+            android:maxLines="10"
+            />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="30dp"
+            android:id="@+id/challenge_spinner"
+            />
+    </LinearLayout>
+
 </LinearLayout>
 </ScrollView>

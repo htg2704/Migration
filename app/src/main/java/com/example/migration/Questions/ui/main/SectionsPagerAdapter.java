@@ -35,6 +35,10 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
                 return new PlaceholderFragment();
             case 1:
                 return new MigrationFragment();
+            case 2:
+                return new AwarenessFragment();
+            case 3:
+                return new PlanFragment();
             default:
                 return new PlaceholderFragment();
         }

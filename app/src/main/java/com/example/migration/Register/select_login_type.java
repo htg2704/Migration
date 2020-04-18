@@ -24,7 +24,7 @@ public class select_login_type extends AppCompatActivity {
         User.type=0;
 
         btn_mobiliser=findViewById(R.id.btn_cmob);
-        btn_volunteer=findViewById(R.id.log_mail);
+        btn_volunteer=findViewById(R.id.btn_vol);
         btn_agency=findViewById(R.id.btn_ngo);
 
 
@@ -33,7 +33,7 @@ public class select_login_type extends AppCompatActivity {
             public void onClick(View view) {
                 User.type=1;
 
-                Intent intent = new Intent(getApplicationContext(),com.example.migration.Questions.questions.class);
+                Intent intent = new Intent(select_login_type.this,com.example.migration.Questions.questions.class);
                 startActivity(intent);
 
             }
@@ -42,7 +42,7 @@ public class select_login_type extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 User.type=2;
-                Intent intent = new Intent(getApplicationContext(),com.example.migration.data.data_main.class);
+                Intent intent = new Intent(select_login_type.this,com.example.migration.Register.LoginOrRegister.class);
                 startActivity(intent);
             }
         });
@@ -50,7 +50,7 @@ public class select_login_type extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 User.type=3;
-                Intent intent = new Intent(getApplicationContext(),com.example.migration.Register.select_login_type.class);
+                Intent intent = new Intent(select_login_type.this,com.example.migration.Register.LoginOrRegister.class);
                 startActivity(intent);
             }
         });

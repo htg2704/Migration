@@ -14,7 +14,6 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 
 
 public class RegisterUser extends AppCompatActivity {
@@ -60,12 +59,14 @@ public class RegisterUser extends AppCompatActivity {
                                 public void onComplete(@NonNull Task<AuthResult> task) {
                                     if (task.isSuccessful()) {
                                         // Sign in success, update UI with the signed-in user's information
-                                        Toast.makeText( RegisterUser.this,"createUserWithEmail:success",Toast.LENGTH_SHORT).show();
-                                        FirebaseUser user = mFirebaseAuth.getCurrentUser();
-                                       //go to Home screen
+                                        Toast.makeText( RegisterUser.this,"Signup:success",Toast.LENGTH_SHORT).show();
+                                        //FirebaseUser user = mFirebaseAuth.getCurrentUser();
+                                        //Intent intent = new Intent(getApplicationContext(),com.example.migration.Register.LoginOrRegister.class);
+                                        //startActivity(intent);
+                                        //go to Home screen
                                     }
                                     else {
-                                        Toast.makeText(RegisterUser.this, "Registration failed.",
+                                        Toast.makeText(RegisterUser.this, "Signup failed.",
                                                 Toast.LENGTH_SHORT).show();
 
                                     }

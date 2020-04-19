@@ -2,18 +2,11 @@
 <resources>
     <string-array name="gvbenefits_array">
     <item>Cooked food/ Ration</item>
-         
-          <item>  Health Check up and treatment</item>
-
-         
-            <item>Govt. financial support</item>
-
-         
-          <item>  Education for children</item>
-
-         
-            <item> Ration / PDS  </item>
-            <item>Any other</item>
+        <item>  Health Check up and treatment</item>
+        <item>  Govt. financial support</item>
+        <item>  Education for children</item>
+        <item> Ration / PDS  </item>
+         <item>Any other</item>
     </string-array>
 
     <string-array name="source_info_array">

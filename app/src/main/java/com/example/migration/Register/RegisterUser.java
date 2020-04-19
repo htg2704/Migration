@@ -1,5 +1,6 @@
 package com.example.migration.Register;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -61,8 +62,8 @@ public class RegisterUser extends AppCompatActivity {
                                         // Sign in success, update UI with the signed-in user's information
                                         Toast.makeText( RegisterUser.this,"Signup:success",Toast.LENGTH_SHORT).show();
                                         //FirebaseUser user = mFirebaseAuth.getCurrentUser();
-                                        //Intent intent = new Intent(getApplicationContext(),com.example.migration.Register.LoginOrRegister.class);
-                                        //startActivity(intent);
+                                        Intent intent = new Intent(getApplicationContext(),com.example.migration.Register.LoginOrRegister.class);
+                                        startActivity(intent);
                                         //go to Home screen
                                     }
                                     else {

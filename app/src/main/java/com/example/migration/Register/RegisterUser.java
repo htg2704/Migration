@@ -30,6 +30,8 @@ public class RegisterUser extends AppCompatActivity {
 
     FirebaseAuth mFirebaseAuth;
     FirebaseAuth.AuthStateListener mAuthListener;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,6 +41,9 @@ public class RegisterUser extends AppCompatActivity {
         reg_psd=findViewById(R.id.reg_pwd);
         reg_sgnup=findViewById(R.id.reg_sign_up);
         cnf_psd=findViewById(R.id.cnf_pwd);
+        getReg_adrs=findViewById(R.id.reg_adrs);
+        getReg_phone=findViewById(R.id.reg_phone);
+        getReg_name=findViewById(R.id.reg_name);
 
         mFirebaseAuth=FirebaseAuth.getInstance();
 
@@ -78,6 +83,7 @@ public class RegisterUser extends AppCompatActivity {
                     reg_psd.setError("Please enter a password");
                     reg_psd.requestFocus();
                 }
+
                 else if(!reg_pwd_str.equals(cnf_pwd_str))
                 {
                     reg_psd.setError("Passwords do not match");
@@ -93,10 +99,11 @@ public class RegisterUser extends AppCompatActivity {
                                 public void onComplete(@NonNull Task<AuthResult> task) {
                                     if (task.isSuccessful()) {
                                         // Sign in success, update UI with the signed-in user's information
-                                        Toast.makeText( RegisterUser.this,"Signup:success",Toast.LENGTH_SHORT).show();
+                                        Toast.makeText( RegisterUser.this,"Sign up:success",Toast.LENGTH_SHORT).show();
                                         //FirebaseUser user = mFirebaseAuth.getCurrentUser();
                                         Intent intent = new Intent(getApplicationContext(),com.example.migration.Register.LoginOrRegister.class);
                                         startActivity(intent);
+
                                         //go to Home screen
                                     }
                                     else {

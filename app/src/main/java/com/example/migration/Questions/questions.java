@@ -11,6 +11,7 @@ import androidx.viewpager.widget.ViewPager;
 import com.example.migration.Questions.ui.main.SectionsPagerAdapter;
 import com.example.migration.R;
 import com.example.migration.Register.LoginOrRegister;
+import com.example.migration.Register.select_login_type;
 import com.example.migration.common.User;
 import com.google.android.material.tabs.TabLayout;
 import com.google.firebase.auth.FirebaseAuth;
@@ -18,6 +19,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class questions extends AppCompatActivity {
 
 Button logout;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,7 +36,7 @@ Button logout;
                 if(User.type!=1)
                 FirebaseAuth.getInstance().signOut();
 
-                Intent intent = new Intent(getApplicationContext(), LoginOrRegister.class);
+                Intent intent = new Intent(getApplicationContext(),User.type==1? select_login_type.class :LoginOrRegister.class);
                 startActivity(intent);
 
 

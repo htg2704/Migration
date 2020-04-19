@@ -1,90 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="gvbenefits_array">
-    <item>Cooked food/ Ration</item>
-         
-          <item>  Health Check up and treatment</item>
-
-         
-            <item>Govt. financial support</item>
-
-         
-          <item>  Education for children</item>
-
-         
-            <item> Ration / PDS  </item>
-            <item>Any other</item>
+        <item>Cooked food/ Ration</item>
+        <item>  Health Check up and treatment</item>      
+        <item>Govt. financial support</item>
+        <item>  Education for children</item>     
+        <item> Ration / PDS  </item>
+        <item>Any other</item>
     </string-array>
 
     <string-array name="source_info_array">
         <item>Employer/ Contractor</item>
-
-        <item> Mobile  </item>
-            <item> TV/ Radio  </item>
-            <item>Relatives  </item>
-            <item>Any other  </item>
-            <item>Not aware</item>
-
+        <item>Mobile  </item>
+        <item>TV/ Radio  </item>
+        <item>Relatives  </item>
+        <item>Any other  </item>
+        <item>Not aware</item>
     </string-array>
     <string-array name="when_lcdn_array">
         <item> Watching TV  Prime Minister</item>
-         
-
-            <item> Same day from employer</item>
-
-         
-            <item> Same day from relative</item>
-
-         
-            <item> After 1 to 3 Days  </item>
-            <item> Did not know - What is lockdown</item>
+        <item> Same day from employer</item>
+        <item> Same day from relative</item>
+        <item> After 1 to 3 Days  </item>
+        <item> Did not know - What is lockdown</item>
     </string-array>
 
     <string-array name="resp_array">
-        <item> Company Supported - gave advance, food, accommodation</item>
-         
-
-            <item> Company asked to leave the job and place</item>
-
-         
-
-         <item>   Company did not give any support</item>
-
-         
-            <item> Company did not take any call</item>
+        <item>Company Supported - gave advance, food, accommodation</item>
+        <item>Company asked to leave the job and place</item>
+        <item>Company did not give any support</item>
+        <item>Company did not take any call</item>
     </string-array>
-<string-array name="loc_array">
-    <item>Workplace</item>  
-       
-     
-        <item>Home/ Native</item>
-    <item>Any other place (please mention)</item>
-</string-array>
+    <string-array name="loc_array">
+        <item>Workplace</item>  
+        <item>Home/ Native</item>
+        <item>Any other place (please mention)</item>
+    </string-array>
 
    <string-array name="sprt_array">
-       <item>  Cooked food // Ration</item>
-           <item>Medicine  </item>
-         <item>  Shelter// Accommodation</item>
-           <item>Transportation  </item>
-           <item>Shared details but no support received</item>
-          <item> Nobody responded to our call</item>
-          <item> Do not have contact of support agency</item>
-       <item> Any other</item>
+        <item>  Cooked food // Ration</item>
+        <item>Medicine  </item>
+        <item>  Shelter// Accommodation</item>
+        <item>Transportation  </item>
+        <item>Shared details but no support received</item>
+        <item> Nobody responded to our call</item>
+        <item> Do not have contact of support agency</item>
+        <item> Any other</item>
    </string-array>
 
     <string-array name="need_array">
         <item> Cooked food// Ration</item>
-         
-            <item>Money// Cash  </item>
-            <item>Medicine  </item>
-           <item> Shelter// Accommodation</item>
-         
-            <item> Any other</item>
+        <item>Money// Cash  </item>
+        <item>Medicine  </item>
+        <item>Shelter// Accommodation</item>
+        <item>Any other</item>
     </string-array>
 
     <string-array name="assmnt_array">
         <item>Cough/ Fever/ Breathing difficulty</item>
-
         <item>Diabetes/ Hypertension/ Lung disease/ Heart Disease</item>
         <item>Travelled in last 14 days</item>
         <item>Interacted with someone tested positive</item>
@@ -93,9 +66,9 @@
 
     <string-array name="wheretogo_array">
         <item>Govt. Hospital</item>
-            <item>Local Health Worker</item>  
-            <item>Local representatives  </item>
-            <item>Dont know</item>
+        <item>Local Health Worker</item>  
+        <item>Local representatives  </item>
+        <item>Dont know</item>
     </string-array>
 
 </resources>

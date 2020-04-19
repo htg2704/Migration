@@ -11,6 +11,7 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -20,6 +21,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
+import com.example.migration.Database.MyDB;
 import com.example.migration.R;
 
 import org.w3c.dom.Text;
@@ -59,8 +61,12 @@ public class PlaceholderFragment extends Fragment {
     public View onCreateView(
             @NonNull LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
+        final MyDB myDB = new MyDB(getActivity().getApplicationContext());
+
 
         final View root = inflater.inflate(R.layout.fragment_questions, container, false);
+        final Switch pwd_switch = root.findViewById(R.id.pwd_switch);
+
         final Spinner spinner = (Spinner) root.findViewById(R.id.age_spinner);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getContext(), R.array.age_array, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -88,7 +94,7 @@ public class PlaceholderFragment extends Fragment {
             public void onClick(View view) {
                 EditText name,pin,mobile_no;
                 RadioGroup casteR,genderR;
-                String name_str,age,gender,caste,dependents,education,id,city;
+                String name_str,age,gender,caste,dependents,education,id,city,pwd;
                 Double mobile,pin_no;
                 name = root.findViewById(R.id.name);
                 pin = root.findViewById(R.id.pin);
@@ -99,8 +105,13 @@ public class PlaceholderFragment extends Fragment {
                 RadioButton gen = root.findViewById(genderR.getCheckedRadioButtonId());
                 gender = gen.getText().toString();
                 RadioButton cas = root.findViewById(casteR.getCheckedRadioButtonId());
-                caste = gen.getText().toString();
-
+                caste = cas.getText().toString();
+                if(pwd_switch.isChecked()){
+                    pwd = "Yes";
+                }
+                else{
+                    pwd = "No";
+                }
                 name_str = name.getText().toString();
                 pin_no = Double.parseDouble(pin.getText().toString());
                 mobile = Double.parseDouble(mobile_no.getText().toString());
@@ -110,6 +121,11 @@ public class PlaceholderFragment extends Fragment {
                 id = govt_spinner.getSelectedItem().toString();
                 city = city_spinner.getSelectedItem().toString();
                 Log.d(TAG, "city " + gender);
+                myDB.addData(name_str,age,gender,caste,pwd,education,pin_no,mobile,city,id,dependents);
+                name.setText("");
+                pin.setText("");
+                mobile_no.setText("");
+                pwd_switch.setChecked(false);
 
             }
         });

@@ -31,4 +31,5 @@ public class PlanFragment extends Fragment {
 
         return root;
     }
+
 }

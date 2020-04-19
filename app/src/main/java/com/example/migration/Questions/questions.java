@@ -1,23 +1,23 @@
 package com.example.migration.Questions;
 
+import android.content.Intent;
 import android.os.Bundle;
-
-import com.example.migration.R;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
-import com.google.android.material.tabs.TabLayout;
-
-import androidx.viewpager.widget.ViewPager;
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
 
 import com.example.migration.Questions.ui.main.SectionsPagerAdapter;
+import com.example.migration.R;
+import com.example.migration.Register.LoginOrRegister;
+import com.example.migration.common.User;
+import com.google.android.material.tabs.TabLayout;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class questions extends AppCompatActivity {
 
+Button logout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,7 +27,19 @@ public class questions extends AppCompatActivity {
         viewPager.setAdapter(sectionsPagerAdapter);
         TabLayout tabs = findViewById(R.id.tabs);
         tabs.setupWithViewPager(viewPager);
-        
+        logout=findViewById(R.id.btn_logout);
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(User.type!=1)
+                FirebaseAuth.getInstance().signOut();
+
+                Intent intent = new Intent(getApplicationContext(), LoginOrRegister.class);
+                startActivity(intent);
+
+
+            }
+        });
 
     }
 }

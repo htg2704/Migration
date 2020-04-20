@@ -75,5 +75,11 @@ public class MyDB extends SQLiteOpenHelper {
         Cursor data = db.rawQuery(query, null);
         return data;
     }
+    public Cursor getLastData(){
+        SQLiteDatabase db = this.getWritableDatabase();
+        String query = "SELECT * FROM " + TABLE_NAME + " ORDER BY ID DESC LIMIT 1";
+        Cursor data = db.rawQuery(query, null);
+        return data;
+    }
 
 }

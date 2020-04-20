@@ -2,15 +2,20 @@
 <resources>
     <string-array name="sprt_needed_array">
         <item>Financial Support to start business</item>
-         
-    <item> Financial Support to travel, accommodation</item>
-         
-
-<item>  Support for job</item>
+        <item> Financial Support to travel, accommodation</item>
+        <item>  Support for job</item>
     </string-array>
     <string-array name="cur_options_array">
         <item>NO OPTION</item>
         <item>WE ARE PAID BY COMPANY</item>
         <item>OTHERS</item>
+    </string-array>
+    <string-array name="train_array">
+        <item>During Lockdown</item>
+        <item>After Lockdown</item>
+    </string-array>
+    <string-array name="interest_array">
+        <item>Interested</item>
+        <item>Not Interested</item>
     </string-array>
 </resources>

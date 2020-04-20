@@ -2,19 +2,19 @@
 <resources>
     <string-array name="gvbenefits_array">
         <item>Cooked food/ Ration</item>
-        <item>  Health Check up and treatment</item>      
+        <item>Health Check up and treatment</item>      
         <item>Govt. financial support</item>
-        <item>  Education for children</item>     
-        <item> Ration / PDS  </item>
+        <item>Education for children</item>     
+        <item>Ration/PDS</item>
         <item>Any other</item>
     </string-array>
 
     <string-array name="source_info_array">
-        <item>Employer/ Contractor</item>
-        <item>Mobile  </item>
-        <item>TV/ Radio  </item>
-        <item>Relatives  </item>
-        <item>Any other  </item>
+        <item>Employer/Contractor</item>
+        <item>Mobile</item>
+        <item>TV/ Radio</item>
+        <item>Relatives</item>
+        <item>Any other</item>
         <item>Not aware</item>
     </string-array>
     <string-array name="when_lcdn_array">
@@ -38,9 +38,9 @@
     </string-array>
 
    <string-array name="sprt_array">
-        <item>  Cooked food // Ration</item>
-        <item>Medicine  </item>
-        <item>  Shelter// Accommodation</item>
+        <item>  Cooked food/Ration</item>
+        <item>Medicine</item>
+        <item>Shelter/Accommodation</item>
         <item>Transportation  </item>
         <item>Shared details but no support received</item>
         <item> Nobody responded to our call</item>
@@ -49,15 +49,15 @@
    </string-array>
 
     <string-array name="need_array">
-        <item> Cooked food// Ration</item>
-        <item>Money// Cash  </item>
-        <item>Medicine  </item>
-        <item>Shelter// Accommodation</item>
+        <item> Cooked food/Ration</item>
+        <item>Money/Cash</item>
+        <item>Medicine</item>
+        <item>Shelter/Accommodation</item>
         <item>Any other</item>
     </string-array>
 
     <string-array name="assmnt_array">
-        <item>Cough/ Fever/ Breathing difficulty</item>
+        <item>Cough/Fever/Breathing difficulty</item>
         <item>Diabetes/ Hypertension/ Lung disease/ Heart Disease</item>
         <item>Travelled in last 14 days</item>
         <item>Interacted with someone tested positive</item>
@@ -68,7 +68,7 @@
         <item>Govt. Hospital</item>
         <item>Local Health Worker</item>  
         <item>Local representatives  </item>
-        <item>Dont know</item>
+        <item>Don\'t know</item>
     </string-array>
 
 </resources>

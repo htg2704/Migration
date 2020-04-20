@@ -15,6 +15,8 @@ public class select_login_type extends AppCompatActivity {
 
     Button btn_volunteer, btn_mobiliser, btn_agency;
 
+
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,6 +46,7 @@ public class select_login_type extends AppCompatActivity {
                 User.type=2;
                 Intent intent = new Intent(select_login_type.this,com.example.migration.Register.LoginOrRegister.class);
                 startActivity(intent);
+
             }
         });
         btn_agency.setOnClickListener(new View.OnClickListener() {
@@ -52,6 +55,7 @@ public class select_login_type extends AppCompatActivity {
                 User.type=3;
                 Intent intent = new Intent(select_login_type.this,com.example.migration.Register.LoginOrRegister.class);
                 startActivity(intent);
+
             }
         });
     }

@@ -26,7 +26,7 @@ public class LoginOrRegister extends AppCompatActivity {
     Button log_sgnin;
     FirebaseAuth mFirebaseAuth;
     TextView tvr;
-    FirebaseAuth.AuthStateListener mAuthListener;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,9 +37,7 @@ public class LoginOrRegister extends AppCompatActivity {
         log_sgnin=findViewById(R.id.btn_login);
         tvr=findViewById(R.id.tv_reg);
         mFirebaseAuth= FirebaseAuth.getInstance();
-        //mAuthListener=new FirebaseAuth.AuthStateListener() {
-            //@Override
-          //  public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
+
                 FirebaseUser firebaseUser=mFirebaseAuth.getCurrentUser();
 
                 if(firebaseUser!=null)
@@ -55,8 +53,6 @@ public class LoginOrRegister extends AppCompatActivity {
                     Toast.makeText(LoginOrRegister.this,"You are'nt Logged In",Toast.LENGTH_SHORT).show();
                     //Intent switching to Log In Screen;
                 }
-            //}
-        //};
 
         tvr.setOnClickListener(new View.OnClickListener()
         {
@@ -110,8 +106,3 @@ public class LoginOrRegister extends AppCompatActivity {
 
     }
 }
-/*
-
-
-
- */

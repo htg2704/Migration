@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
@@ -18,7 +19,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class questions extends AppCompatActivity {
 
-Button logout;
+ImageButton logout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

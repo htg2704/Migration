@@ -1,6 +1,7 @@
 package com.example.migration.Questions.ui.main;
 
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,6 +10,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -83,15 +85,33 @@ public class MigrationFragment extends Fragment {
                 mobile_no_employer = 0.0;
 
                 nature_str = work_spinner.getSelectedItem().toString();
-                employer_str = employer.getText().toString();
-                mobile_no_employer = Double.parseDouble(employer_contact.getText().toString());
+                if(TextUtils.isEmpty(employer.getText().toString())){
+                    employer.setError("This can't be empty");
+                    employer_str = "null";
+                }
+                else{
+                    employer_str = employer.getText().toString();
+
+                }
+                if(TextUtils.isEmpty(employer_contact.getText().toString())){
+                    employer_contact.setError("This can't be empty");
+                    mobile_no_employer = 0.0;
+                }
+                else{
+                    mobile_no_employer = Double.parseDouble(employer_contact.getText().toString());
+                }
                 loc = l_spinner.getSelectedItem().toString();
                 period = period_spinner.getSelectedItem().toString();
                 wage = wage_spinner.getSelectedItem().toString();
                 other = benefit_spinner.getSelectedItem().toString();
                 challenges = challenge_spinner.getSelectedItem().toString();
                 Log.d(TAG, "city " + challenges);
-                migrationDB.addData(nature_str,loc,period,wage,employer_str,mobile_no_employer,other,challenges);
+                if(employer_str=="null"||mobile_no_employer ==0.0){
+                    Toast.makeText(getActivity().getApplicationContext(),"Data not saved",Toast.LENGTH_SHORT);
+                }else {
+                    migrationDB.addData(nature_str,loc,period,wage,employer_str,mobile_no_employer,other,challenges);
+                }
+
                 employer.setText("");
                 employer_contact.setText("");
 

@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Migration</string>
     <string name="title_activity_survey">survey</string>
-    <string name="tab_text_1">personal profile</string>
+    <string name="tab_text_1">Demographic profile</string>
     <string name="tab_text_2">Migration Profile</string>
     <string name="tab_text_3">Awareness Profile</string>
     <string name="tab_text_4">Future Plan</string>

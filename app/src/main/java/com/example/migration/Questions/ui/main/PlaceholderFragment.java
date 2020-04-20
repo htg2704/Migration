@@ -1,6 +1,7 @@
 package com.example.migration.Questions.ui.main;
 
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -101,11 +102,22 @@ public class PlaceholderFragment extends Fragment {
                 mobile_no = root.findViewById(R.id.mobile_no);
                 casteR = root.findViewById(R.id.caste);
                 genderR = root.findViewById(R.id.gender);
+                if(genderR.getCheckedRadioButtonId()==-1){
+                    gender = "null";
+                }
+                else{
 
-                RadioButton gen = root.findViewById(genderR.getCheckedRadioButtonId());
-                gender = gen.getText().toString();
-                RadioButton cas = root.findViewById(casteR.getCheckedRadioButtonId());
-                caste = cas.getText().toString();
+                    RadioButton gen = root.findViewById(genderR.getCheckedRadioButtonId());
+                    gender = gen.getText().toString();
+                }
+                if(casteR.getCheckedRadioButtonId()==-1){
+                    caste = "null";
+                }
+                else
+                { RadioButton cas = root.findViewById(casteR.getCheckedRadioButtonId());
+                    caste = cas.getText().toString();
+
+                }
                 if(pwd_switch.isChecked()){
                     pwd = "Yes";
                 }
@@ -113,15 +125,40 @@ public class PlaceholderFragment extends Fragment {
                     pwd = "No";
                 }
                 name_str = name.getText().toString();
-                pin_no = Double.parseDouble(pin.getText().toString());
-                mobile = Double.parseDouble(mobile_no.getText().toString());
+                if(TextUtils.isEmpty(name_str)){
+                    name.setError("This can't be empty");
+                    name_str = "null";
+                }
+
+                if(TextUtils.isEmpty(gender)){
+                    name_str = "null";
+                }
+
+
+                if(TextUtils.isEmpty(pin.getText().toString())){
+                    pin.setError("This can't be empty");
+                    pin_no = 0.0;
+                }else {
+                    pin_no = Double.parseDouble(pin.getText().toString());
+                }
+                if(TextUtils.isEmpty(pin.getText().toString())){
+                    mobile_no.setError("This can't be empty");
+                    mobile = 0.0;
+                }else {
+                    mobile = Double.parseDouble(mobile_no.getText().toString());
+                }
+
                 age = spinner.getSelectedItem().toString();
                 dependents = dep_spinner.getSelectedItem().toString();
                 education = edu_spinner.getSelectedItem().toString();
                 id = govt_spinner.getSelectedItem().toString();
                 city = city_spinner.getSelectedItem().toString();
                 Log.d(TAG, "city " + gender);
-                myDB.addData(name_str,age,gender,caste,pwd,education,pin_no,mobile,city,id,dependents);
+                if(name_str=="null"||pin_no ==0.0||mobile==0.0||gender=="null"||caste=="null"){
+                    Toast.makeText(getActivity().getApplicationContext(),"Data not saved",Toast.LENGTH_SHORT);
+                }else {
+                    myDB.addData(name_str, age, gender, caste, pwd, education, pin_no, mobile, city, id, dependents);
+                }
                 name.setText("");
                 pin.setText("");
                 mobile_no.setText("");

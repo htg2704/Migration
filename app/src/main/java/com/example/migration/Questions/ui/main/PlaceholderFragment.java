@@ -88,7 +88,7 @@ public class PlaceholderFragment extends Fragment {
         ArrayAdapter<CharSequence> city_adapter = ArrayAdapter.createFromResource(getContext(), R.array.india_cities, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         city_spinner.setAdapter(city_adapter);
-        Button save = root.findViewById(R.id.save_personal);
+        final Button save = root.findViewById(R.id.save_personal);
 
         save.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -163,6 +163,9 @@ public class PlaceholderFragment extends Fragment {
                 pin.setText("");
                 mobile_no.setText("");
                 pwd_switch.setChecked(false);
+
+                Toast.makeText(getActivity().getApplicationContext(),"Data added successfully",Toast.LENGTH_SHORT);
+                save.setEnabled(false);
 
             }
         });

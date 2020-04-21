@@ -69,7 +69,7 @@ public class MigrationFragment extends Fragment {
         challenge_adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         challenge_spinner.setAdapter(challenge_adapter);
 
-        Button save = root.findViewById(R.id.save_migration);
+        final Button save = root.findViewById(R.id.save_migration);
 
 
         save.setOnClickListener(new View.OnClickListener() {
@@ -114,6 +114,8 @@ public class MigrationFragment extends Fragment {
 
                 employer.setText("");
                 employer_contact.setText("");
+                Toast.makeText(getActivity().getApplicationContext(),"Data added successfully",Toast.LENGTH_SHORT);
+                save.setEnabled(false);
 
             }
         });

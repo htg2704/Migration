@@ -9,6 +9,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -76,7 +77,7 @@ public class AwarenessFragment extends Fragment {
         where_adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         where_spinner.setAdapter(where_adapter);
 
-        Button save = root.findViewById(R.id.save_awareness);
+        final Button save = root.findViewById(R.id.save_awareness);
 
 
         save.setOnClickListener(new View.OnClickListener() {
@@ -96,6 +97,9 @@ public class AwarenessFragment extends Fragment {
                 reach = where_spinner.getSelectedItem().toString();
                 Log.d(TAG, "city " + govt_ben);
                 awarenessDB.addData(govt_ben,covid_know,lock_know,response,current_loc,support_rec,support_needed,covid_self,reach);
+
+                Toast.makeText(getActivity().getApplicationContext(),"Data added successfully",Toast.LENGTH_SHORT);
+                save.setEnabled(false);
 
             }
         });

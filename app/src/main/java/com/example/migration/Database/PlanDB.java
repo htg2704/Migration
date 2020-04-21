@@ -33,7 +33,7 @@ public class PlanDB extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         String createTable = "CREATE TABLE " + TABLE_NAME + " (ID INTEGER PRIMARY KEY AUTOINCREMENT, " + COL2 +" TEXT,"+ COL3 +" TEXT,"+ COL4 +" TEXT,"+ COL5 +" TEXT,"+ COL6 +" TEXT,"
-                + COL7 +" TEXT,"+ COL8 +" TEXT,"+ COL9 + " TEXT,"+ COL10 +" TEXT,"+ COL11 +" TEXT,"+ COL13 +" TEXT)";
+                + COL7 +" TEXT,"+ COL8 +" TEXT,"+ COL9 + " TEXT,"+ COL10 +" TEXT,"+ COL11 +" TEXT,"+COL12+" TEXT," +COL13 +" TEXT)";
         db.execSQL(createTable);
     }
 

@@ -1,172 +1,285 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Questions.ui.main.PlaceholderFragment"
-    >
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center_horizontal"
-    android:orientation="vertical">
+    android:background="@color/back">
 
-    <LinearLayout
+    <ScrollView
+        android:id="@+id/scrollView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        >
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="Nature of work"
-            android:textSize="15sp"
-            android:maxLines="10"
-            />
-        <Spinner
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginStart="30dp"
-            android:id="@+id/nature_of_work_spinner"
-            />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        >
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="Work location"
-            android:textSize="15sp"
-            android:maxLines="10"
-            />
-        <Spinner
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginStart="30dp"
-            android:id="@+id/location_spinner"
-            />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        >
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="Period of Migration"
-            android:textSize="15sp"
-            android:maxLines="10"
-            />
-        <Spinner
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginStart="30dp"
-            android:id="@+id/period_spinner"
-            />
-    </LinearLayout>
+        android:layout_height="match_parent"
+        tools:context=".Questions.ui.main.PlaceholderFragment">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        >
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="Daily Wage"
-            android:textSize="15sp"
-            android:maxLines="10"
-            />
-        <Spinner
+        <LinearLayout
+            android:layout_margin="10dp"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginStart="30dp"
-            android:id="@+id/wage_spinner"
-            />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="Employer Name"
-            android:textSize="20sp"
-            android:maxLines="10"
-            />
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/employer_name"
-            android:inputType="text"
-            />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="Employer's \nContact No."
-            android:textSize="20sp"
-            android:maxLines="10"
-            />
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/employer_CON_NO"
-            android:inputType="numberDecimal|number"
-            />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        >
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="Other benefits in Cities"
-            android:textSize="15sp"
-            android:maxLines="10"
-            />
-        <Spinner
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginStart="30dp"
-            android:id="@+id/other_benefit_spinner"
-            />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        >
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="Challenges in the new place"
-            android:textSize="15sp"
-            android:maxLines="10"
-            />
-        <Spinner
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginStart="30dp"
-            android:id="@+id/challenge_spinner"
-            />
-    </LinearLayout>
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/save_migration"
-        android:text="Save and next"/>
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                app:cardCornerRadius="6dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Employer Name"
+                        android:fontFamily="@font/noto_sans_bold"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"></TextView>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/employer_name"
+                        android:hint="@string/enter_name_here"
+                        android:layout_marginHorizontal="20dp"
+                        android:fontFamily="@font/noto_sans"
+                        android:inputType="text"
+                        android:autofillHints=""
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:backgroundTint="@color/blue"
+                        android:textCursorDrawable="@drawable/cursor"
+                        android:textColorHint="@color/gray"
+                        />
+
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Employer's Mobile Number"
+                        android:fontFamily="@font/noto_sans_bold"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="15dp"
+                        android:textColor="@color/black"></TextView>
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="@string/enter_mobile_no_here"
+                        android:id="@+id/employer_CON_NO"
+                        android:autofillHints=""
+                        android:inputType="numberDecimal"
+                        android:layout_marginHorizontal="20dp"
+                        android:fontFamily="@font/noto_sans"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:backgroundTint="@color/blue"
+                        android:ems="10"
+                        android:layout_marginBottom="10dp"
+                        android:maxLength="10"
+                        android:textCursorDrawable="@drawable/cursor"
+                        android:textColorHint="@color/gray"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Nature of work"
+                        android:fontFamily="@font/noto_sans_bold"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/gray"></TextView>
+
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/nature_of_work_spinner"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:layout_marginHorizontal="20dp"
+                        />
+
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Work location"
+                        android:fontFamily="@font/noto_sans_bold"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="20dp"
+                        android:textColor="@color/gray"></TextView>
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/location_spinner"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:layout_marginHorizontal="20dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Period of Migration"
+                        android:fontFamily="@font/noto_sans_bold"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="20dp"
+                        android:textColor="@color/gray"></TextView>
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/period_spinner"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:layout_marginHorizontal="20dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Daily Wage"
+                        android:fontFamily="@font/noto_sans_bold"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="20dp"
+                        android:textColor="@color/gray"></TextView>
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/wage_spinner"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginHorizontal="20dp"
+                        />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFFFFF"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        app:cardCornerRadius="6dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Other benefits in Cities"
+                        android:fontFamily="@font/noto_sans_bold"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="20dp"
+                        android:textColor="@color/gray"></TextView>
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/other_benefit_spinner"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:layout_marginHorizontal="20dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Challenges in the new place"
+                        android:fontFamily="@font/noto_sans_bold"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="20dp"
+                        android:textColor="@color/gray"></TextView>
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/challenge_spinner"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:layout_marginHorizontal="20dp"
+                        />
+
+
+
+                    <Button
+                        android:layout_width="170dp"
+                        android:layout_height="50dp"
+                        android:text="Save and Next"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/noto_sans_bold"
+                        android:background="@drawable/button"
+                        android:textSize="12sp"
+                        android:layout_marginVertical="30dp"
+                        android:id="@+id/save_migration"/>
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
 </LinearLayout>
-</ScrollView>

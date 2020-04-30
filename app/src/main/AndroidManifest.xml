@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".Register.ForgotPass"></activity>
+        <activity android:name=".SliderActivity"></activity>
         <activity android:name=".Launcher">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -34,11 +35,7 @@
             android:parentActivityName=".Register.select_login_type"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".data.data_main" />
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".MainActivity" />
         <activity android:name=".Register.select_login_type" />
         <activity android:name=".Stats.stats_main" />
 

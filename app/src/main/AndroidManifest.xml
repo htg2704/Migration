@@ -39,7 +39,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".Register.select_login_type" />
-
+        <activity android:name=".Stats.stats_main"/>
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Migration</string>
+    <string name="app_name">Kutumb</string>
     <string name="title_activity_survey">survey</string>
     <string name="tab_text_1">Demographic profile</string>
     <string name="tab_text_2">Migration Profile</string>

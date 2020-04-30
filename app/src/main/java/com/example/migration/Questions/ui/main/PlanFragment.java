@@ -1,5 +1,7 @@
 package com.example.migration.Questions.ui.main;
 
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.util.Log;
@@ -13,12 +15,14 @@ import android.widget.Switch;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
 
 import com.example.migration.Database.AwarenessDB;
 import com.example.migration.Database.MigrationDB;
 import com.example.migration.Database.MyDB;
 import com.example.migration.Database.PlanDB;
+import com.example.migration.Questions.questions;
 import com.example.migration.R;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -60,11 +64,11 @@ public class PlanFragment extends Fragment {
         support_after_adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         support_after.setAdapter(support_after_adapter);
         final Spinner skill_spinner = (Spinner) root.findViewById(R.id.skill_upgrade_spinner);
-        ArrayAdapter<CharSequence> skill_adapter = ArrayAdapter.createFromResource(getContext(), R.array.india_cities, android.R.layout.simple_spinner_item);
+        ArrayAdapter<CharSequence> skill_adapter = ArrayAdapter.createFromResource(getContext(), R.array.interest_array, android.R.layout.simple_spinner_item);
         skill_adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         skill_spinner.setAdapter(skill_adapter);
         final Spinner live_spinner = (Spinner) root.findViewById(R.id.livelihhod_spinner);
-        ArrayAdapter<CharSequence> live_adapter = ArrayAdapter.createFromResource(getContext(), R.array.interest_array, android.R.layout.simple_spinner_item);
+        ArrayAdapter<CharSequence> live_adapter = ArrayAdapter.createFromResource(getContext(), R.array.cur_options_array, android.R.layout.simple_spinner_item);
         live_adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         live_spinner.setAdapter(live_adapter);
         final Spinner training_spinner = (Spinner) root.findViewById(R.id.training_spinner);
@@ -161,7 +165,7 @@ public class PlanFragment extends Fragment {
                 FirebaseFirestore db = FirebaseFirestore.getInstance();
                 Map<String, Object> migrant = new HashMap<>();
 
-              //  if (personal.moveToFirst()) {
+               if (personal.moveToFirst()) {
 
 
                     int idIdx = personal.getColumnIndex("ID");
@@ -180,9 +184,9 @@ public class PlanFragment extends Fragment {
 
                     //int id = personal.getInt(idIdx);
                     String name = personal.getString(nameIdx);
-                    String age = personal.getString(nameIdx);
-                    String gender = personal.getString(nameIdx);
-                    String caste = personal.getString(nameIdx);
+                    String age = personal.getString(ageIdx);
+                    String gender = personal.getString(genderIdx);
+                    String caste = personal.getString(casteIdx);
                     String pwd = personal.getString(pwdIdx);
                     String education = personal.getString(eduIdx);
                     Double pin = personal.getDouble(pinIdx);
@@ -203,9 +207,9 @@ public class PlanFragment extends Fragment {
                     migrant.put("Govt_id", govt_id);
                     migrant.put("Dependants", dependants);
 
-               // }
+                }
 
-          //      if (migration.moveToFirst()) {
+                if (migration.moveToFirst()) {
 
                   //  int idIdx = migration.getColumnIndex("ID");
                     int natureIdx = migration.getColumnIndex("nature");
@@ -240,9 +244,9 @@ public class PlanFragment extends Fragment {
                     migrant.put("Challenges", chal);
 
 
-            //    }
+                }
 
-         //       if (awareness.moveToFirst()) {
+                 if (awareness.moveToFirst()) {
 
                     int gvtbenIdx = awareness.getColumnIndex("govt_ben");
                     int cvdIdx = awareness.getColumnIndex("covid_know");
@@ -265,9 +269,9 @@ public class PlanFragment extends Fragment {
                     migrant.put("Covid Self", awareness.getString(cvdslfIdx));
                     migrant.put("Reach", awareness.getString(rchIdx));
 
-             //   }
+               }
 
-               /// if (plan.moveToFirst()) {
+                if (plan.moveToFirst()) {
 
 
                     migrant.put("Where for Job", plan.getString(plan.getColumnIndex("where_for_job")));
@@ -282,15 +286,15 @@ public class PlanFragment extends Fragment {
                     migrant.put("Skill Upgrade", plan.getString(plan.getColumnIndex("skill_upgrade")));
                     migrant.put("Availability for Training ", plan.getString(plan.getColumnIndex("availability_for_training")));
                     migrant.put("Present Livelihood", plan.getString(plan.getColumnIndex("present_livelihood")));
-              //  }
+               }
 
 
-                db.collection("Migrant")
+                db.collection("Migrants")
                         .add(migrant)
                         .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
                             @Override
                             public void onSuccess(DocumentReference documentReference) {
-                                //Log.d(TAG, "DocumentSnapshot added with ID: " + documentReference.getId());
+                                ((questions)getActivity()).selectTab(0);//Log.d(TAG, "DocumentSnapshot added with ID: " + documentReference.getId());
                             }
                         })
                         .addOnFailureListener(new OnFailureListener() {
@@ -300,8 +304,10 @@ public class PlanFragment extends Fragment {
                             }
                         });
 
-                Toast.makeText(getActivity().getApplicationContext(),"Data added successfully",Toast.LENGTH_SHORT);
+                Toast.makeText(getActivity(),"Data added successfully, you can add more",Toast.LENGTH_SHORT).show();
                 save.setEnabled(false);
+                ((questions)getActivity()).selectTab(0);
+
 
 
             }

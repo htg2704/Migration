@@ -73,7 +73,10 @@
                         android:textColor="@color/black"
                         android:layout_marginHorizontal="20dp"
                         />
-
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -84,17 +87,40 @@
                         android:layout_marginHorizontal="20dp"
                         android:layout_marginTop="20dp"
                         android:textColor="@color/gray"></TextView>
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cooked Food/Ration"
+                        android:id="@+id/c1"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Health check up and treatment"
+        android:id="@+id/c2"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Govt. financial support"
+        android:id="@+id/c3"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Education for children"
+        android:id="@+id/c4"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ration/PDS"
+        android:id="@+id/c5"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Any other"
+        android:id="@+id/c6"/>
 
-                    <Spinner
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:id="@+id/govt_ben_spinner"
-                        android:layout_marginTop="10dp"
-                        android:textColor="@color/black"
-                        android:layout_marginHorizontal="20dp"
-                        />
 
 
+</LinearLayout>
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -191,7 +217,10 @@
                         android:textColor="@color/black"
                         android:layout_marginHorizontal="20dp"
                         />
-
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -203,15 +232,32 @@
                         android:layout_marginTop="20dp"
                         android:textColor="@color/gray"></TextView>
 
-                    <Spinner
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:id="@+id/support_needed_spinner"
-                        android:layout_marginTop="10dp"
-                        android:textColor="@color/black"
-                        android:layout_marginHorizontal="20dp"
-                        />
-
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Health check up and treatment"
+                        android:id="@+id/c7"/>
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Govt. financial support"
+                        android:id="@+id/c8"/>
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Education for children"
+                        android:id="@+id/c9"/>
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ration/PDS"
+                        android:id="@+id/c10"/>
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Any other"
+                        android:id="@+id/c11"/>
+                </LinearLayout>
 
                     <TextView
                         android:layout_width="match_parent"
@@ -250,25 +296,9 @@
 
 
                 </LinearLayout>
-
-
-
-
-
-
-
-
-
             </androidx.cardview.widget.CardView>
-
-
-
-
-
-
         </LinearLayout>
 
 
     </ScrollView>
-
 </LinearLayout>

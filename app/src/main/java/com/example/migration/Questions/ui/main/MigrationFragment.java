@@ -19,6 +19,7 @@ import androidx.lifecycle.Observer;
 
 import com.example.migration.Database.MigrationDB;
 import com.example.migration.Database.MyDB;
+import com.example.migration.Questions.questions;
 import com.example.migration.R;
 
 import static android.content.ContentValues.TAG;
@@ -110,12 +111,14 @@ public class MigrationFragment extends Fragment {
                     Toast.makeText(getActivity().getApplicationContext(),"Data not saved",Toast.LENGTH_SHORT);
                 }else {
                     migrationDB.addData(nature_str,loc,period,wage,employer_str,mobile_no_employer,other,challenges);
+                    save.setClickable(false);
+                    ((questions)getActivity()).selectTab(2);
                 }
 
                 employer.setText("");
                 employer_contact.setText("");
-                Toast.makeText(getActivity().getApplicationContext(),"Data added successfully",Toast.LENGTH_SHORT);
-                save.setEnabled(false);
+                Toast.makeText(getActivity().getApplicationContext(),"Migration data added successfully",Toast.LENGTH_SHORT).show();
+
 
             }
         });

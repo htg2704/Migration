@@ -23,6 +23,7 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.example.migration.Database.MyDB;
+import com.example.migration.Questions.questions;
 import com.example.migration.R;
 
 import org.w3c.dom.Text;
@@ -158,14 +159,17 @@ public class PlaceholderFragment extends Fragment {
                     Toast.makeText(getActivity().getApplicationContext(),"Data not saved",Toast.LENGTH_SHORT);
                 }else {
                     myDB.addData(name_str, age, gender, caste, pwd, education, pin_no, mobile, city, id, dependents);
+                    save.setClickable(false);
+                    ((questions)getActivity()).selectTab(1);
                 }
                 name.setText("");
                 pin.setText("");
                 mobile_no.setText("");
                 pwd_switch.setChecked(false);
 
-                Toast.makeText(getActivity().getApplicationContext(),"Data added successfully",Toast.LENGTH_SHORT);
-                save.setEnabled(false);
+                Toast.makeText(getActivity().getApplicationContext(),"Demographic data added successfully",Toast.LENGTH_SHORT).show();
+                ((questions)getActivity()).selectTab(1);
+
 
             }
         });

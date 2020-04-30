@@ -53,13 +53,13 @@ public class SliderActivity extends AppCompatActivity {
 
             switch (i) {
                 case 0:
-                    sliderView.setImageUrl("");
+                    sliderView.setImageUrl("https://i.postimg.cc/3RmgXv3L/s1.png");
                     break;
                 case 1:
-                    sliderView.setImageUrl("");
+                    sliderView.setImageUrl("https://i.postimg.cc/9QNNX0Cx/s2.png");
                     break;
                 case 2:
-                    sliderView.setImageUrl("");
+                    sliderView.setImageUrl("https://i.postimg.cc/DZfnX5Sv/s3.png");
                     break;
 
             }

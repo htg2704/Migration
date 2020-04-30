@@ -1,134 +1,176 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Register.RegisterUser">
-
-    <EditText
-        android:id="@+id/reg_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:width="300dp"
-        android:background="@drawable/btn_draw1"
-        android:ems="10"
-        android:hint="Name"
-
-        android:inputType="textPersonName"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.06" />
-
-    <EditText
-        android:id="@+id/reg_mail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:width="300dp"
-        android:background="@drawable/btn_draw1"
-        android:ems="10"
-        android:hint="Email"
-        android:inputType="textEmailAddress"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/reg_name"
-        app:layout_constraintVertical_bias="0.042" />
-
-    <EditText
-        android:id="@+id/reg_phone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:width="300dp"
-        android:background="@drawable/btn_draw1"
-        android:ems="10"
-        android:hint="Phone Number"
-        android:inputType="phone"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/reg_mail"
-        app:layout_constraintVertical_bias="0.048" />
-
-    <EditText
-        android:id="@+id/reg_adrs"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:width="300dp"
-        android:background="@drawable/btn_draw1"
-        android:ems="10"
-        android:gravity="start|top"
-        android:hint="Address"
-        android:inputType="textMultiLine"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/reg_phone"
-        app:layout_constraintVertical_bias="0.052" />
-
-    <EditText
-        android:id="@+id/reg_pwd"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:width="300dp"
-        android:background="@drawable/btn_draw1"
-        android:ems="10"
-        android:hint="Set Password"
-        android:inputType="textPassword"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/reg_adrs"
-        app:layout_constraintVertical_bias="0.056" />
-
-    <EditText
-        android:id="@+id/cnf_pwd"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:width="300dp"
-        android:height="20dp"
-        android:background="@drawable/btn_draw1"
-        android:ems="10"
-        android:hint="Confirm Password"
-        android:inputType="textPassword"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/reg_pwd"
-        app:layout_constraintVertical_bias="0.065" />
-
-    <Button
-        android:id="@+id/reg_sign_up"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Register"
-        android:background="@drawable/btn_draw1"
-        android:textColor="@color/pink"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cnf_pwd"
-        app:layout_constraintVertical_bias="0.162" />
+    xmlns:tools="http://schemas.android.com/tools"
+    >
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Please Enter Your Details"
-        android:textSize="30sp"
-        android:textStyle="italic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.05" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:text="Sign Up"
+        android:fontFamily="@font/noto_sans_bold"
+        android:textSize="35sp"
+        android:layout_marginVertical="20dp"
+        android:layout_marginStart="30dp"
+        android:textColor="@color/blue"
+        ></TextView>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:id="@+id/reg_name"
+            android:hint="Full Name"
+            android:layout_marginHorizontal="30dp"
+            android:fontFamily="@font/noto_sans"
+            android:inputType="text"
+            android:autofillHints=""
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_marginTop="30dp"
+            android:drawableLeft="@drawable/ic_account_circle_black_24dp"
+            android:background="@drawable/btn_draw1"
+            android:drawablePadding="15dp"
+            android:textCursorDrawable="@drawable/cursor"
+            android:textColorHint="@color/gray"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:id="@+id/reg_mail"
+            android:hint="E-mail Address"
+            android:layout_marginHorizontal="30dp"
+            android:fontFamily="@font/noto_sans"
+            android:inputType="text"
+            android:autofillHints=""
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/ic_email_black_24dp"
+            android:background="@drawable/btn_draw1"
+            android:drawablePadding="15dp"
+            android:textCursorDrawable="@drawable/cursor"
+            android:textColorHint="@color/gray"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:id="@+id/reg_phone"
+            android:hint="Mobile Number"
+            android:layout_marginHorizontal="30dp"
+            android:fontFamily="@font/noto_sans"
+            android:inputType="text"
+            android:autofillHints=""
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/ic_phone_black_24dp"
+            android:background="@drawable/btn_draw1"
+            android:drawablePadding="15dp"
+            android:textCursorDrawable="@drawable/cursor"
+            android:textColorHint="@color/gray"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:id="@+id/reg_adrs"
+            android:hint="Address"
+            android:layout_marginHorizontal="30dp"
+            android:fontFamily="@font/noto_sans"
+            android:inputType="text"
+            android:autofillHints=""
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/ic_home_black_24dp"
+            android:background="@drawable/btn_draw1"
+            android:drawablePadding="15dp"
+            android:textCursorDrawable="@drawable/cursor"
+            android:textColorHint="@color/gray"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:id="@+id/reg_pwd"
+            android:hint="Password"
+            android:layout_marginHorizontal="30dp"
+            android:fontFamily="@font/noto_sans"
+            android:inputType="text"
+            android:autofillHints=""
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+            android:background="@drawable/btn_draw1"
+            android:drawablePadding="15dp"
+            android:textCursorDrawable="@drawable/cursor"
+            android:textColorHint="@color/gray"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/cnf_pwd"
+            android:hint="Confirm Password"
+            android:layout_marginHorizontal="30dp"
+            android:fontFamily="@font/noto_sans"
+            android:inputType="text"
+            android:autofillHints=""
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+            android:background="@drawable/btn_draw1"
+            android:drawablePadding="15dp"
+            android:textCursorDrawable="@drawable/cursor"
+            android:textColorHint="@color/gray"
+            />
+
+
+
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textColor="@color/white"
+            android:fontFamily="@font/noto_sans_bold"
+            android:background="@drawable/button"
+            android:textSize="15sp"
+            android:padding="15dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginVertical="50dp"
+            android:id="@+id/reg_sign_up"/>
+
+
+    </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

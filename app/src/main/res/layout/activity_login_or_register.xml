@@ -1,97 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:weightSum="10"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.migration.Register.LoginOrRegister"
     >
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:id="@+id/ll1"
-        android:gravity="center">
-        <TextView
+        android:layout_height="wrap_content"
+        android:layout_weight="9"
+        android:orientation="vertical">
 
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Sign In"
+       android:fontFamily="@font/noto_sans_bold"
+       android:textSize="35sp"
+       android:layout_marginVertical="20dp"
+       android:layout_marginStart="30dp"
+       android:textColor="@color/blue"
+       ></TextView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:id="@+id/log_mail"
+        android:hint="E-mail Address"
+        android:layout_marginHorizontal="30dp"
+        android:fontFamily="@font/noto_sans"
+        android:inputType="text"
+        android:autofillHints=""
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:layout_marginTop="30dp"
+        android:drawableLeft="@drawable/ic_account_circle_black_24dp"
+        android:background="@drawable/btn_draw1"
+        android:drawablePadding="15dp"
+        android:textCursorDrawable="@drawable/cursor"
+        android:textColorHint="@color/gray"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_marginTop="25dp"
+        android:id="@+id/log_pwd"
+        android:hint="Password"
+        android:layout_marginHorizontal="30dp"
+        android:fontFamily="@font/noto_sans"
+        android:inputType="text"
+        android:autofillHints=""
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:drawableLeft="@drawable/ic_lock_open_black_24dp"
+        android:background="@drawable/btn_draw1"
+        android:drawablePadding="15dp"
+        android:textCursorDrawable="@drawable/cursor"
+        android:textColorHint="@color/gray"
+        />
+
+
+
+        <TextView
+            android:id="@+id/tv_forgotpass"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Please Login Or Register"
-            android:textSize="32sp" />
+            android:text="Forgot Password ?"
+            android:fontFamily="@font/noto_sans_bold"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_gravity="end"
+            android:textColor="@color/gray"></TextView>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:textColor="@color/white"
+        android:fontFamily="@font/noto_sans_bold"
+        android:background="@drawable/button"
+        android:textSize="15sp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="30dp"
+        android:id="@+id/btn_login"/>
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="50dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an acoount ?"
+            android:textSize="12sp"
+            android:textColor="@color/gray"
+            android:fontFamily="@font/noto_sans_bold"
+            >
+
+        </TextView>
+
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create new one"
+        android:textSize="12sp"
+            android:id="@+id/tv_reg"
+        android:layout_marginStart="5dp"
+        android:textColor="@color/blue"
+        android:fontFamily="@font/noto_sans_bold"
+        >
+
+    </TextView>
+
     </LinearLayout>
 
 
-    <EditText
-        android:id="@+id/log_mail"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:layout_below="@+id/ll1"
-        android:layout_marginTop="30dp"
-        android:background="@drawable/btn_draw1"
-        android:layout_marginLeft="68dp"
-        android:layout_marginRight="68dp"
-        android:hint="Enter your email Id"
-        android:textAlignment="center"
-        >
-
-    </EditText>
-
-    <EditText
-        android:id="@+id/log_pwd"
-        android:layout_marginTop="22dp"
-        android:layout_below="@+id/log_mail"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:layout_marginLeft="70dp"
-        android:layout_marginRight="70dp"
-        android:password="true"
-        android:textAlignment="center"
-        android:background="@drawable/btn_draw1"
-        android:hint="Enter your password">
-
-    </EditText>
-
-    <Button
-        android:id="@+id/btn_login"
-        android:layout_marginTop="50dp"
-        android:layout_below="@+id/log_pwd"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:layout_marginLeft="70dp"
-        android:layout_marginRight="70dp"
-        android:textColor="@color/pink"
-        android:background="@drawable/btn_draw1"
-        android:text="Log In">
-    </Button>
-
-    <TextView
-        android:id="@+id/tv_reg"
-        android:layout_marginTop="10dp"
-        android:layout_below="@+id/btn_login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="158dp"
-        android:layout_marginRight="100dp"
-        android:textStyle="italic"
-        android:clickable="true"
-        android:autoLink="none"
-        android:textAlignment="textEnd"
-        android:text="New User? Register here!">
-    </TextView>
-
-    <TextView
-        android:id="@+id/tv_forgotpass"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/tv_reg"
-        android:layout_marginLeft="158dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="100dp"
-        android:autoLink="none"
-        android:clickable="true"
-        android:text="Forgot password!!"
-        android:textAlignment="textEnd"
-        android:textStyle="italic"></TextView>
 
 
-
-</RelativeLayout>
+</LinearLayout>

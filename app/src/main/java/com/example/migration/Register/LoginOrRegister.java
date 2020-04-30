@@ -26,6 +26,7 @@ public class LoginOrRegister extends AppCompatActivity {
     Button log_sgnin;
     FirebaseAuth mFirebaseAuth;
     TextView tvr;
+    TextView tvfp;
 
 
     @Override
@@ -36,6 +37,7 @@ public class LoginOrRegister extends AppCompatActivity {
         log_psd=findViewById(R.id.log_pwd);
         log_sgnin=findViewById(R.id.btn_login);
         tvr=findViewById(R.id.tv_reg);
+        tvfp = findViewById(R.id.tv_forgotpass);
         mFirebaseAuth= FirebaseAuth.getInstance();
 
                 FirebaseUser firebaseUser=mFirebaseAuth.getCurrentUser();
@@ -59,6 +61,14 @@ public class LoginOrRegister extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), RegisterUser.class);
+                startActivity(intent);
+            }
+        });
+        tvfp.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), ForgotPass.class);
                 startActivity(intent);
             }
         });

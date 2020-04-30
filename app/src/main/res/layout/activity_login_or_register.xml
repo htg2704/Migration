@@ -62,6 +62,7 @@
         android:background="@drawable/btn_draw1"
         android:text="Log In">
     </Button>
+
     <TextView
         android:id="@+id/tv_reg"
         android:layout_marginTop="10dp"
@@ -76,6 +77,20 @@
         android:textAlignment="textEnd"
         android:text="New User? Register here!">
     </TextView>
+
+    <TextView
+        android:id="@+id/tv_forgotpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_reg"
+        android:layout_marginLeft="158dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="100dp"
+        android:autoLink="none"
+        android:clickable="true"
+        android:text="Forgot password!!"
+        android:textAlignment="textEnd"
+        android:textStyle="italic"></TextView>
 
 
 

@@ -21,7 +21,7 @@ public class Launcher extends AppCompatActivity {
                 new Handler().postDelayed(new Runnable() {
                     @Override
                     public void run() {
-                        Intent intent = new Intent(Launcher.this,MainActivity.class);
+                        Intent intent = new Intent(Launcher.this,SliderActivity.class);
                         startActivity(intent);
                         Launcher.this.finish();
                     }

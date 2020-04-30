@@ -50,7 +50,7 @@ public class LoginOrRegister extends AppCompatActivity {
                 }
                 else
                 {
-                    Toast.makeText(LoginOrRegister.this,"You are'nt Logged In",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginOrRegister.this,"You aren't Logged In",Toast.LENGTH_SHORT).show();
                     //Intent switching to Log In Screen;
                 }
 

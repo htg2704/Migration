@@ -306,6 +306,8 @@ public class PlanFragment extends Fragment {
 
                 Toast.makeText(getActivity(),"Data added successfully, you can add more",Toast.LENGTH_SHORT).show();
                 save.setEnabled(false);
+                ((questions)getActivity()).selectTab(0);
+
 
 
             }

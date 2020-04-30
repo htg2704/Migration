@@ -117,7 +117,7 @@ public class MigrationFragment extends Fragment {
 
                 employer.setText("");
                 employer_contact.setText("");
-                Toast.makeText(getActivity().getApplicationContext(),"Data added successfully",Toast.LENGTH_SHORT);
+                Toast.makeText(getActivity().getApplicationContext(),"Migration data added successfully",Toast.LENGTH_SHORT).show();
 
 
             }

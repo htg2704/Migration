@@ -167,7 +167,8 @@ public class PlaceholderFragment extends Fragment {
                 mobile_no.setText("");
                 pwd_switch.setChecked(false);
 
-                Toast.makeText(getActivity().getApplicationContext(),"Data added successfully",Toast.LENGTH_SHORT);
+                Toast.makeText(getActivity().getApplicationContext(),"Demographic data added successfully",Toast.LENGTH_SHORT).show();
+                ((questions)getActivity()).selectTab(1);
 
 
             }

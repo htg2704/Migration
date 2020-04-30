@@ -159,6 +159,8 @@
         <Spinner
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+
+
             android:layout_marginStart="30dp"
             android:id="@+id/challenge_spinner"
             />
@@ -166,6 +168,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
         android:id="@+id/save_migration"
         android:text="Save and next"/>
 </LinearLayout>

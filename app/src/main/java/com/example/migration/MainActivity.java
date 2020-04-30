@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         enter_stats.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(),com.example.migration.Register.select_login_type.class);
+                Intent intent = new Intent(getApplicationContext(),com.example.migration.Stats.stats_main.class);
                 startActivity(intent);
 
             }
@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         this.doubleBackToExitPressedOnce = true;
-        Toast.makeText(this, "Please click BACK again to exit", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Please BACK again to exit", Toast.LENGTH_SHORT).show();
 
         new Handler().postDelayed(new Runnable() {
 

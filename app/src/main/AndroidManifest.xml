@@ -30,6 +30,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".Register.select_login_type" />
+        <activity android:name=".Stats.stats_main"/>
     </application>
 
 </manifest>

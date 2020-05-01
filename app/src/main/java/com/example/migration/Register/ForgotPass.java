@@ -35,22 +35,30 @@ public class ForgotPass extends AppCompatActivity {
         firebaseAuth = FirebaseAuth.getInstance();
         usrPass.setOnClickListener(new View.OnClickListener(){
             @Override
-            public void onClick(View view){
-                firebaseAuth.sendPasswordResetEmail(usreml.getText().toString()).addOnCompleteListener(new OnCompleteListener<Void>(){
-                    @Override
-                    public void onComplete(@NonNull Task<Void> task){
-                        if(task.isSuccessful()){
-                            Toast.makeText(ForgotPass.this,"Password send! Check Email",Toast.LENGTH_LONG).show();
-                        }
-                        else{
-                            Toast.makeText(ForgotPass.this,task.getException().getMessage(),Toast.LENGTH_LONG).show();
+            public void onClick(View view) {
 
-                        }
-                    }
 
-                });
+                String reg_mail_str = usreml.getText().toString();
+                if (reg_mail_str.isEmpty()) {
+                    usreml.setError("Please enter a valid email ID");
+                    usreml.requestFocus();
+                } else {
+
+                    firebaseAuth.sendPasswordResetEmail(usreml.getText().toString()).addOnCompleteListener(new OnCompleteListener<Void>() {
+                        @Override
+                        public void onComplete(@NonNull Task<Void> task) {
+                            if (task.isSuccessful()) {
+                                Toast.makeText(ForgotPass.this, "Password send! Check Email", Toast.LENGTH_LONG).show();
+                            } else {
+                                Toast.makeText(ForgotPass.this, task.getException().getMessage(), Toast.LENGTH_LONG).show();
+
+                            }
+                        }
+
+                    });
+                }
+
             }
-
         });
 
     }

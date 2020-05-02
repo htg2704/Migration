@@ -9,10 +9,11 @@ import android.widget.Toast;
 import android.widget.Toolbar;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 public class MainActivity extends AppCompatActivity {
     boolean doubleBackToExitPressedOnce = false;
-    Button enter_register,enter_data,enter_stats;
+    CardView enter_register,enter_data,enter_stats,enter_contact;
 
     private long backPressedTime = 0;
     @Override
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         enter_register = findViewById(R.id.btn_register);
         enter_data = findViewById(R.id.btn_data);
         enter_stats = findViewById(R.id.btn_stats);
+        enter_contact = findViewById(R.id.contact);
 
         enter_register.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,6 +49,15 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+        enter_contact.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(),Contact.class);
+                startActivity(intent);
+
+            }
+        });
+
 
     }
 
@@ -55,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
         long t = System.currentTimeMillis();
         if (t - backPressedTime > 2000) {
             backPressedTime = t;
-            Toast.makeText(this, "Press back again to close ", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Press back again to Exit ", Toast.LENGTH_SHORT).show();
         } else {
             moveTaskToBack(true);
             android.os.Process.killProcess(android.os.Process.myPid());

@@ -5,59 +5,236 @@
     android:gravity="center_horizontal"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/back"
     tools:context=".MainActivity">
 
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/back">
+    </ImageView>
 
 
     <TextView
-        android:id="@+id/tv1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginRight="50dp"
-        android:text="Choose why you want to enter"
-        android:textSize="22sp" />
-
-    <Button
-        android:id="@+id/btn_register"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:layout_below="@+id/tv1"
-        android:layout_marginLeft="68dp"
-        android:layout_marginTop="47dp"
-        android:layout_marginRight="68dp"
-        android:background="@drawable/btn_draw1"
-        android:fontFamily="@font/noto_sans_bold"
-        android:text="Enter to register the details"
-        android:textColor="@color/pink">
-
-    </Button>
-
-    <Button
-        android:id="@+id/btn_data"
+        android:text="KutumB"
+        android:fontFamily="@font/aclonica"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="30dp"
-        android:layout_below="@+id/btn_register"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:layout_marginLeft="70dp"
-        android:layout_marginRight="70dp"
-        android:textColor="@color/pink"
-        android:background="@drawable/btn_draw1"
-        android:text="Enter to access data">
+        android:id="@+id/text"></TextView>
 
-    </Button>
-    <Button
-        android:id="@+id/btn_stats"
-        android:layout_marginTop="30dp"
-        android:layout_below="@+id/btn_data"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:layout_marginLeft="70dp"
-        android:layout_marginRight="70dp"
-        android:textColor="@color/pink"
-        android:background="@drawable/btn_draw1"
-    android:text="Enter to View Stats">
-    </Button>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:layout_marginTop="45dp"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="30dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="30dp"
+                android:elevation="4dp"
+                android:id="@+id/btn_register"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/register"
+                        android:padding="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="2"
+                        >
+                    </ImageView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Register"
+                        android:layout_weight="1"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/noto_sans"
+                        android:textAlignment="center"
+                        android:layout_marginBottom="10dp"
+                        ></TextView>
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="30dp"
+                android:elevation="4dp"
+                android:id="@+id/btn_data"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/data"
+                        android:padding="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="2"
+                        >
+                    </ImageView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Access Data"
+                        android:layout_weight="1"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/noto_sans"
+                        android:textAlignment="center"
+                        android:layout_marginBottom="10dp"
+                        ></TextView>
+
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:weightSum="2">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="30dp"
+                android:id="@+id/btn_stats"
+                android:elevation="4dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/stats"
+                        android:padding="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="2"
+                        >
+                    </ImageView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="View Stats"
+                        android:layout_weight="1"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/noto_sans"
+                        android:textAlignment="center"
+                        android:layout_marginBottom="10dp"
+                        ></TextView>
+
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="30dp"
+                android:elevation="4dp"
+                android:id="@+id/contact"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/contact"
+                        android:padding="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="2"
+                        >
+                    </ImageView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Contact Us"
+                        android:layout_weight="1"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/noto_sans"
+                        android:textAlignment="center"
+                        android:layout_marginBottom="10dp"
+                        ></TextView>
+
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
 </RelativeLayout>

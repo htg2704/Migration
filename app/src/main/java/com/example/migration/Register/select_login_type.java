@@ -4,17 +4,20 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
+import com.example.migration.MainActivity;
 import com.example.migration.R;
 import com.example.migration.common.User;
 
 public class select_login_type extends AppCompatActivity {
 
-    Button btn_volunteer, btn_mobiliser, btn_agency;
-
+    CardView btn_volunteer, btn_mobiliser, btn_agency;
+    ImageButton back;
 
 
     @Override
@@ -28,7 +31,7 @@ public class select_login_type extends AppCompatActivity {
         btn_mobiliser=findViewById(R.id.btn_cmob);
         btn_volunteer=findViewById(R.id.btn_vol);
         btn_agency=findViewById(R.id.btn_ngo);
-
+        back=findViewById(R.id.back);
 
         btn_volunteer.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -58,5 +61,23 @@ public class select_login_type extends AppCompatActivity {
 
             }
         });
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(select_login_type.this, MainActivity.class);
+                startActivity(intent);
+
+            }
+        });
+
+
+    }
+
+    @Override
+    public void onBackPressed() {
+
+        finish();
+        Intent intent = new Intent(select_login_type.this, MainActivity.class);
+        startActivity(intent);
     }
 }

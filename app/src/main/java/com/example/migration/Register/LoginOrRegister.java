@@ -11,6 +11,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.migration.MainActivity;
 import com.example.migration.Questions.questions;
 import com.example.migration.R;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -114,5 +115,13 @@ public class LoginOrRegister extends AppCompatActivity {
             }
         });
 
+    }
+
+    @Override
+    public void onBackPressed() {
+
+        finish();
+        Intent intent = new Intent(LoginOrRegister.this, select_login_type.class);
+        startActivity(intent);
     }
 }

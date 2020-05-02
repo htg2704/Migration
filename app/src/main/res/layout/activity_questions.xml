@@ -9,7 +9,7 @@
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/blue"
+        android:background="@drawable/tab"
         android:theme="@style/AppTheme.AppBarOverlay">
 
         <LinearLayout
@@ -18,28 +18,42 @@
             android:orientation="vertical">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:weightSum="5"
+            android:orientation="horizontal">
+
+
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_back_black_24dp"
+                android:background="@null"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="15dp"
+                android:id="@+id/btn"></ImageButton>
 
             <TextView
             android:id="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:minHeight="?actionBarSize"
-            android:padding="@dimen/appbar_padding"
-            android:fontFamily="@font/noto_sans_bold"
+                android:layout_marginTop="18dp"
+                android:layout_marginHorizontal="10dp"
+            android:fontFamily="@font/aclonica"
+                android:layout_weight="4"
             android:text="@string/kutumb"
             android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
 
-
             <ImageButton
-                android:id="@+id/btn_logout"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:src="@mipmap/logout_round"
-                android:layout_marginLeft="190dp"
-                android:background="@color/colorPrimaryDark"
-                android:textSize="16sp" />
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_power_settings_new_black_24dp"
+                android:background="@null"
+                android:layout_marginTop="15dp"
+                android:id="@+id/btn_logout"></ImageButton>
+
         </LinearLayout>
 
 
@@ -48,7 +62,6 @@
             android:id="@+id/tabs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/blue"
             app:tabMode="scrollable"
             ></com.google.android.material.tabs.TabLayout>
         </LinearLayout>

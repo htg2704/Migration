@@ -8,5 +8,9 @@
         android:bottom="2dp"
         android:left="2dp"
         android:right="2dp"/>
+    <gradient
+        android:startColor="#021B34"
+        android:endColor="@color/blue"
+        android:angle="90"/>
 
 </shape>

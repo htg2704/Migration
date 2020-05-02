@@ -1,5 +1,6 @@
 package com.example.migration.Questions.ui.main;
 
+import android.app.Activity;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
@@ -22,8 +23,11 @@ import com.example.migration.Database.AwarenessDB;
 import com.example.migration.Database.MigrationDB;
 import com.example.migration.Database.MyDB;
 import com.example.migration.Database.PlanDB;
+import com.example.migration.MainActivity;
 import com.example.migration.Questions.questions;
 import com.example.migration.R;
+import com.example.migration.Register.ForgotPass;
+import com.example.migration.Register.select_login_type;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.firestore.DocumentReference;
@@ -81,6 +85,8 @@ public class PlanFragment extends Fragment {
         save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Intent i = new Intent(getActivity(), select_login_type.class);
+                startActivity(i);
 
                 Cursor personal, migration, plan, awareness;
 

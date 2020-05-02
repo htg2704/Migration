@@ -11,6 +11,7 @@ import android.widget.LinearLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
+import com.example.migration.MainActivity;
 import com.example.migration.Questions.ui.main.SectionsPagerAdapter;
 import com.example.migration.R;
 import com.example.migration.Register.LoginOrRegister;
@@ -21,7 +22,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class questions extends AppCompatActivity {
 
-    ImageButton logout;
+    ImageButton logout,btn;
     ViewPager viewPager;
 
     @Override
@@ -43,6 +44,7 @@ public class questions extends AppCompatActivity {
             });
         }
         logout=findViewById(R.id.btn_logout);
+
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -55,10 +57,28 @@ public class questions extends AppCompatActivity {
             }
         });
 
+        btn=findViewById(R.id.btn);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(questions.this, select_login_type.class);
+                startActivity(intent);
+
+            }
+        });
+
 
     }
 
     public void selectTab(int position){
         viewPager.setCurrentItem(position);
+    }
+
+    @Override
+    public void onBackPressed() {
+
+        finish();
+        Intent intent = new Intent(questions.this, select_login_type.class);
+        startActivity(intent);
     }
 }

@@ -102,6 +102,39 @@
     android:textColor="@color/gray"
     android:id="@+id/tv_reg"></TextView>
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="or signup with"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:fontFamily="@font/noto_sans"
+            android:layout_marginTop="50dp"
+            ></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="110dp"
+            android:weightSum="2" >
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/facebook"
+                android:layout_weight="1"
+                ></ImageView>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/google"
+                android:layout_weight="1"
+                ></ImageView>
+
+        </LinearLayout>
 
     </LinearLayout>
 

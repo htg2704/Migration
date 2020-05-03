@@ -10,13 +10,6 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
-import com.example.migration.Questions.questions;
-import com.example.migration.Register.ForgotPass;
-import com.example.migration.Register.LoginOrRegister;
-import com.example.migration.Register.select_login_type;
-import com.example.migration.common.User;
-import com.google.firebase.auth.FirebaseAuth;
-
 public class Contact extends AppCompatActivity {
 
     ImageButton logout;
@@ -65,7 +58,8 @@ public class Contact extends AppCompatActivity {
         privacy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(Contact.this, "Under Construction", Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(Contact.this, privacywebactivity.class);
+                startActivity(intent);
 
             }
         });
@@ -79,19 +73,18 @@ public class Contact extends AppCompatActivity {
         terms.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(Contact.this, "Under Construction", Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(Contact.this, termswebactivity.class);
+                startActivity(intent);
 
             }
         });
-
-
         logout.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    Intent intent = new Intent(Contact.this, MainActivity.class);
-                    startActivity(intent);
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Contact.this, MainActivity.class);
+                startActivity(intent);
 
-                }
+            }
         });
 
 

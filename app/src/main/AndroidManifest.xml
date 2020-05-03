@@ -11,7 +11,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="LockedOrientationActivity">
-
+        <activity android:name=".privacywebactivity"></activity>
+        <activity android:name=".termswebactivity" />
         <activity
             android:name=".Launcher"
             android:screenOrientation="portrait">
@@ -33,10 +34,9 @@
         <activity
             android:name=".Stats.stats_main"
             android:screenOrientation="portrait" />
-
-        <activity android:name=".Contact"
-            android:screenOrientation="portrait"></activity>
-
+        <activity
+            android:name=".Contact"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Register.select_login_type"
             android:screenOrientation="portrait" />

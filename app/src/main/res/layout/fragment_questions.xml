@@ -102,7 +102,10 @@
                                 android:layout_marginHorizontal="20dp"
                                 android:layout_marginTop="10dp"
                                 android:textColor="@color/black"></TextView>
-
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
                             <RadioGroup
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -112,10 +115,8 @@
                                 android:buttonTint="@color/blue"
                                 android:id="@+id/gender"
                                 >
-                                <LinearLayout
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:orientation="vertical">
+
+
 
                                     <RadioButton
                                         android:layout_width="wrap_content"
@@ -137,11 +138,11 @@
                                         android:fontFamily="@font/noto_sans"
                                         android:text="@string/others"/>
 
-                                </LinearLayout>
+
 
                             </RadioGroup>
 
-
+                            </LinearLayout>
                         </LinearLayout>
 
                         <LinearLayout
@@ -161,6 +162,10 @@
                                 android:layout_marginTop="10dp"
                                 android:textColor="@color/black"></TextView>
 
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
                             <RadioGroup
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -171,10 +176,7 @@
                                 android:orientation="vertical"
                                 >
 
-                                <LinearLayout
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:orientation="vertical">
+
 
                                     <RadioButton
                                         android:layout_width="wrap_content"
@@ -210,11 +212,11 @@
                                         android:fontFamily="@font/noto_sans"
                                         android:text="@string/minority"/>
 
-                                </LinearLayout>
+
 
                             </RadioGroup>
 
-
+                            </LinearLayout>
 
                         </LinearLayout>
 

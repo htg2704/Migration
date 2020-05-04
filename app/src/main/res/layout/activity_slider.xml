@@ -30,6 +30,7 @@
                 android:background="@color/blue">
 
                 <LinearLayout
+                    android:id="@+id/wel"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
@@ -48,12 +49,12 @@
 
 
 
-                    <ImageButton
-                        android:id="@+id/wel"
+                    <ImageView
+
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:background="@drawable/ic_navigate_next_black_24dp"
-                        ></ImageButton>
+                        ></ImageView>
 
 
 

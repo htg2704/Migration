@@ -63,6 +63,28 @@
         android:textColorHint="@color/gray"
         />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:id="@+id/check"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/gray">
+
+            </CheckBox>
+            <TextView
+                android:id="@+id/remember"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remember me"
+                android:layout_weight="2"
+                android:fontFamily="@font/noto_sans_bold"
+                android:textColor="@color/gray"></TextView>
 
 
         <TextView
@@ -71,13 +93,8 @@
             android:layout_height="wrap_content"
             android:text="Forgot Password ?"
             android:fontFamily="@font/noto_sans_bold"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp"
-            android:layout_marginHorizontal="30dp"
-            android:layout_gravity="end"
             android:textColor="@color/gray"></TextView>
-
+        </LinearLayout>
 
     <Button
         android:layout_width="match_parent"

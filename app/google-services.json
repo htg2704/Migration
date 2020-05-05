@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:811469435111:android:b42a61664fdf06882f7242",
         "android_client_info": {
-          "package_name": "com.example.migration"
+          "package_name": "com.kutumb.migration"
         }
       },
       "oauth_client": [
@@ -18,7 +18,7 @@
           "client_id": "811469435111-22nu4uvm3rl394athj3lljmv77600tp6.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.migration",
+            "package_name": "com.kutumb.migration",
             "certificate_hash": "43bf74cef90486340b4e2aa427fe81f1d7300094"
           }
         },

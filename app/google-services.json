@@ -10,16 +10,69 @@
       "client_info": {
         "mobilesdk_app_id": "1:811469435111:android:b42a61664fdf06882f7242",
         "android_client_info": {
+          "package_name": "com.example.migration"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "811469435111-4rdt6nr59eslo3t1700l96l1vt0s95n1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.migration",
+            "certificate_hash": "205199d6ecc6ecc9a9a9a6fb32d6493bd998682b"
+          }
+        },
+        {
+          "client_id": "811469435111-8kpj93c64gnp25ajn36i8bt8t3m9lvj3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.migration",
+            "certificate_hash": "ec81562755c517f529d767f3931d2c883fc0efb3"
+          }
+        },
+        {
+          "client_id": "811469435111-22nu4uvm3rl394athj3lljmv77600tp6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.migration",
+            "certificate_hash": "43bf74cef90486340b4e2aa427fe81f1d7300094"
+          }
+        },
+        {
+          "client_id": "811469435111-i56t0apc9cdghedlcp8u17o09bolu69r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQKazoNZfyd470nuQhJDe2mpQu2kH091M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "811469435111-i56t0apc9cdghedlcp8u17o09bolu69r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:811469435111:android:52f2238658f489d62f7242",
+        "android_client_info": {
           "package_name": "com.kutumb.migration"
         }
       },
       "oauth_client": [
         {
-          "client_id": "811469435111-22nu4uvm3rl394athj3lljmv77600tp6.apps.googleusercontent.com",
+          "client_id": "811469435111-50e5fkf8fm0f25jju3k0lqhh8tjdsbm3.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.kutumb.migration",
-            "certificate_hash": "43bf74cef90486340b4e2aa427fe81f1d7300094"
+            "certificate_hash": "205199d6ecc6ecc9a9a9a6fb32d6493bd998682b"
           }
         },
         {

@@ -3,9 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.migration">
 
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
     <application
         android:allowBackup="true"
@@ -15,7 +15,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="LockedOrientationActivity">
-        <activity android:name=".privacywebactivity"></activity>
+        <activity android:name=".Register.VerifyMobile"></activity>
+        <activity
+            android:name=".ui.login.VerifyPhone"
+            android:label="@string/title_activity_verify_phone" />
+        <activity android:name=".Register.MobileAuth" />
+        <activity android:name=".privacywebactivity" />
         <activity android:name=".termswebactivity" />
         <activity
             android:name=".Launcher"

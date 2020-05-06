@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -28,6 +29,7 @@ public class LoginOrRegister extends AppCompatActivity {
     FirebaseAuth mFirebaseAuth;
     TextView tvr;
     TextView tvfp;
+    ImageView mobileauth;
 
 
     @Override
@@ -38,6 +40,7 @@ public class LoginOrRegister extends AppCompatActivity {
         log_psd=findViewById(R.id.log_pwd);
         log_sgnin=findViewById(R.id.btn_login);
         tvr=findViewById(R.id.tv_reg);
+        mobileauth = findViewById(R.id.mobauth);
         tvfp = findViewById(R.id.tv_forgotpass);
         mFirebaseAuth= FirebaseAuth.getInstance();
 
@@ -70,6 +73,14 @@ public class LoginOrRegister extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), ForgotPass.class);
+                startActivity(intent);
+            }
+        });
+        mobileauth.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), MobileAuth.class);
                 startActivity(intent);
             }
         });

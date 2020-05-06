@@ -76,18 +76,18 @@
             android:textColor="@color/gray"></TextView>
 
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Sign In"
-        android:textColor="@color/white"
-        android:fontFamily="@font/noto_sans_bold"
-        android:background="@drawable/button"
-        android:textSize="15sp"
-        android:layout_marginHorizontal="30dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="10dp"
-        android:id="@+id/btn_login"/>
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button"
+            android:fontFamily="@font/noto_sans_bold"
+            android:text="Sign In"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
 
 <TextView
     android:layout_width="match_parent"
@@ -121,16 +121,15 @@
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/facebook"
                 android:layout_weight="1"
-                ></ImageView>
+                android:src="@drawable/facebook"></ImageView>
 
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/google"
                 android:layout_weight="1"
-                ></ImageView>
+                android:src="@drawable/google"></ImageView>
+
             <ImageView
                 android:id="@+id/mobauth"
                 android:layout_width="50dp"
@@ -140,6 +139,27 @@
                 ></ImageView>
 
         </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/fb_login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+
+        <com.google.android.gms.common.SignInButton
+            android:layout_marginTop="5dp"
+            android:id="@+id/g_sign_in_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
 
     </LinearLayout>
 

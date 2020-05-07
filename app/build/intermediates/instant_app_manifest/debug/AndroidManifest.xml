@@ -26,9 +26,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
         <activity android:name="com.example.migration.Register.VerifyMobile" />
-        <activity
-            android:name="com.example.migration.ui.login.VerifyPhone"
-            android:label="@string/title_activity_verify_phone" />
         <activity android:name="com.example.migration.Register.MobileAuth" />
         <activity android:name="com.example.migration.privacywebactivity" />
         <activity android:name="com.example.migration.termswebactivity" />

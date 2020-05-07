@@ -16,9 +16,6 @@
         android:theme="@style/AppTheme"
         tools:ignore="LockedOrientationActivity">
         <activity android:name=".Register.VerifyMobile"></activity>
-        <activity
-            android:name=".ui.login.VerifyPhone"
-            android:label="@string/title_activity_verify_phone" />
         <activity android:name=".Register.MobileAuth" />
         <activity android:name=".privacywebactivity" />
         <activity android:name=".termswebactivity" />

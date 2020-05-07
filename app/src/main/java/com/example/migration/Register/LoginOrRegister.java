@@ -1,7 +1,10 @@
 package com.example.migration.Register;
 
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.text.method.HideReturnsTransformationMethod;
+import android.text.method.PasswordTransformationMethod;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -9,6 +12,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.DrawableRes;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -45,9 +49,9 @@ public class LoginOrRegister extends AppCompatActivity {
     TextView tvr;
     TextView tvfp;
     ImageView mobileauth;
-
+    Button drawable;
     CallbackManager callbackManager;
-
+    private Boolean isClicked = false;
     GoogleSignInClient mGoogleSignInClient;
 
     @Override
@@ -61,7 +65,20 @@ public class LoginOrRegister extends AppCompatActivity {
         mobileauth = findViewById(R.id.mobauth);
         tvfp = findViewById(R.id.tv_forgotpass);
         mFirebaseAuth= FirebaseAuth.getInstance();
+        drawable=findViewById(R.id.draw);
 
+        drawable.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                isClicked = isClicked ? false : true;
+                if (isClicked) {
+                    log_psd.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
+                } else {
+                    log_psd.setTransformationMethod(PasswordTransformationMethod.getInstance());
+
+                }
+            }
+        });
                 FirebaseUser firebaseUser=mFirebaseAuth.getCurrentUser();
 
                 if(firebaseUser!=null)

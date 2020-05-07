@@ -22,153 +22,153 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-
-
-
-        <EditText
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="15dp"
-            android:id="@+id/reg_name"
-            android:hint="Full Name"
-            android:layout_marginHorizontal="30dp"
-            android:fontFamily="@font/noto_sans"
-            android:inputType="text"
-            android:autofillHints=""
-            android:textColor="@color/black"
-            android:textSize="15sp"
-            android:layout_marginTop="30dp"
-            android:drawableLeft="@drawable/ic_account_circle_black_24dp"
-            android:background="@drawable/btn_draw1"
-            android:drawablePadding="15dp"
-            android:textCursorDrawable="@drawable/cursor"
-            android:textColorHint="@color/gray"
-            />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="15dp"
-            android:id="@+id/reg_mail"
-            android:hint="E-mail Address"
-            android:layout_marginHorizontal="30dp"
-            android:fontFamily="@font/noto_sans"
-            android:inputType="text"
-            android:autofillHints=""
-            android:textColor="@color/black"
-            android:textSize="15sp"
-            android:layout_marginTop="20dp"
-            android:drawableLeft="@drawable/ic_email_black_24dp"
-            android:background="@drawable/btn_draw1"
-            android:drawablePadding="15dp"
-            android:textCursorDrawable="@drawable/cursor"
-            android:textColorHint="@color/gray"
-            />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="15dp"
-            android:id="@+id/reg_phone"
-            android:hint="Mobile Number"
-            android:layout_marginHorizontal="30dp"
-            android:fontFamily="@font/noto_sans"
-            android:inputType="phone"
-            android:ems="10"
-            android:maxLength="10"
-            android:autofillHints=""
-            android:textColor="@color/black"
-            android:textSize="15sp"
-            android:layout_marginTop="20dp"
-            android:drawableLeft="@drawable/ic_phone_black_24dp"
-            android:background="@drawable/btn_draw1"
-            android:drawablePadding="15dp"
-            android:textCursorDrawable="@drawable/cursor"
-            android:textColorHint="@color/gray"
-            />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="15dp"
-            android:id="@+id/reg_adrs"
-            android:hint="Address"
-            android:layout_marginHorizontal="30dp"
-            android:fontFamily="@font/noto_sans"
-            android:autofillHints=""
-            android:textColor="@color/black"
-            android:textSize="15sp"
-            android:layout_marginTop="20dp"
-            android:drawableLeft="@drawable/ic_home_black_24dp"
-            android:background="@drawable/btn_draw1"
-            android:drawablePadding="15dp"
-            android:textCursorDrawable="@drawable/cursor"
-            android:textColorHint="@color/gray"
-            />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="15dp"
-            android:id="@+id/reg_pwd"
-            android:hint="Password"
-            android:layout_marginHorizontal="30dp"
-            android:fontFamily="@font/noto_sans"
-            android:autofillHints=""
-            android:textColor="@color/black"
-            android:textSize="15sp"
-            android:layout_marginTop="20dp"
-            android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
-            android:background="@drawable/btn_draw1"
-            android:drawablePadding="15dp"
-            android:textCursorDrawable="@drawable/cursor"
-            android:textColorHint="@color/gray"
-            />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="15dp"
-            android:layout_marginTop="20dp"
-            android:id="@+id/cnf_pwd"
-            android:hint="Confirm Password"
-            android:layout_marginHorizontal="30dp"
-            android:fontFamily="@font/noto_sans"
-            android:autofillHints=""
-            android:textColor="@color/black"
-            android:textSize="15sp"
-            android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
-            android:background="@drawable/btn_draw1"
-            android:drawablePadding="15dp"
-            android:textCursorDrawable="@drawable/cursor"
-            android:textColorHint="@color/gray"
-            />
+            android:orientation="vertical">
 
 
 
 
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:id="@+id/reg_name"
+                android:hint="Full Name"
+                android:layout_marginHorizontal="30dp"
+                android:fontFamily="@font/noto_sans"
+                android:inputType="text"
+                android:autofillHints=""
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:layout_marginTop="30dp"
+                android:drawableLeft="@drawable/ic_account_circle_black_24dp"
+                android:background="@drawable/btn_draw1"
+                android:drawablePadding="15dp"
+                android:textCursorDrawable="@drawable/cursor"
+                android:textColorHint="@color/gray"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:id="@+id/reg_mail"
+                android:hint="E-mail Address"
+                android:layout_marginHorizontal="30dp"
+                android:fontFamily="@font/noto_sans"
+                android:inputType="text"
+                android:autofillHints=""
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/ic_email_black_24dp"
+                android:background="@drawable/btn_draw1"
+                android:drawablePadding="15dp"
+                android:textCursorDrawable="@drawable/cursor"
+                android:textColorHint="@color/gray"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:id="@+id/reg_phone"
+                android:hint="Mobile Number (10-digit)"
+                android:layout_marginHorizontal="30dp"
+                android:fontFamily="@font/noto_sans"
+                android:inputType="phone"
+                android:ems="10"
+                android:maxLength="10"
+                android:autofillHints=""
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/ic_phone_black_24dp"
+                android:background="@drawable/btn_draw1"
+                android:drawablePadding="15dp"
+                android:textCursorDrawable="@drawable/cursor"
+                android:textColorHint="@color/gray"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:id="@+id/reg_adrs"
+                android:hint="Address"
+                android:layout_marginHorizontal="30dp"
+                android:fontFamily="@font/noto_sans"
+                android:autofillHints=""
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/ic_home_black_24dp"
+                android:background="@drawable/btn_draw1"
+                android:drawablePadding="15dp"
+                android:textCursorDrawable="@drawable/cursor"
+                android:textColorHint="@color/gray"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:id="@+id/reg_pwd"
+                android:hint="Password"
+                android:layout_marginHorizontal="30dp"
+                android:fontFamily="@font/noto_sans"
+                android:autofillHints=""
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+                android:background="@drawable/btn_draw1"
+                android:drawablePadding="15dp"
+                android:textCursorDrawable="@drawable/cursor"
+                android:textColorHint="@color/gray"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/cnf_pwd"
+                android:hint="Confirm Password"
+                android:layout_marginHorizontal="30dp"
+                android:fontFamily="@font/noto_sans"
+                android:autofillHints=""
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+                android:background="@drawable/btn_draw1"
+                android:drawablePadding="15dp"
+                android:textCursorDrawable="@drawable/cursor"
+                android:textColorHint="@color/gray"
+                />
 
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Sign Up"
-            android:textColor="@color/white"
-            android:fontFamily="@font/noto_sans_bold"
-            android:background="@drawable/button"
-            android:textSize="15sp"
-            android:padding="15dp"
-            android:layout_marginHorizontal="30dp"
-            android:layout_marginVertical="50dp"
-            android:id="@+id/reg_sign_up"/>
 
 
-    </LinearLayout>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"
+                android:textColor="@color/white"
+                android:fontFamily="@font/noto_sans_bold"
+                android:background="@drawable/button"
+                android:textSize="15sp"
+                android:padding="15dp"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginVertical="50dp"
+                android:id="@+id/reg_sign_up"/>
+
+
+        </LinearLayout>
     </ScrollView>
 
 

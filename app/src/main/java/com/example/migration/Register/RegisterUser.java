@@ -32,6 +32,8 @@ public class RegisterUser extends AppCompatActivity {
     FirebaseAuth mFirebaseAuth;
     FirebaseAuth.AuthStateListener mAuthListener;
     String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
+    String passwordPattern =
+            "((?=.*\\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%]).{6,20})";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -82,7 +84,11 @@ public class RegisterUser extends AppCompatActivity {
                     getReg_adrs.setError("Please enter your address");
                     getReg_adrs.requestFocus();
                 }
-
+                else if(!reg_pwd_str.matches(passwordPattern))
+                {
+                    reg_psd.setError("Password must contain atleast 6 characters \nPassword must contain atleast one special character($,#,@,%) \nPassword must contain atleast one Capital letter  ");
+                    reg_psd.requestFocus();
+                }
                 else if(reg_pwd_str.isEmpty())
                 {
                     reg_psd.setError("Please enter a password");

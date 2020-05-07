@@ -2,6 +2,7 @@ package com.example.migration.Register;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -104,20 +105,32 @@ public class RegisterUser extends AppCompatActivity {
                 }
                 else {
                     if (reg_mail_str.matches(emailPattern)) {
-                        Intent intent = new Intent(getApplicationContext(), LoginOrRegister.class);
-                        startActivity(intent);
+//                        Intent intent = new Intent(getApplicationContext(), LoginOrRegister.class);
+//                        startActivity(intent);
                         mFirebaseAuth.createUserWithEmailAndPassword(reg_mail_str, reg_pwd_str)
                                 .addOnCompleteListener(RegisterUser.this, new OnCompleteListener<AuthResult>() {
                                     @Override
                                     public void onComplete(@NonNull Task<AuthResult> task) {
                                         if (task.isSuccessful()) {
-                                            // Sign in success, update UI with the signed-in user's information
-                                            Toast.makeText(RegisterUser.this, "Sign up:success", Toast.LENGTH_SHORT).show();
-                                            //FirebaseUser user = mFirebaseAuth.getCurrentUser();
-                                            Intent intent = new Intent(getApplicationContext(), com.example.migration.Register.LoginOrRegister.class);
-                                            startActivity(intent);
 
-                                            //go to Home screen
+                                            mFirebaseAuth.getCurrentUser().sendEmailVerification().addOnCompleteListener(new OnCompleteListener<Void>(){
+                                                @Override
+                                                public void onComplete(@NonNull Task<Void> task){
+                                                    if(task.isSuccessful())
+                                                    {
+                                                        // Sign in success, update UI with the signed-in user's information
+                                                        Toast.makeText(RegisterUser.this, "Sign up:success, Verify Your Email", Toast.LENGTH_LONG).show();
+                                                        //FirebaseUser user = mFirebaseAuth.getCurrentUser();
+                                                        reg_email.setText("");
+                                                        reg_psd.setText("");
+                                                    }
+                                                    else {
+                                                        Toast.makeText(RegisterUser.this, task.getException().getMessage(), Toast.LENGTH_LONG).show();
+                                                    }
+                                                }
+                                            });
+
+
                                         } else {
                                             Toast.makeText(RegisterUser.this, "Signup failed.",
                                                     Toast.LENGTH_SHORT).show();

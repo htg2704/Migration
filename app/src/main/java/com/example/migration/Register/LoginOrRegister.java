@@ -81,7 +81,7 @@ public class LoginOrRegister extends AppCompatActivity {
         });
                 FirebaseUser firebaseUser=mFirebaseAuth.getCurrentUser();
 
-                if(firebaseUser!=null)
+                if(firebaseUser!=null && firebaseUser.isEmailVerified())
                 {
                     Toast.makeText(LoginOrRegister.this,"You are Logged In",Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(getApplicationContext(), questions.class);
@@ -143,17 +143,21 @@ public class LoginOrRegister extends AppCompatActivity {
                                 @Override
                                 public void onComplete(@NonNull Task<AuthResult> task) {
                                     if (task.isSuccessful()) {
-                                        // Sign in success, update UI with the signed-in user's information
-                                        Toast.makeText( LoginOrRegister.this,"LogIn:success",Toast.LENGTH_SHORT).show();
-                                        Intent intent = new Intent(getApplicationContext(), questions.class);
-                                        startActivity(intent);
-                                        //FirebaseUser user = mFirebaseAuth.getCurrentUser();
-                                        //go to Home screen
-                                    } else {
+
+                                        if(mFirebaseAuth.getCurrentUser().isEmailVerified())
+                                        {
+                                            // Sign in success, update UI with the signed-in user's information
+                                            Toast.makeText( LoginOrRegister.this,"LogIn:success",Toast.LENGTH_SHORT).show();
+                                            Intent intent = new Intent(getApplicationContext(), questions.class);
+                                            startActivity(intent);
+                                            //FirebaseUser user = mFirebaseAuth.getCurrentUser();
+                                            //go to Home screen
+                                        }
+                                     else {
                                         Toast.makeText(LoginOrRegister.this, "LogIn failed.",
                                                 Toast.LENGTH_SHORT).show();
 
-                                    }
+                                    }}
                                     // ...
                                 }
                             });
@@ -276,7 +280,7 @@ public class LoginOrRegister extends AppCompatActivity {
                             FirebaseUser user = mFirebaseAuth.getCurrentUser();
                             //txtv2.setText(user.getDisplayName());
 
-                            Intent intent = new Intent(getApplicationContext(), questions.class);
+                            Intent intent = new Intent(getApplicationContext(),questions.class);
                             startActivity(intent);
 
 

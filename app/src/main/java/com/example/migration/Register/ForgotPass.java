@@ -1,11 +1,14 @@
 package com.example.migration.Register;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -55,8 +58,21 @@ public class ForgotPass extends AppCompatActivity {
 
                     if (reg_mail_str.matches(emailPattern)) {
 
-                        Intent intent = new Intent(getApplicationContext(), LoginOrRegister.class);
-                        startActivity(intent);
+                        AlertDialog.Builder alertadd = new AlertDialog.Builder(ForgotPass.this);
+                        LayoutInflater factory = LayoutInflater.from(ForgotPass.this);
+                        view = factory.inflate(R.layout.sample, null);
+                        alertadd.setView(view);
+                        alertadd.show();
+                        new Handler().postDelayed(new Runnable() {
+
+                            @Override
+                            public void run() {
+
+                                Intent intent = new Intent(getApplicationContext(), LoginOrRegister.class);
+                                startActivity(intent);
+                            }
+                        }, 1200);
+
                         firebaseAuth.sendPasswordResetEmail(usreml.getText().toString()).addOnCompleteListener(new OnCompleteListener<Void>() {
                             @Override
                             public void onComplete(@NonNull Task<Void> task) {

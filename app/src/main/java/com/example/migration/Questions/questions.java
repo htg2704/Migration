@@ -1,5 +1,6 @@
 package com.example.migration.Questions;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MotionEvent;
@@ -8,6 +9,7 @@ import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
@@ -83,12 +85,37 @@ public class questions extends AppCompatActivity {
                     }
                 }
 
-                Intent intent = new Intent(getApplicationContext(),User.type==1? select_login_type.class :LoginOrRegister.class);
-                startActivity(intent);
+                    AlertDialog.Builder dialog = new AlertDialog.Builder(questions.this);
+                    dialog.setTitle("Alert !");
+                    dialog.setMessage("Are you sure you want to exit ?");
+                    dialog.setCancelable(true);
+
+                    dialog.setPositiveButton(
+                            "Yes",
+                            new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int
+                                        id) {
+                                    Intent intent = new Intent(getApplicationContext(),User.type==1? select_login_type.class :LoginOrRegister.class);
+                                    startActivity(intent);
 
 
-                finish();
-            }
+                                    finish();
+
+                                }
+                            });
+
+                    dialog.setNegativeButton(
+                            "No",
+                            new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int id) {
+                                    dialog.cancel();
+                                }
+                            });
+
+                    AlertDialog alert = dialog.create();
+                    alert.show();
+                }
+
         });
 
         btn=findViewById(R.id.btn);
@@ -111,8 +138,33 @@ public class questions extends AppCompatActivity {
     @Override
     public void onBackPressed() {
 
-        finish();
-        Intent intent = new Intent(questions.this, select_login_type.class);
-        startActivity(intent);
+
+        AlertDialog.Builder dialog = new AlertDialog.Builder(questions.this);
+        dialog.setTitle("Alert !");
+        dialog.setMessage("Are you sure you want to exit ?");
+        dialog.setCancelable(true);
+
+        dialog.setPositiveButton(
+                "Yes",
+                new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int
+                            id) {
+                        finish();
+                        Intent intent = new Intent(questions.this, select_login_type.class);
+                        startActivity(intent);
+
+                    }
+                });
+
+        dialog.setNegativeButton(
+                "No",
+                new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        dialog.cancel();
+                    }
+                });
+
+        AlertDialog alert = dialog.create();
+        alert.show();
     }
-}
+    }

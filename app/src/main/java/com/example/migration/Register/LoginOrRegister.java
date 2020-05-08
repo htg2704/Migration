@@ -3,8 +3,10 @@ package com.example.migration.Register;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.os.Handler;
 import android.text.method.HideReturnsTransformationMethod;
 import android.text.method.PasswordTransformationMethod;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -14,6 +16,7 @@ import android.widget.Toast;
 
 import androidx.annotation.DrawableRes;
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.migration.Questions.questions;
@@ -99,24 +102,66 @@ public class LoginOrRegister extends AppCompatActivity {
         {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), RegisterUser.class);
-                startActivity(intent);
+                AlertDialog.Builder alertadd = new AlertDialog.Builder(LoginOrRegister.this);
+                LayoutInflater factory = LayoutInflater.from(LoginOrRegister.this);
+                view = factory.inflate(R.layout.sample, null);
+                alertadd.setView(view);
+                alertadd.show();
+                new Handler().postDelayed(new Runnable() {
+
+                    @Override
+                    public void run() {
+
+                        Intent intent = new Intent(getApplicationContext(), RegisterUser.class);
+                        startActivity(intent);
+                    }
+                }, 1200);
+
+
             }
         });
         tvfp.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), ForgotPass.class);
-                startActivity(intent);
+                AlertDialog.Builder alertadd = new AlertDialog.Builder(LoginOrRegister.this);
+                LayoutInflater factory = LayoutInflater.from(LoginOrRegister.this);
+                view = factory.inflate(R.layout.sample, null);
+                alertadd.setView(view);
+                alertadd.show();
+                new Handler().postDelayed(new Runnable() {
+
+                    @Override
+                    public void run() {
+
+                        Intent intent = new Intent(getApplicationContext(), ForgotPass.class);
+                        startActivity(intent);
+                    }
+                }, 1200);
+
+
             }
         });
         mobileauth.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), MobileAuth.class);
-                startActivity(intent);
+                AlertDialog.Builder alertadd = new AlertDialog.Builder(LoginOrRegister.this);
+                LayoutInflater factory = LayoutInflater.from(LoginOrRegister.this);
+                view = factory.inflate(R.layout.sample, null);
+                alertadd.setView(view);
+                alertadd.show();
+                new Handler().postDelayed(new Runnable() {
+
+                    @Override
+                    public void run() {
+
+                        Intent intent = new Intent(getApplicationContext(), MobileAuth.class);
+                        startActivity(intent);
+                    }
+                }, 1200);
+
+
             }
         });
 
@@ -126,7 +171,7 @@ public class LoginOrRegister extends AppCompatActivity {
             {
                 String reg_mail_str=log_email.getText().toString();
                 String reg_pwd_str=log_psd.getText().toString();
-                if(reg_mail_str.isEmpty())
+                if (reg_mail_str.isEmpty())
                 {
                     log_email.setError("Please enter a valid email ID");
                     log_email.requestFocus();
@@ -147,9 +192,11 @@ public class LoginOrRegister extends AppCompatActivity {
                                         if(mFirebaseAuth.getCurrentUser().isEmailVerified())
                                         {
                                             // Sign in success, update UI with the signed-in user's information
+
                                             Toast.makeText( LoginOrRegister.this,"LogIn:success",Toast.LENGTH_SHORT).show();
                                             Intent intent = new Intent(getApplicationContext(), questions.class);
                                             startActivity(intent);
+
                                             //FirebaseUser user = mFirebaseAuth.getCurrentUser();
                                             //go to Home screen
                                         }

@@ -161,14 +161,14 @@ public class PlaceholderFragment extends Fragment {
                     myDB.addData(name_str, age, gender, caste, pwd, education, pin_no, mobile, city, id, dependents);
                     save.setClickable(false);
                     ((questions)getActivity()).selectTab(1);
+                    Toast.makeText(getActivity().getApplicationContext(),"Demographic data added successfully",Toast.LENGTH_SHORT).show();
+                    ((questions)getActivity()).selectTab(1);
                 }
                 name.setText("");
                 pin.setText("");
                 mobile_no.setText("");
                 pwd_switch.setChecked(false);
 
-                Toast.makeText(getActivity().getApplicationContext(),"Demographic data added successfully",Toast.LENGTH_SHORT).show();
-                ((questions)getActivity()).selectTab(1);
 
 
             }

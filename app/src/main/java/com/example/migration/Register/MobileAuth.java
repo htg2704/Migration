@@ -37,4 +37,12 @@ public class MobileAuth extends AppCompatActivity {
         });
 
     }
+
+    @Override
+    public void onBackPressed() {
+
+        finish();
+        Intent intent = new Intent(MobileAuth.this, LoginOrRegister.class);
+        startActivity(intent);
+    }
 }

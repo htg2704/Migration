@@ -85,8 +85,7 @@ public class PlanFragment extends Fragment {
         save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getActivity(), select_login_type.class);
-                startActivity(i);
+
 
                 Cursor personal, migration, plan, awareness;
 
@@ -309,6 +308,7 @@ public class PlanFragment extends Fragment {
                                 //Log.w(TAG, "Error adding document", e);
                             }
                         });
+
 
                 Toast.makeText(getActivity(),"Data added successfully, you can add more",Toast.LENGTH_SHORT).show();
                 save.setEnabled(false);

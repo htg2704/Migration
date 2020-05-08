@@ -113,11 +113,12 @@ public class MigrationFragment extends Fragment {
                     migrationDB.addData(nature_str,loc,period,wage,employer_str,mobile_no_employer,other,challenges);
                     save.setClickable(false);
                     ((questions)getActivity()).selectTab(2);
+                    Toast.makeText(getActivity().getApplicationContext(),"Migration data added successfully",Toast.LENGTH_SHORT).show();
                 }
 
                 employer.setText("");
                 employer_contact.setText("");
-                Toast.makeText(getActivity().getApplicationContext(),"Migration data added successfully",Toast.LENGTH_SHORT).show();
+
 
 
             }

@@ -2,11 +2,14 @@ package com.example.migration.Register;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
@@ -37,18 +40,41 @@ public class select_login_type extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 User.type=1;
+                AlertDialog.Builder alertadd = new AlertDialog.Builder(select_login_type.this);
+                LayoutInflater factory = LayoutInflater.from(select_login_type.this);
+                view = factory.inflate(R.layout.sample, null);
+                alertadd.setView(view);
+                alertadd.show();
+                new Handler().postDelayed(new Runnable() {
 
-                Intent intent = new Intent(select_login_type.this,com.example.migration.Questions.questions.class);
-                startActivity(intent);
+                    @Override
+                    public void run() {
 
+                        Intent intent = new Intent(select_login_type.this,com.example.migration.Questions.questions.class);
+                        startActivity(intent);
+                    }
+                }, 1200);
             }
         });
         btn_mobiliser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 User.type=2;
-                Intent intent = new Intent(select_login_type.this,com.example.migration.Register.LoginOrRegister.class);
-                startActivity(intent);
+                AlertDialog.Builder alertadd = new AlertDialog.Builder(select_login_type.this);
+                LayoutInflater factory = LayoutInflater.from(select_login_type.this);
+                view = factory.inflate(R.layout.sample, null);
+                alertadd.setView(view);
+                alertadd.show();
+                new Handler().postDelayed(new Runnable() {
+
+                    @Override
+                    public void run() {
+
+                        Intent intent = new Intent(select_login_type.this,com.example.migration.Register.LoginOrRegister.class);
+                        startActivity(intent);
+                    }
+                }, 1200);
+
 
             }
         });
@@ -56,8 +82,21 @@ public class select_login_type extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 User.type=3;
-                Intent intent = new Intent(select_login_type.this,com.example.migration.Register.LoginOrRegister.class);
-                startActivity(intent);
+                AlertDialog.Builder alertadd = new AlertDialog.Builder(select_login_type.this);
+                LayoutInflater factory = LayoutInflater.from(select_login_type.this);
+                view = factory.inflate(R.layout.sample, null);
+                alertadd.setView(view);
+                alertadd.show();
+                new Handler().postDelayed(new Runnable() {
+
+                    @Override
+                    public void run() {
+
+                        Intent intent = new Intent(select_login_type.this,com.example.migration.Register.LoginOrRegister.class);
+                        startActivity(intent);
+                    }
+                }, 1200);
+
 
             }
         });

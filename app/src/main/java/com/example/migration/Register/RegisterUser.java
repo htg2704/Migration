@@ -1,6 +1,8 @@
 package com.example.migration.Register;
 
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -9,9 +11,12 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.airbnb.lottie.LottieAnimationView;
 import com.example.migration.MainActivity;
+import com.example.migration.Questions.questions;
 import com.example.migration.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -29,7 +34,6 @@ public class RegisterUser extends AppCompatActivity {
      EditText getReg_name;
 
      Button reg_sgnup;
-
     FirebaseAuth mFirebaseAuth;
     FirebaseAuth.AuthStateListener mAuthListener;
     String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
@@ -50,7 +54,6 @@ public class RegisterUser extends AppCompatActivity {
         getReg_name=findViewById(R.id.reg_name);
 
         mFirebaseAuth=FirebaseAuth.getInstance();
-
 
         reg_sgnup.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -105,14 +108,11 @@ public class RegisterUser extends AppCompatActivity {
                 }
                 else {
                     if (reg_mail_str.matches(emailPattern)) {
-//                        Intent intent = new Intent(getApplicationContext(), LoginOrRegister.class);
-//                        startActivity(intent);
                         mFirebaseAuth.createUserWithEmailAndPassword(reg_mail_str, reg_pwd_str)
                                 .addOnCompleteListener(RegisterUser.this, new OnCompleteListener<AuthResult>() {
                                     @Override
                                     public void onComplete(@NonNull Task<AuthResult> task) {
                                         if (task.isSuccessful()) {
-
                                             mFirebaseAuth.getCurrentUser().sendEmailVerification().addOnCompleteListener(new OnCompleteListener<Void>(){
                                                 @Override
                                                 public void onComplete(@NonNull Task<Void> task){
@@ -121,8 +121,15 @@ public class RegisterUser extends AppCompatActivity {
                                                         // Sign in success, update UI with the signed-in user's information
                                                         Toast.makeText(RegisterUser.this, "Sign up:success, Verify Your Email", Toast.LENGTH_LONG).show();
                                                         //FirebaseUser user = mFirebaseAuth.getCurrentUser();
+                                                        Intent intent = new Intent(RegisterUser.this, LoginOrRegister.class);
+                                                        startActivity(intent);
                                                         reg_email.setText("");
                                                         reg_psd.setText("");
+                                                        reg_sgnup.setText("");
+                                                        cnf_psd.setText("");
+                                                        getReg_adrs.setText("");
+                                                        getReg_phone.setText("");
+                                                        getReg_name.setText("");
                                                     }
                                                     else {
                                                         Toast.makeText(RegisterUser.this, task.getException().getMessage(), Toast.LENGTH_LONG).show();
@@ -153,8 +160,32 @@ public class RegisterUser extends AppCompatActivity {
     @Override
     public void onBackPressed() {
 
-        finish();
-        Intent intent = new Intent(RegisterUser.this, select_login_type.class);
-        startActivity(intent);
+        AlertDialog.Builder dialog = new AlertDialog.Builder(RegisterUser.this);
+        dialog.setTitle("Alert !");
+        dialog.setMessage("Are you sure you want to exit ?");
+        dialog.setCancelable(true);
+
+        dialog.setPositiveButton(
+                "Yes",
+                new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int
+                            id) {
+                        finish();
+                        Intent intent = new Intent(RegisterUser.this, LoginOrRegister.class);
+                        startActivity(intent);
+
+                    }
+                });
+
+        dialog.setNegativeButton(
+                "No",
+                new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        dialog.cancel();
+                    }
+                });
+
+        AlertDialog alert = dialog.create();
+        alert.show();
     }
 }

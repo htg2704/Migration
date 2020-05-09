@@ -33,8 +33,21 @@ public class MainActivity extends AppCompatActivity {
         enter_register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(),com.example.migration.Register.select_login_type.class);
-                startActivity(intent);
+                AlertDialog.Builder alertadd = new AlertDialog.Builder(MainActivity.this);
+                LayoutInflater factory = LayoutInflater.from(MainActivity.this);
+                view = factory.inflate(R.layout.sample, null);
+                alertadd.setView(view);
+                alertadd.show();
+                new Handler().postDelayed(new Runnable() {
+
+                    @Override
+                    public void run() {
+
+                        Intent intent = new Intent(getApplicationContext(),com.example.migration.Register.select_login_type.class);
+                        startActivity(intent);
+                    }
+                }, 1100);
+
 
             }
         });
@@ -81,8 +94,22 @@ public class MainActivity extends AppCompatActivity {
         enter_contact.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(),Contact.class);
-                startActivity(intent);
+
+                AlertDialog.Builder alertadd = new AlertDialog.Builder(MainActivity.this);
+                LayoutInflater factory = LayoutInflater.from(MainActivity.this);
+                view = factory.inflate(R.layout.sample, null);
+                alertadd.setView(view);
+                alertadd.show();
+                new Handler().postDelayed(new Runnable() {
+
+                    @Override
+                    public void run() {
+
+                        Intent intent = new Intent(getApplicationContext(),Contact.class);
+                        startActivity(intent);
+                    }
+                }, 1100);
+
 
             }
         });

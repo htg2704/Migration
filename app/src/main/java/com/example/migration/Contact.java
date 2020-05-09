@@ -66,8 +66,10 @@ public class Contact extends AppCompatActivity {
         faq.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(Contact.this, "Under Construction", Toast.LENGTH_LONG).show();
-
+                Intent browserIntent = new Intent(
+                        Intent.ACTION_VIEW,
+                        Uri.parse("http://www.kutumbindia.com/"));
+                startActivity(browserIntent);
             }
         });
         terms.setOnClickListener(new View.OnClickListener() {

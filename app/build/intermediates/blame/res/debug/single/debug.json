@@ -32,6 +32,10 @@
         "source": "C:\\Users\\Divyesh Nabhoya\\Desktop\\Migration\\app\\src\\main\\res\\drawable-v24\\facebook.png"
     },
     {
+        "merged": "C:\\Users\\Divyesh Nabhoya\\Desktop\\Migration\\app\\build\\intermediates\\res\\merged\\debug\\drawable_download.png.flat",
+        "source": "C:\\Users\\Divyesh Nabhoya\\Desktop\\Migration\\app\\src\\main\\res\\drawable\\download.png"
+    },
+    {
         "merged": "C:\\Users\\Divyesh Nabhoya\\Desktop\\Migration\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
         "source": "C:\\Users\\Divyesh Nabhoya\\Desktop\\Migration\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
     },
@@ -120,6 +124,10 @@
         "source": "C:\\Users\\Divyesh Nabhoya\\Desktop\\Migration\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },
     {
+        "merged": "C:\\Users\\Divyesh Nabhoya\\Desktop\\Migration\\app\\build\\intermediates\\res\\merged\\debug\\drawable_upload.png.flat",
+        "source": "C:\\Users\\Divyesh Nabhoya\\Desktop\\Migration\\app\\src\\main\\res\\drawable\\upload.png"
+    },
+    {
         "merged": "C:\\Users\\Divyesh Nabhoya\\Desktop\\Migration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_volunteer.png.flat",
         "source": "C:\\Users\\Divyesh Nabhoya\\Desktop\\Migration\\app\\src\\main\\res\\drawable-v24\\volunteer.png"
     },
@@ -134,6 +142,10 @@
     {
         "merged": "C:\\Users\\Divyesh Nabhoya\\Desktop\\Migration\\app\\build\\intermediates\\res\\merged\\debug\\font_noto_sans.xml.flat",
         "source": "C:\\Users\\Divyesh Nabhoya\\Desktop\\Migration\\app\\src\\main\\res\\font\\noto_sans.xml"
+    },
+    {
+        "merged": "C:\\Users\\Divyesh Nabhoya\\Desktop\\Migration\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_bulk_data.xml.flat",
+        "source": "C:\\Users\\Divyesh Nabhoya\\Desktop\\Migration\\app\\src\\main\\res\\layout\\activity_bulk_data.xml"
     },
     {
         "merged": "C:\\Users\\Divyesh Nabhoya\\Desktop\\Migration\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_data_main.xml.flat",
@@ -244,12 +256,20 @@
         "source": "C:\\Users\\Divyesh Nabhoya\\Desktop\\Migration\\app\\src\\main\\res\\drawable\\ic_email_black_24dp.xml"
     },
     {
+        "merged": "C:\\Users\\Divyesh Nabhoya\\Desktop\\Migration\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bulk.png.flat",
+        "source": "C:\\Users\\Divyesh Nabhoya\\Desktop\\Migration\\app\\src\\main\\res\\drawable\\bulk.png"
+    },
+    {
         "merged": "C:\\Users\\Divyesh Nabhoya\\Desktop\\Migration\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_select_login_type.xml.flat",
         "source": "C:\\Users\\Divyesh Nabhoya\\Desktop\\Migration\\app\\src\\main\\res\\layout\\activity_select_login_type.xml"
     },
     {
         "merged": "C:\\Users\\Divyesh Nabhoya\\Desktop\\Migration\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_lock_outline_black_24dp.xml.flat",
         "source": "C:\\Users\\Divyesh Nabhoya\\Desktop\\Migration\\app\\src\\main\\res\\drawable\\ic_lock_outline_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\Divyesh Nabhoya\\Desktop\\Migration\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_after_login.xml.flat",
+        "source": "C:\\Users\\Divyesh Nabhoya\\Desktop\\Migration\\app\\src\\main\\res\\layout\\activity_after_login.xml"
     },
     {
         "merged": "C:\\Users\\Divyesh Nabhoya\\Desktop\\Migration\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_account_circle_black_24dp.xml.flat",

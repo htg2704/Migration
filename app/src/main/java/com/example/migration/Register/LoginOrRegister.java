@@ -21,6 +21,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.migration.Questions.questions;
 import com.example.migration.R;
+import com.example.migration.after_login;
 import com.facebook.AccessToken;
 import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;
@@ -87,7 +88,7 @@ public class LoginOrRegister extends AppCompatActivity {
                 if(firebaseUser!=null && firebaseUser.isEmailVerified())
                 {
                     Toast.makeText(LoginOrRegister.this,"You are Logged In",Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(getApplicationContext(), questions.class);
+                    Intent intent = new Intent(getApplicationContext(), after_login.class);
                     startActivity(intent);
 
                     //Intent switching to Home Screen;
@@ -194,7 +195,7 @@ public class LoginOrRegister extends AppCompatActivity {
                                             // Sign in success, update UI with the signed-in user's information
 
                                             Toast.makeText( LoginOrRegister.this,"LogIn:success",Toast.LENGTH_SHORT).show();
-                                            Intent intent = new Intent(getApplicationContext(), questions.class);
+                                            Intent intent = new Intent(getApplicationContext(), after_login.class);
                                             startActivity(intent);
 
                                             //FirebaseUser user = mFirebaseAuth.getCurrentUser();
@@ -293,7 +294,7 @@ public class LoginOrRegister extends AppCompatActivity {
                             FirebaseUser user = mFirebaseAuth.getCurrentUser();
                             Toast.makeText(LoginOrRegister.this, "Firebase GoogleSignIn success",
                                     Toast.LENGTH_LONG).show();
-                            Intent intent = new Intent(getApplicationContext(), questions.class);
+                            Intent intent = new Intent(getApplicationContext(), after_login.class);
                             startActivity(intent);
 
                             //updateUI(user);
@@ -327,7 +328,7 @@ public class LoginOrRegister extends AppCompatActivity {
                             FirebaseUser user = mFirebaseAuth.getCurrentUser();
                             //txtv2.setText(user.getDisplayName());
 
-                            Intent intent = new Intent(getApplicationContext(),questions.class);
+                            Intent intent = new Intent(getApplicationContext(),after_login.class);
                             startActivity(intent);
 
 

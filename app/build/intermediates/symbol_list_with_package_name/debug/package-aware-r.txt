@@ -1175,6 +1175,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable bulk
 drawable button
 drawable card
 drawable circular_progress_bar
@@ -1227,6 +1228,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable download
 drawable drawable
 drawable edit
 drawable facebook
@@ -1279,6 +1281,7 @@ drawable stats
 drawable tab
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable upload
 drawable volunteer
 font aclonica
 font akronim
@@ -1379,6 +1382,7 @@ id btn_ngo
 id btn_register
 id btn_stats
 id btn_vol
+id bulk
 id button
 id buttonPanel
 id c1
@@ -1446,6 +1450,7 @@ id direct
 id disableHome
 id display_always
 id distant_switch
+id download
 id draw
 id drop
 id editTextMobAuth
@@ -1597,6 +1602,7 @@ id search_voice_btn
 id select_dialog_listview
 id selected
 id self_assessment_spinner
+id service
 id shortcut
 id showCustom
 id showHome
@@ -1669,6 +1675,7 @@ id uniform
 id unknown
 id unlabeled
 id up
+id upload
 id useLogo
 id usreml
 id vertical
@@ -1741,6 +1748,8 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_after_login
+layout activity_bulk_data
 layout activity_contact
 layout activity_data_main
 layout activity_forgot_pass

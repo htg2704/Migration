@@ -45,15 +45,6 @@
             android:text="@string/kutumb"
             android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
 
-            <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_power_settings_new_black_24dp"
-                android:background="@null"
-                android:layout_marginTop="15dp"
-                android:id="@+id/btn_logout"></ImageButton>
-
         </LinearLayout>
 
 

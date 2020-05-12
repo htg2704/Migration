@@ -17,6 +17,7 @@ import com.example.migration.Questions.ui.main.SectionsPagerAdapter;
 import com.example.migration.R;
 import com.example.migration.Register.LoginOrRegister;
 import com.example.migration.Register.select_login_type;
+import com.example.migration.after_login;
 import com.example.migration.common.User;
 import com.facebook.AccessToken;
 import com.facebook.login.LoginManager;
@@ -31,9 +32,8 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class questions extends AppCompatActivity {
 
-    ImageButton logout,btn;
+    ImageButton btn;
     ViewPager viewPager;
-    GoogleSignInClient mGoogleSignInClient;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,37 +53,12 @@ public class questions extends AppCompatActivity {
                 }
             });
         }
-        logout=findViewById(R.id.btn_logout);
-
-        logout.setOnClickListener(new View.OnClickListener() {
+        btn=findViewById(R.id.btn);
+        btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 if(User.type!=1) {
-                    FirebaseAuth.getInstance().signOut();
-                    AccessToken accessToken = AccessToken.getCurrentAccessToken();
-                    boolean isLoggedIn = accessToken != null && !accessToken.isExpired();
-
-                    if (isLoggedIn)
-                        LoginManager.getInstance().logOut();
-
-                     GoogleSignInOptions gso = new GoogleSignInOptions.Builder(com.google.android.gms.auth.api.signin.GoogleSignInOptions.DEFAULT_SIGN_IN).
-                            requestIdToken(getString(R.string.default_g_web_client_id))
-                            .requestEmail()
-                             .build();
-                     mGoogleSignInClient= GoogleSignIn.getClient(questions.this, gso);
-                    GoogleSignInAccount account = GoogleSignIn.getLastSignedInAccount(questions.this);
-                    if (account != null) {
-                        mGoogleSignInClient.signOut()
-                                .addOnCompleteListener(questions.this, new OnCompleteListener<Void>() {
-                                    @Override
-                                    public void onComplete(@androidx.annotation.NonNull Task<Void> task) {
-                                        // ...
-                                        Toast.makeText(questions.this,"Google Signed Out",Toast.LENGTH_LONG);
-                                    }
-                                });
-
-                    }
-                }
 
                     AlertDialog.Builder dialog = new AlertDialog.Builder(questions.this);
                     dialog.setTitle("Alert !");
@@ -95,11 +70,9 @@ public class questions extends AppCompatActivity {
                             new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int
                                         id) {
-                                    Intent intent = new Intent(getApplicationContext(),User.type==1? select_login_type.class :LoginOrRegister.class);
-                                    startActivity(intent);
-
-
                                     finish();
+                                    Intent intent = new Intent(questions.this, after_login.class);
+                                    startActivity(intent);
 
                                 }
                             });
@@ -115,16 +88,36 @@ public class questions extends AppCompatActivity {
                     AlertDialog alert = dialog.create();
                     alert.show();
                 }
+                else {
 
-        });
+                    AlertDialog.Builder dialog = new AlertDialog.Builder(questions.this);
+                    dialog.setTitle("Alert !");
+                    dialog.setMessage("Are you sure you want to exit ?");
+                    dialog.setCancelable(true);
 
-        btn=findViewById(R.id.btn);
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(questions.this, select_login_type.class);
-                startActivity(intent);
+                    dialog.setPositiveButton(
+                            "Yes",
+                            new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int
+                                        id) {
+                                    finish();
+                                    Intent intent = new Intent(questions.this, select_login_type.class);
+                                    startActivity(intent);
 
+                                }
+                            });
+
+                    dialog.setNegativeButton(
+                            "No",
+                            new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int id) {
+                                    dialog.cancel();
+                                }
+                            });
+
+                    AlertDialog alert = dialog.create();
+                    alert.show();
+                }
             }
         });
 
@@ -138,33 +131,65 @@ public class questions extends AppCompatActivity {
     @Override
     public void onBackPressed() {
 
+        if(User.type!=1) {
 
-        AlertDialog.Builder dialog = new AlertDialog.Builder(questions.this);
-        dialog.setTitle("Alert !");
-        dialog.setMessage("Are you sure you want to exit ?");
-        dialog.setCancelable(true);
+            AlertDialog.Builder dialog = new AlertDialog.Builder(questions.this);
+            dialog.setTitle("Alert !");
+            dialog.setMessage("Are you sure you want to exit ?");
+            dialog.setCancelable(true);
 
-        dialog.setPositiveButton(
-                "Yes",
-                new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int
-                            id) {
-                        finish();
-                        Intent intent = new Intent(questions.this, select_login_type.class);
-                        startActivity(intent);
+            dialog.setPositiveButton(
+                    "Yes",
+                    new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int
+                                id) {
+                            finish();
+                            Intent intent = new Intent(questions.this, after_login.class);
+                            startActivity(intent);
 
-                    }
-                });
+                        }
+                    });
 
-        dialog.setNegativeButton(
-                "No",
-                new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int id) {
-                        dialog.cancel();
-                    }
-                });
+            dialog.setNegativeButton(
+                    "No",
+                    new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int id) {
+                            dialog.cancel();
+                        }
+                    });
 
-        AlertDialog alert = dialog.create();
-        alert.show();
+            AlertDialog alert = dialog.create();
+            alert.show();
+
+        }
+        else {
+            AlertDialog.Builder dialog = new AlertDialog.Builder(questions.this);
+            dialog.setTitle("Alert !");
+            dialog.setMessage("Are you sure you want to exit ?");
+            dialog.setCancelable(true);
+
+            dialog.setPositiveButton(
+                    "Yes",
+                    new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int
+                                id) {
+                            finish();
+                            Intent intent = new Intent(questions.this, select_login_type.class);
+                            startActivity(intent);
+
+                        }
+                    });
+
+            dialog.setNegativeButton(
+                    "No",
+                    new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int id) {
+                            dialog.cancel();
+                        }
+                    });
+
+            AlertDialog alert = dialog.create();
+            alert.show();
+        }
     }
     }

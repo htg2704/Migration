@@ -97,7 +97,6 @@ public class select_login_type extends AppCompatActivity {
                     }
                 }, 1200);
 
-
             }
         });
         back.setOnClickListener(new View.OnClickListener() {

@@ -31,6 +31,7 @@ import java.io.File;
 public class bulk_data extends AppCompatActivity {
 
     CardView down;
+    CardView upload;
     ImageButton btn;
     FirebaseStorage firebaseStorage;
     StorageReference storageReference;
@@ -49,7 +50,13 @@ public class bulk_data extends AppCompatActivity {
             }
         });
 
-
+        upload = findViewById(R.id.upload);
+        upload.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                upload();
+            }
+        });
 
 
         btn=findViewById(R.id.btn);
@@ -61,6 +68,10 @@ public class bulk_data extends AppCompatActivity {
 
             }
         });
+    }
+
+    private void upload() {
+
     }
 
 

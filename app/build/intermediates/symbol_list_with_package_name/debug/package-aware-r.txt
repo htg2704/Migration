@@ -1228,6 +1228,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable done
 drawable download
 drawable drawable
 drawable edit
@@ -1276,6 +1277,7 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable phone
+drawable plus
 drawable register
 drawable stats
 drawable tab
@@ -1347,7 +1349,6 @@ id action_mode_close_button
 id action_text
 id actions
 id activity_chooser_view_content
-id activity_main
 id add
 id adjust_height
 id adjust_width
@@ -1497,7 +1498,6 @@ id icon_only
 id ifRoom
 id image
 id imageSlider
-id imageView
 id imageView2
 id info
 id inline
@@ -1512,7 +1512,6 @@ id left
 id light
 id line1
 id line3
-id linearLayout
 id listMode
 id list_item
 id livelihhod_spinner

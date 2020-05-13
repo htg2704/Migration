@@ -12,8 +12,11 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
+import android.os.Handler;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 import com.example.migration.MainActivity;
 import com.example.migration.R;
@@ -41,7 +44,9 @@ public class bulk_data extends AppCompatActivity {
         down.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Toast.makeText(bulk_data.this, "Download Started", Toast.LENGTH_SHORT).show();
                 download();
+                Toast.makeText(bulk_data.this, "Download Successful", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -49,8 +54,21 @@ public class bulk_data extends AppCompatActivity {
         up.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(bulk_data.this, upload.class);
-                startActivity(intent);
+                AlertDialog.Builder alertadd = new AlertDialog.Builder(bulk_data.this);
+                LayoutInflater factory = LayoutInflater.from(bulk_data.this);
+                v = factory.inflate(R.layout.sample, null);
+                alertadd.setView(v);
+                alertadd.show();
+                new Handler().postDelayed(new Runnable() {
+
+                    @Override
+                    public void run() {
+
+                        Intent intent = new Intent(bulk_data.this, upload.class);
+                        startActivity(intent);
+                    }
+                }, 1100);
+
             }
         });
 

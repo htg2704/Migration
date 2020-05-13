@@ -20,10 +20,10 @@
 13-->D:\internship\C\Migration\app\src\main\AndroidManifest.xml:8:5-76
 13-->D:\internship\C\Migration\app\src\main\AndroidManifest.xml:8:22-73
 14    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-14-->D:\internship\C\Migration\app\src\main\AndroidManifest.xml:9:5-80
+14-->D:\internship\C\Migration\app\src\main\AndroidManifest.xml:9:5-81
 14-->D:\internship\C\Migration\app\src\main\AndroidManifest.xml:9:22-78
 15    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-15-->D:\internship\C\Migration\app\src\main\AndroidManifest.xml:10:5-79
+15-->D:\internship\C\Migration\app\src\main\AndroidManifest.xml:10:5-80
 15-->D:\internship\C\Migration\app\src\main\AndroidManifest.xml:10:22-77
 16    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
 16-->[com.google.android.gms:play-services-measurement-api:17.3.0] C:\Users\HP\.gradle\caches\transforms-2\files-2.1\d734e85b2ea2f6b5c3dd2e12b4244ac5\jetified-play-services-measurement-api-17.3.0\AndroidManifest.xml:24:5-68
@@ -53,10 +53,12 @@
 28        android:testOnly="true"
 29        android:theme="@style/AppTheme" >
 29-->D:\internship\C\Migration\app\src\main\AndroidManifest.xml:18:9-40
-30        <activity android:name="com.example.migration.after_login" >
-30-->D:\internship\C\Migration\app\src\main\AndroidManifest.xml:20:9-21:20
-30-->D:\internship\C\Migration\app\src\main\AndroidManifest.xml:20:19-46
-31        </activity>
+30        <activity android:name="com.example.migration.Register.upload" />
+30-->D:\internship\C\Migration\app\src\main\AndroidManifest.xml:20:9-62
+30-->D:\internship\C\Migration\app\src\main\AndroidManifest.xml:20:19-50
+31        <activity android:name="com.example.migration.after_login" />
+31-->D:\internship\C\Migration\app\src\main\AndroidManifest.xml:21:9-58
+31-->D:\internship\C\Migration\app\src\main\AndroidManifest.xml:21:19-46
 32        <activity android:name="com.example.migration.Register.bulk_data" />
 32-->D:\internship\C\Migration\app\src\main\AndroidManifest.xml:22:9-56
 32-->D:\internship\C\Migration\app\src\main\AndroidManifest.xml:22:19-53
@@ -294,11 +296,11 @@
 152                android:value="com.google.firebase.components.ComponentRegistrar" />
 152-->[com.google.firebase:firebase-auth:19.3.0] C:\Users\HP\.gradle\caches\transforms-2\files-2.1\4189c7719053123afa41922c68903b5b\jetified-firebase-auth-19.3.0\AndroidManifest.xml:38:17-82
 153            <meta-data
-153-->[com.google.firebase:firebase-storage:19.1.0] C:\Users\HP\.gradle\caches\transforms-2\files-2.1\d16ef19c514b9b5581ac7499b64e28ab\jetified-firebase-storage-19.1.0\AndroidManifest.xml:33:13-35:85
+153-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\HP\.gradle\caches\transforms-2\files-2.1\c8c55a9dfb88ee84ed4b575295b8e34f\jetified-firebase-storage-19.1.1\AndroidManifest.xml:33:13-35:85
 154                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
-154-->[com.google.firebase:firebase-storage:19.1.0] C:\Users\HP\.gradle\caches\transforms-2\files-2.1\d16ef19c514b9b5581ac7499b64e28ab\jetified-firebase-storage-19.1.0\AndroidManifest.xml:34:17-107
+154-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\HP\.gradle\caches\transforms-2\files-2.1\c8c55a9dfb88ee84ed4b575295b8e34f\jetified-firebase-storage-19.1.1\AndroidManifest.xml:34:17-107
 155                android:value="com.google.firebase.components.ComponentRegistrar" />
-155-->[com.google.firebase:firebase-storage:19.1.0] C:\Users\HP\.gradle\caches\transforms-2\files-2.1\d16ef19c514b9b5581ac7499b64e28ab\jetified-firebase-storage-19.1.0\AndroidManifest.xml:35:17-82
+155-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\HP\.gradle\caches\transforms-2\files-2.1\c8c55a9dfb88ee84ed4b575295b8e34f\jetified-firebase-storage-19.1.1\AndroidManifest.xml:35:17-82
 156            <meta-data
 156-->[com.google.android.gms:play-services-measurement-api:17.3.0] C:\Users\HP\.gradle\caches\transforms-2\files-2.1\d734e85b2ea2f6b5c3dd2e12b4244ac5\jetified-play-services-measurement-api-17.3.0\AndroidManifest.xml:30:13-32:85
 157                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"

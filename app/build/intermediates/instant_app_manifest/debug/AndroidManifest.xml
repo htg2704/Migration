@@ -28,8 +28,8 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.example.migration.after_login" >
-        </activity>
+        <activity android:name="com.example.migration.Register.upload" />
+        <activity android:name="com.example.migration.after_login" />
         <activity android:name="com.example.migration.Register.bulk_data" />
         <activity
             android:name="com.example.migration.Register.VerifyMobile"

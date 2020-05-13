@@ -12,10 +12,8 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
-import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
-import android.widget.Toast;
 
 import com.example.migration.MainActivity;
 import com.example.migration.R;
@@ -26,12 +24,9 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 
-import java.io.File;
-
 public class bulk_data extends AppCompatActivity {
 
-    CardView down;
-    CardView upload;
+    CardView down,up;
     ImageButton btn;
     FirebaseStorage firebaseStorage;
     StorageReference storageReference;
@@ -50,13 +45,15 @@ public class bulk_data extends AppCompatActivity {
             }
         });
 
-        upload = findViewById(R.id.upload);
-        upload.setOnClickListener(new View.OnClickListener() {
+        up = findViewById(R.id.upload);
+        up.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                upload();
+                Intent intent = new Intent(bulk_data.this, upload.class);
+                startActivity(intent);
             }
         });
+
 
 
         btn=findViewById(R.id.btn);
@@ -70,44 +67,34 @@ public class bulk_data extends AppCompatActivity {
         });
     }
 
-    private void upload() {
-
-    }
-
 
     public void download(){
-
-        storageReference=FirebaseStorage.getInstance().getReference();
+        storageReference=firebaseStorage.getInstance().getReference();
         ref=storageReference.child("Bulkdataformat.xlsm");
+
         ref.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
             @Override
             public void onSuccess(Uri uri) {
                 String url = uri.toString();
-                Toast.makeText(bulk_data.this,"URL RECEIEVED",Toast.LENGTH_SHORT).show();
-                downloadFile(uri);
+                downloadFile("Bulkdataformat",".xlsm", Environment.DIRECTORY_DOWNLOADS,url);
 
             }
         }).addOnFailureListener(new OnFailureListener() {
             @Override
             public void onFailure(@NonNull Exception e) {
-                Toast.makeText(bulk_data.this,"Some error occured",Toast.LENGTH_SHORT).show();
+
             }
         });
-
     }
 
-    private void downloadFile(Uri uri) {
-        File file = new File(Environment.getExternalStorageDirectory(),"Bulkdataformat.xlsm");
-        DownloadManager downloadManager = (DownloadManager) getSystemService(DOWNLOAD_SERVICE);
-        DownloadManager.Request request = new DownloadManager.Request(uri).setTitle("File download")
-                .setDescription("This is BULK DATA FORMAT")
-                .setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE)
-                .setDestinationUri(Uri.fromFile(file));
-
+    public void downloadFile(String fileName,String fileExtension,String destinationDirectory,String url){
+        DownloadManager downloadManager = (DownloadManager) getApplicationContext().getSystemService(getApplicationContext().DOWNLOAD_SERVICE);
+        Uri uri = Uri.parse(url);
+        DownloadManager.Request request = new DownloadManager.Request(uri);
+        request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
+        request.setDestinationInExternalFilesDir(getApplicationContext(),destinationDirectory,fileName + fileExtension);
         downloadManager.enqueue(request);
     }
-
-
     @Override
     public void onBackPressed() {
 

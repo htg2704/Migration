@@ -184,6 +184,10 @@
         "source": "D:\\internship\\C\\Migration\\app\\src\\main\\res\\drawable\\ic_remove_red_eye_black_24dp.xml"
     },
     {
+        "merged": "D:\\internship\\C\\Migration\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_upload.xml.flat",
+        "source": "D:\\internship\\C\\Migration\\app\\src\\main\\res\\layout\\activity_upload.xml"
+    },
+    {
         "merged": "D:\\internship\\C\\Migration\\app\\build\\intermediates\\res\\merged\\debug\\font_akronim.xml.flat",
         "source": "D:\\internship\\C\\Migration\\app\\src\\main\\res\\font\\akronim.xml"
     },

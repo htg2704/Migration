@@ -1347,6 +1347,7 @@ id action_mode_close_button
 id action_text
 id actions
 id activity_chooser_view_content
+id activity_main
 id add
 id adjust_height
 id adjust_width
@@ -1384,7 +1385,9 @@ id btn_stats
 id btn_vol
 id bulk
 id button
+id buttonChoose
 id buttonPanel
+id buttonUpload
 id c1
 id c10
 id c11
@@ -1494,6 +1497,7 @@ id icon_only
 id ifRoom
 id image
 id imageSlider
+id imageView
 id imageView2
 id info
 id inline
@@ -1508,6 +1512,7 @@ id left
 id light
 id line1
 id line3
+id linearLayout
 id listMode
 id list_item
 id livelihhod_spinner
@@ -1764,6 +1769,7 @@ layout activity_select_login_type
 layout activity_slider
 layout activity_stats
 layout activity_termswebactivity
+layout activity_upload
 layout activity_verify_mobile
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row

@@ -17,12 +17,16 @@ public class AwarenessDB extends SQLiteOpenHelper {
     private static final String COL2 = "govt_ben";
     private static final String COL3 = "covid_know";
     private static final String COL4 = "lock_know";
-    private static final String COL5 = "response";
-    private static final String COL6 = "current_loc";
-    private static final String COL7 = "support_received";
-    private static final String COL8 = "support_needed";
-    private static final String COL9 = "covid_self";
-    private static final String COL10 = "reach";
+    private static final String COL5 = "support_needed";
+    private static final String COL6 = "covid_self";
+    private static final String COL7 = "schema";
+    private static final String COL8 = "otherproblem";
+    private static final String COL9 = "suggestion";
+    private static final String COL10 = "othersupportreceive";
+
+
+
+
 
     public AwarenessDB(@Nullable Context context) {
         super(context, TABLE_NAME, null, 1);
@@ -39,18 +43,19 @@ public class AwarenessDB extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE "+TABLE_NAME+";");
         onCreate(db);
     }
-    public boolean addData(String govt_ben,String covid_know,String lock_knw,String response,String current_loc,String support_rec,String support_needed,String covid_self,String reach) {
+    public boolean addData(String govt_ben,String covid_know,String lock_knw,String support_needed,String covid_self,
+                           String schema,String otherproblem,String suggestion,String othersupportreceive) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
         contentValues.put(COL2, govt_ben);
         contentValues.put(COL3, covid_know);
         contentValues.put(COL4, lock_knw);
-        contentValues.put(COL5, response);
-        contentValues.put(COL6, current_loc);
-        contentValues.put(COL7, support_rec);
-        contentValues.put(COL8, support_needed);
-        contentValues.put(COL9, covid_self);
-        contentValues.put(COL10, reach);
+        contentValues.put(COL5, support_needed);
+        contentValues.put(COL6, covid_self);
+        contentValues.put(COL7, schema);
+        contentValues.put(COL8, otherproblem);
+        contentValues.put(COL9, suggestion);
+        contentValues.put(COL10, othersupportreceive);
 
 
         Log.d(TAG, "addData: Adding " +govt_ben+ " to " + TABLE_NAME);

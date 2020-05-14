@@ -15,17 +15,17 @@ public class PlanDB extends SQLiteOpenHelper {
     private static final String TABLE_NAME = "PLAN_PROFILE";
     private static final String COL1 = "ID";
     private static final String COL2 = "where_for_job";
-    private static final String COL3 = "skil_need";
-    private static final String COL4 = "support_lockdown";
-    private static final String COL5 = "safety_net";
-    private static final String COL6 = "one_stop";
-    private static final String COL7 = "distant_work";
-    private static final String COL8 = "affordable_housing";
-    private static final String COL9 = "healthcare";
-    private static final String COL10 = "schooling";
-    private static final String COL11 = "skill_upgrade";
-    private static final String COL12 = "availability_for_training";
-    private static final String COL13 = "present_livelihood";
+    private static final String COL3 = "support_lockdown";
+    private static final String COL4 = "skill_upgrade";
+    private static final String COL5 = "availability_for_training";
+    private static final String COL6 = "present_livelihood";
+    private static final String COL7 = "migrate_plan";
+    private static final String COL8 = "migrate_support";
+    private static final String COL9 = "other_avaibility";
+    private static final String COL10 = "other_livelihood";
+    private static final String COL11 = "other_support";
+    private static final String COL12 = "comment";
+
 
     public PlanDB(@Nullable Context context) {
         super(context, TABLE_NAME, null, 1);
@@ -33,7 +33,7 @@ public class PlanDB extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         String createTable = "CREATE TABLE " + TABLE_NAME + " (ID INTEGER PRIMARY KEY AUTOINCREMENT, " + COL2 +" TEXT,"+ COL3 +" TEXT,"+ COL4 +" TEXT,"+ COL5 +" TEXT,"+ COL6 +" TEXT,"
-                + COL7 +" TEXT,"+ COL8 +" TEXT,"+ COL9 + " TEXT,"+ COL10 +" TEXT,"+ COL11 +" TEXT,"+COL12+" TEXT," +COL13 +" TEXT)";
+                + COL7 +" TEXT,"+ COL8 +" TEXT,"+ COL9 + " TEXT,"+ COL10 +" TEXT,"+ COL11 +" TEXT,"+ COL12 +" TEXT)";
         db.execSQL(createTable);
     }
 
@@ -42,22 +42,21 @@ public class PlanDB extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE "+TABLE_NAME+";");
         onCreate(db);
     }
-    public boolean addData(String where_for_job,String skil_need,String support_lockdown,String safety_net,String one_stop,String distant_work,
-                           String affordable_housing,String healthcare,String school,String skill_upgrade,String availability_for_training,String present_livelihood) {
+    public boolean addData(String where_for_job,String support_lockdown,String skill_upgrade,String availability_for_training,String present_livelihood,
+                           String migrate_plan,String migrate_support,String other_avaibility,String other_livelihood,String other_support,String comment) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
         contentValues.put(COL2, where_for_job);
-        contentValues.put(COL3, skil_need);
-        contentValues.put(COL4, support_lockdown);
-        contentValues.put(COL5, safety_net);
-        contentValues.put(COL6, one_stop);
-        contentValues.put(COL7, distant_work);
-        contentValues.put(COL8, affordable_housing);
-        contentValues.put(COL9, healthcare);
-        contentValues.put(COL10, school);
-        contentValues.put(COL11, skill_upgrade);
-        contentValues.put(COL12, availability_for_training);
-        contentValues.put(COL13,present_livelihood);
+        contentValues.put(COL3, support_lockdown);
+        contentValues.put(COL4, skill_upgrade);
+        contentValues.put(COL5, availability_for_training);
+        contentValues.put(COL6,present_livelihood);
+        contentValues.put(COL7,migrate_plan);
+        contentValues.put(COL8,migrate_support);
+        contentValues.put(COL9,other_avaibility);
+        contentValues.put(COL10,other_livelihood);
+        contentValues.put(COL11,other_support);
+        contentValues.put(COL12,comment);
 
         Log.d(TAG, "addData: Adding " +where_for_job+ " to " + TABLE_NAME);
 

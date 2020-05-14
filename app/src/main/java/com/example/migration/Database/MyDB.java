@@ -25,6 +25,11 @@ public class MyDB extends SQLiteOpenHelper {
     private static final String COL10 = "city";
     private static final String COL11 = "govt_id";
     private static final String COL12 = "dependents";
+    private static final String COL13 = "maritialstatus";
+    private static final String COL14 = "addskill";
+
+
+
 
     public MyDB(@Nullable Context context) {
         super(context, TABLE_NAME, null, 1);
@@ -33,7 +38,7 @@ public class MyDB extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         String createTable = "CREATE TABLE " + TABLE_NAME + " (ID INTEGER PRIMARY KEY AUTOINCREMENT, " + COL2 +" TEXT,"+ COL3 +" TEXT,"+ COL4 +" TEXT,"+ COL5 +" TEXT,"+ COL6 +" TEXT,"
-                + COL7 +" TEXT,"+ COL8 +" DOUBLE,"+ COL9 +" DOUBLE,"+ COL10 +" TEXT,"+ COL11 +" TEXT,"+ COL12 + " TEXT)";
+                + COL7 +" TEXT,"+ COL8 +" DOUBLE,"+ COL9 +" DOUBLE,"+ COL10 +" TEXT,"+ COL11 +" TEXT,"+ COL12 + " TEXT,"+ COL13 + " TEXT,"+ COL14 + " TEXT)";
         db.execSQL(createTable);
     }
 
@@ -42,7 +47,7 @@ public class MyDB extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE "+TABLE_NAME+";");
         onCreate(db);
     }
-    public boolean addData(String name,String age,String gender,String caste,String pwd,String edu,Double pin,Double Mobile,String city,String govt_id,String dependent) {
+    public boolean addData(String name,String age,String gender,String caste,String pwd,String edu,Double pin,Double Mobile,String city,String govt_id,String dependent,String maritialstatus,String addskill) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
         contentValues.put(COL2, name);
@@ -56,6 +61,9 @@ public class MyDB extends SQLiteOpenHelper {
         contentValues.put(COL10, city);
         contentValues.put(COL11, govt_id);
         contentValues.put(COL12, dependent);
+        contentValues.put(COL13, maritialstatus);
+        contentValues.put(COL14, addskill);
+
 
 
         Log.d(TAG, "addData: Adding " +name+ " to " + TABLE_NAME);

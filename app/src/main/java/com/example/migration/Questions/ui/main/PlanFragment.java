@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Switch;
 import android.widget.Toast;
@@ -72,13 +73,21 @@ public class PlanFragment extends Fragment {
         skill_adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         skill_spinner.setAdapter(skill_adapter);
         final Spinner live_spinner = (Spinner) root.findViewById(R.id.livelihhod_spinner);
-        ArrayAdapter<CharSequence> live_adapter = ArrayAdapter.createFromResource(getContext(), R.array.cur_options_array, android.R.layout.simple_spinner_item);
+        final ArrayAdapter<CharSequence> live_adapter = ArrayAdapter.createFromResource(getContext(), R.array.cur_options_array, android.R.layout.simple_spinner_item);
         live_adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         live_spinner.setAdapter(live_adapter);
         final Spinner training_spinner = (Spinner) root.findViewById(R.id.training_spinner);
         ArrayAdapter<CharSequence> training_adapter = ArrayAdapter.createFromResource(getContext(), R.array.train_array, android.R.layout.simple_spinner_item);
         training_adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         training_spinner.setAdapter(training_adapter);
+        final Spinner plan_spinner = (Spinner) root.findViewById(R.id.migrateplan);
+        final ArrayAdapter<CharSequence> plan_adapter = ArrayAdapter.createFromResource(getContext(), R.array.migrate_plan_array, android.R.layout.simple_spinner_item);
+        plan_adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        plan_spinner.setAdapter(plan_adapter);
+        final Spinner support_spinner = (Spinner) root.findViewById(R.id.migratesupport);
+        ArrayAdapter<CharSequence> support_adapter = ArrayAdapter.createFromResource(getContext(), R.array.migrate_support_array, android.R.layout.simple_spinner_item);
+        support_adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        support_spinner.setAdapter(support_adapter);
 
         final Button save = root.findViewById(R.id.save_plan);
 
@@ -89,21 +98,50 @@ public class PlanFragment extends Fragment {
 
                 Cursor personal, migration, plan, awareness;
 
-                Switch where, skill, safety, onestop, housing, health, school, distant;
+                EditText other_avaibility,other_livelihood,other_support,comment;
 
-                String where_for_job, skill_need, support_lockdown, safety_net, one_stop, distant_work, affordable_housing, healthcare, schooling, skill_upgrade,
-                        availability_for_training, present_livelihood;
+
+                other_avaibility = root.findViewById(R.id.other_avaibility);
+                String other_avaibility_str=other_avaibility.getText().toString();
+
+                other_livelihood = root.findViewById(R.id.other_livelihood);
+                String other_livelihood_str=other_livelihood.getText().toString();
+
+                other_support = root.findViewById(R.id.other_support);
+                String other_support_str=other_support.getText().toString();
+
+                comment = root.findViewById(R.id.comment);
+                String comment_str=comment.getText().toString();
+
+
+
+                if(other_avaibility_str.isEmpty())
+                {
+                    other_avaibility.setError("This can't be empty");
+                    other_avaibility.requestFocus();
+                }
+
+                if(other_livelihood_str.isEmpty())
+                {
+                    other_livelihood.setError("This can't be empty");
+                    other_livelihood.requestFocus();
+                }
+
+                if(other_support_str.isEmpty())
+                {
+                    other_support.setError("This can't be empty");
+                    other_support.requestFocus();
+                }
+
+                Switch where;
+
+                String where_for_job, support_lockdown, skill_upgrade,
+                        availability_for_training, present_livelihood,migrate_support,migrate_plan;
 
                 where = root.findViewById(R.id.where_to_go_switch);
-                skill = root.findViewById(R.id.skill_switch);
-                safety = root.findViewById(R.id.safety_switch);
-                onestop = root.findViewById(R.id.one_stop_switch);
-                housing = root.findViewById(R.id.housing_switch);
-                health = root.findViewById(R.id.healthcare_switch);
-                school = root.findViewById(R.id.school_switch);
-                distant = root.findViewById(R.id.distant_switch);
 
-
+                migrate_plan=plan_spinner.getSelectedItem().toString();
+                migrate_support=support_spinner.getSelectedItem().toString();
                 support_lockdown = support_after.getSelectedItem().toString();
                 skill_upgrade = skill_spinner.getSelectedItem().toString();
                 availability_for_training = training_spinner.getSelectedItem().toString();
@@ -113,53 +151,17 @@ public class PlanFragment extends Fragment {
                 } else {
                     where_for_job = "No";
                 }
-                if (skill.isChecked()) {
-                    skill_need = "Yes";
-                } else {
-                    skill_need = "No";
-                }
-                if (safety.isChecked()) {
-                    safety_net = "Yes";
-                } else {
-                    safety_net = "No";
-                }
-                if (onestop.isChecked()) {
-                    one_stop = "Yes";
-                } else {
-                    one_stop = "No";
-                }
-                if (housing.isChecked()) {
-                    affordable_housing = "Yes";
-                } else {
-                    affordable_housing = "No";
-                }
-                if (health.isChecked()) {
-                    healthcare = "Yes";
-                } else {
-                    healthcare = "No";
-                }
-                if (school.isChecked()) {
-                    schooling = "Yes";
-                } else {
-                    schooling = "No";
-                }
-                if (distant.isChecked()) {
-                    distant_work = "Yes";
-                } else {
-                    distant_work = "No";
-                }
-                Log.d(TAG, "city " + where);
-                planDB.addData(where_for_job, skill_need, support_lockdown, safety_net, one_stop, distant_work, affordable_housing,
-                        healthcare, schooling, skill_upgrade, availability_for_training, present_livelihood);
 
+                Log.d(TAG, "city " + where);
+                if(other_avaibility_str=="null"||other_livelihood_str=="null"||other_support_str=="null"||comment_str=="null"){
+                    Toast.makeText(getActivity().getApplicationContext(),"Data not saved",Toast.LENGTH_SHORT);
+                }else {
+
+                    planDB.addData(where_for_job, support_lockdown,skill_upgrade, availability_for_training, present_livelihood,migrate_plan,migrate_support,other_avaibility_str,other_livelihood_str,other_support_str,comment_str);
+                    save.setClickable(false);
+                   }
                 where.setChecked(false);
-                onestop.setChecked(false);
-                housing.setChecked(false);
-                health.setChecked(false);
-                school.setChecked(false);
-                distant.setChecked(false);
-                safety.setChecked(false);
-                skill.setChecked(false);
+
 
                 personal = myDB.getLastData();
                 migration = migrationDB.getLastData();
@@ -170,7 +172,7 @@ public class PlanFragment extends Fragment {
                 FirebaseFirestore db = FirebaseFirestore.getInstance();
                 Map<String, Object> migrant = new HashMap<>();
 
-               if (personal.moveToFirst()) {
+                if (personal.moveToFirst()) {
 
 
                     int idIdx = personal.getColumnIndex("ID");
@@ -185,6 +187,8 @@ public class PlanFragment extends Fragment {
                     int cityIdx = personal.getColumnIndex("city");
                     int govtIdx = personal.getColumnIndex("govt_id");
                     int dependentsIdx = personal.getColumnIndex("dependents");
+                    int maritialstatusIdx = personal.getColumnIndex("maritialstatus");
+                    int addskillIdx = personal.getColumnIndex("addskill");
 
 
                     //int id = personal.getInt(idIdx);
@@ -199,24 +203,28 @@ public class PlanFragment extends Fragment {
                     String city = personal.getString(cityIdx);
                     String govt_id = personal.getString(govtIdx);
                     String dependants = personal.getString(dependentsIdx);
+                    String maritialstatus = personal.getString(maritialstatusIdx);
+                    String addskill = personal.getString(addskillIdx);
 
-                    migrant.put("Name", name);
-                    migrant.put("Age", age);
-                    migrant.put("Gender", gender);
-                    migrant.put("Caste", caste);
-                    migrant.put("Education", education);
-                    migrant.put("PWD", pwd);
-                    migrant.put("Pin", pin);
-                    migrant.put("Mobile", mob);
-                    migrant.put("City", city);
-                    migrant.put("Govt_id", govt_id);
-                    migrant.put("Dependants", dependants);
+                    migrant.put("AA.Name", name);
+                    migrant.put("AB.Age", age);
+                    migrant.put("AC.Gender", gender);
+                    migrant.put("AD.Caste", caste);
+                    migrant.put("AK.Education", education);
+                    migrant.put("AM.PWD", pwd);
+                    migrant.put("AF.Pin", pin);
+                    migrant.put("AE.Mobile", mob);
+                    migrant.put("AG.City", city);
+                    migrant.put("AL.Govt_id", govt_id);
+                    migrant.put("AJ.Dependants", dependants);
+                    migrant.put("AI.Maritial_Status",maritialstatus);
+                    migrant.put("AN.Add_Skill",addskill);
 
                 }
 
                 if (migration.moveToFirst()) {
 
-                  //  int idIdx = migration.getColumnIndex("ID");
+                    //  int idIdx = migration.getColumnIndex("ID");
                     int natureIdx = migration.getColumnIndex("nature");
                     int locIdx = migration.getColumnIndex("location");
                     int periodIdx = migration.getColumnIndex("period");
@@ -225,6 +233,20 @@ public class PlanFragment extends Fragment {
                     int enoIdx = migration.getColumnIndex("e_no");
                     int obenIdx = migration.getColumnIndex("otherbenefits");
                     int chalIdx = migration.getColumnIndex("challenges");
+                    int kindIdx = migration.getColumnIndex("kindofwork");
+                    int tychalIdx = migration.getColumnIndex("typechallenge");
+                    int reasIdx = migration.getColumnIndex("reason");
+                    int amountIdx = migration.getColumnIndex("amount");
+                    int houseIdx = migration.getColumnIndex("amounthouse");
+                    int otherIdx = migration.getColumnIndex("amountother");
+                    int foodIdx = migration.getColumnIndex("amountfood");
+                    int transIdx = migration.getColumnIndex("amounttransport");
+                    int healthIdx = migration.getColumnIndex("amounthealth");
+                    int educaIdx = migration.getColumnIndex("amountedu");
+                    int loanIdx = migration.getColumnIndex("amountloan");
+
+
+
 
 
 
@@ -237,61 +259,87 @@ public class PlanFragment extends Fragment {
                     double eno = migration.getDouble(enoIdx);
                     String oben = migration.getString(obenIdx);
                     String chal = migration.getString(chalIdx);
+                    String kind = migration.getString(kindIdx);
+                    String tychal = migration.getString(tychalIdx);
+                    String reason = migration.getString(reasIdx);
+                    double amount = migration.getDouble(amountIdx);
+                    double house = migration.getDouble(houseIdx);
+                    double other = migration.getDouble(otherIdx);
+                    double food = migration.getDouble(foodIdx);
+                    double trans = migration.getDouble(transIdx);
+                    double heal = migration.getDouble(healthIdx);
+                    double ed = migration.getDouble(educaIdx);
+                    double loan = migration.getDouble(loanIdx);
 
 
-                    migrant.put("Nature", nature);
-                    migrant.put("Location", locn);
-                    migrant.put("Period", period);
-                    migrant.put("Wage", wage);
-                    migrant.put("Employer", employer);
-                    migrant.put("Employee Number", eno);
-                    migrant.put("Other Benefits", oben);
-                    migrant.put("Challenges", chal);
+
+
+                    migrant.put("BE.Nature", nature);
+                    migrant.put("BF.Location", locn);
+                    migrant.put("BG.Period", period);
+                    migrant.put("BI.Wage", wage);
+                    migrant.put("BA.Employer", employer);
+                    migrant.put("BB.Employee Number", eno);
+                    migrant.put("BL.Other Benefits", oben);
+                    migrant.put("BJ.Challenges", chal);
+                    migrant.put("BC.Kind Of Work", kind);
+                    migrant.put("BK.Type of Challenges", tychal);
+                    migrant.put("BD.Reason", reason);
+                    migrant.put("BM.Amount", amount);
+                    migrant.put("BN.House Rent", house);
+                    migrant.put("BO.Other Need", other);
+                    migrant.put("BP.Food", food);
+                    migrant.put("BQ.Transport", trans);
+                    migrant.put("BR.Health", heal);
+                    migrant.put("BS.Education Amount", ed);
+                    migrant.put("BT.Loan", loan);
+
 
 
                 }
 
-                 if (awareness.moveToFirst()) {
+                if (awareness.moveToFirst()) {
 
                     int gvtbenIdx = awareness.getColumnIndex("govt_ben");
                     int cvdIdx = awareness.getColumnIndex("covid_know");
                     int lock_knowIdx = awareness.getColumnIndex("lock_know");
-                    int responseIdx = awareness.getColumnIndex("response");
-                    int curlocIdx = awareness.getColumnIndex("current_loc");
-                    int sprtrdIdx = awareness.getColumnIndex("support_received");
                     int sprtndIdx = awareness.getColumnIndex("support_needed");
                     int cvdslfIdx = awareness.getColumnIndex("covid_self");
-                    int rchIdx = awareness.getColumnIndex("reach");
+                    int schemIdx = awareness.getColumnIndex("schema");
+                    int othproIdx = awareness.getColumnIndex("otherproblem");
+                    int suggIdx = awareness.getColumnIndex("suggestion");
+                    int reIdx = awareness.getColumnIndex("othersupportreceive");
 
 
-                    migrant.put("Govt Benefits", awareness.getString(gvtbenIdx));
-                    migrant.put("Covid Knowledge", awareness.getString(cvdIdx));
-                    migrant.put("Lockdown Knowledge", awareness.getString(lock_knowIdx));
-                    migrant.put("Response", awareness.getString(responseIdx));
-                    migrant.put("Current Location", awareness.getString(curlocIdx));
-                    migrant.put("Support Received", awareness.getString(sprtrdIdx));
-                    migrant.put("Support Needed", awareness.getString(sprtndIdx));
-                    migrant.put("Covid Self", awareness.getString(cvdslfIdx));
-                    migrant.put("Reach", awareness.getString(rchIdx));
 
-               }
+                    migrant.put("CG.Govt Benefits", awareness.getString(gvtbenIdx));
+                    migrant.put("CB.Covid Knowledge", awareness.getString(cvdIdx));
+                    migrant.put("CE.Lockdown Knowledge", awareness.getString(lock_knowIdx));
+                    migrant.put("CF.Support Needed", awareness.getString(sprtndIdx));
+                    migrant.put("CK.Covid Self", awareness.getString(cvdslfIdx));
+                    migrant.put("CA.Benifits for Migrant worker", awareness.getString(schemIdx));
+                    migrant.put("CC.Any Other Problem", awareness.getString(othproIdx));
+                    migrant.put("CD.Any Suggestion", awareness.getString(suggIdx));
+                    migrant.put("CI.Any Other Support Recieved", awareness.getString(reIdx));
+
+                }
 
                 if (plan.moveToFirst()) {
 
 
-                    migrant.put("Where for Job", plan.getString(plan.getColumnIndex("where_for_job")));
-                    migrant.put("Skill Need", plan.getString(plan.getColumnIndex("skil_need")));
-                    migrant.put("Support Lockdown", plan.getString(plan.getColumnIndex("support_lockdown")));
-                    migrant.put("Safety Net", plan.getString(plan.getColumnIndex("safety_net")));
-                    migrant.put("One Stop", plan.getString(plan.getColumnIndex("one_stop")));
-                    migrant.put("Distant Work", plan.getString(plan.getColumnIndex("distant_work")));
-                    migrant.put("Affordable Housing", plan.getString(plan.getColumnIndex("affordable_housing")));
-                    migrant.put("Health Care", plan.getString(plan.getColumnIndex("healthcare")));
-                    migrant.put("Schooling", plan.getString(plan.getColumnIndex("schooling")));
-                    migrant.put("Skill Upgrade", plan.getString(plan.getColumnIndex("skill_upgrade")));
-                    migrant.put("Availability for Training ", plan.getString(plan.getColumnIndex("availability_for_training")));
-                    migrant.put("Present Livelihood", plan.getString(plan.getColumnIndex("present_livelihood")));
-               }
+                    migrant.put("DA.Where for Job", plan.getString(plan.getColumnIndex("where_for_job")));
+                    migrant.put("DB.Support Lockdown", plan.getString(plan.getColumnIndex("support_lockdown")));
+                    migrant.put("DC.Skill Upgrade", plan.getString(plan.getColumnIndex("skill_upgrade")));
+                    migrant.put("DD.Availability for Training ", plan.getString(plan.getColumnIndex("availability_for_training")));
+                    migrant.put("DF.Present Livelihood", plan.getString(plan.getColumnIndex("present_livelihood")));
+                    migrant.put("DI.MIgrate plan", plan.getString(plan.getColumnIndex("migrate_plan")));
+                    migrant.put("DJ.migrate support", plan.getString(plan.getColumnIndex("migrate_support")));
+                    migrant.put("DE.other avaibility", plan.getString(plan.getColumnIndex("other_avaibility")));
+                    migrant.put("DG.otherlivelihood", plan.getString(plan.getColumnIndex("other_livelihood")));
+                    migrant.put("DK.other_support", plan.getString(plan.getColumnIndex("other_support")));
+                    migrant.put("DL.comment", plan.getString(plan.getColumnIndex("comment")));
+
+                }
 
 
                 db.collection("Migrants")

@@ -31,10 +31,110 @@
                     android:orientation="vertical"
                     >
 
+
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="How did you came to know about COVID19?"
+                        android:text="What are the benefits(like schemes)from the government for migrant workers ?"
+                        android:fontFamily="@font/noto_sans_bold"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"></TextView>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/schema"
+                        android:hint="(If you are unaware,Type 'Don't know')"
+                        android:layout_marginHorizontal="20dp"
+                        android:fontFamily="@font/noto_sans"
+                        android:inputType="text"
+                        android:autofillHints=""
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:backgroundTint="@color/blue"
+                        android:textCursorDrawable="@drawable/cursor"
+                        android:textColorHint="@color/gray"
+                        />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Any other challenges faced during lockdown ?"
+                        android:fontFamily="@font/noto_sans_bold"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"></TextView>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/otherproblem"
+                        android:hint="(Challenges that you faced)"
+                        android:layout_marginHorizontal="20dp"
+                        android:fontFamily="@font/noto_sans"
+                        android:inputType="text"
+                        android:autofillHints=""
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:backgroundTint="@color/blue"
+                        android:textCursorDrawable="@drawable/cursor"
+                        android:textColorHint="@color/gray"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Provide your suggestions what can be done to address some of the major problems faced by you during the lock down period ?"
+                        android:fontFamily="@font/noto_sans_bold"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"></TextView>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/suggestion"
+                        android:hint="(Suggestions)"
+                        android:layout_marginHorizontal="20dp"
+                        android:fontFamily="@font/noto_sans"
+                        android:inputType="text"
+                        android:autofillHints=""
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:layout_marginBottom="20dp"
+                        android:backgroundTint="@color/blue"
+                        android:textCursorDrawable="@drawable/cursor"
+                        android:textColorHint="@color/gray"
+                        />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="6dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="What kind of problems / challenges did you face during the time of lockdown?"
                         android:fontFamily="@font/noto_sans_bold"
                         android:textSize="12sp"
                         android:textStyle="bold"
@@ -52,12 +152,10 @@
                         android:layout_marginHorizontal="20dp"
                         />
 
-
-
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="How did you came know about Country wide Lockdown"
+                        android:text="Did you get any support from your employer during this period ?"
                         android:fontFamily="@font/noto_sans_bold"
                         android:textSize="12sp"
                         android:textStyle="bold"
@@ -77,7 +175,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="COVID19 Self assessment (As per Government's Aarogya Setu App)"
+                        android:text="Did you get any support from any one else(government or NGO or any other)during this period ?"
                         android:fontFamily="@font/noto_sans_bold"
                         android:textSize="12sp"
                         android:textStyle="bold"
@@ -92,9 +190,21 @@
                         android:layout_marginTop="10dp"
                         android:textColor="@color/black"
                         android:layout_marginHorizontal="20dp"
-                        android:layout_marginBottom="10dp"
+                        android:layout_marginBottom="20dp"
                         />
-
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="6dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -102,7 +212,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Are you aware of Govt. benefits ?"
+                            android:text="What kind of support did you receive during this period (from employer or any other)?"
                             android:fontFamily="@font/noto_sans_bold"
                             android:textSize="12sp"
                             android:textStyle="bold"
@@ -112,28 +222,28 @@
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Cooked Food/Ration"
+                            android:text="Cooked food"
                             android:id="@+id/c1"
                             android:layout_marginStart="20dp"
                             android:fontFamily="@font/noto_sans"/>
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Health check up and treatment"
+                            android:text=" Dry ration"
                             android:layout_marginStart="20dp"
                             android:fontFamily="@font/noto_sans"
                             android:id="@+id/c2"/>
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Govt. financial support"
+                            android:text="Cooking fuel"
                             android:layout_marginStart="20dp"
                             android:fontFamily="@font/noto_sans"
                             android:id="@+id/c3"/>
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Education for children"
+                            android:text="PPE kit (mask/sanitiser)"
                             android:layout_marginStart="20dp"
                             android:fontFamily="@font/noto_sans"
                             android:id="@+id/c4"/>
@@ -142,20 +252,61 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="20dp"
                             android:fontFamily="@font/noto_sans"
-                            android:text="Ration/PDS"
+                            android:text="Shelter/accomodation"
                             android:id="@+id/c5"/>
                         <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="20dp"
                             android:fontFamily="@font/noto_sans"
-                            android:text="Any other"
-                            android:layout_marginBottom="20dp"
+                            android:text=" Medicine"
                             android:id="@+id/c6"/>
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:fontFamily="@font/noto_sans"
+                            android:text="Money"
+                            android:id="@+id/c20"/>
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:fontFamily="@font/noto_sans"
+                            android:text="Any other(please specify below)"
+                            android:layout_marginBottom="20dp"
+                            android:id="@+id/c21"/>
 
 
 
                     </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Any other kind of support you received from employer, government or any one else"
+                        android:fontFamily="@font/noto_sans_bold"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"></TextView>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/othersupportreceive"
+                        android:hint="(please specify here)"                        android:layout_marginHorizontal="20dp"
+                        android:fontFamily="@font/noto_sans"
+                        android:inputType="text"
+                        android:autofillHints=""
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:layout_marginBottom="20dp"
+                        android:backgroundTint="@color/blue"
+                        android:textCursorDrawable="@drawable/cursor"
+                        android:textColorHint="@color/gray"
+                        />
 
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -172,66 +323,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Where are you now?"
-                        android:fontFamily="@font/noto_sans_bold"
-                        android:textSize="12sp"
-                        android:textStyle="bold"
-                        android:layout_marginHorizontal="20dp"
-                        android:layout_marginTop="20dp"
-                        android:textColor="@color/gray"></TextView>
-
-                    <Spinner
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:id="@+id/where_spinner"
-                        android:layout_marginTop="10dp"
-                        android:textColor="@color/black"
-                        android:layout_marginHorizontal="20dp"
-                        />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="What support you have received?"
-                        android:fontFamily="@font/noto_sans_bold"
-                        android:textSize="12sp"
-                        android:textStyle="bold"
-                        android:layout_marginHorizontal="20dp"
-                        android:layout_marginTop="20dp"
-                        android:textColor="@color/gray"></TextView>
-
-                    <Spinner
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:id="@+id/support_received_spinner"
-                        android:layout_marginTop="10dp"
-                        android:textColor="@color/black"
-                        android:layout_marginHorizontal="20dp"
-                        />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Response of your company Employer Contractor"
-                        android:fontFamily="@font/noto_sans_bold"
-                        android:textSize="12sp"
-                        android:textStyle="bold"
-                        android:layout_marginHorizontal="20dp"
-                        android:layout_marginTop="20dp"
-                        android:textColor="@color/gray"></TextView>
-
-                    <Spinner
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:id="@+id/employer_response_spinner"
-                        android:layout_marginTop="10dp"
-                        android:textColor="@color/black"
-                        android:layout_marginHorizontal="20dp"
-                        />
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -239,7 +330,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="What support do you need"
+                        android:text="What kind of support do you need now ?"
                         android:fontFamily="@font/noto_sans_bold"
                         android:textSize="12sp"
                         android:textStyle="bold"
@@ -250,21 +341,21 @@
                     <CheckBox
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Health check up and treatment"
+                        android:text="Cooked food"
                         android:layout_marginStart="20dp"
                         android:fontFamily="@font/noto_sans"
                         android:id="@+id/c7"/>
                     <CheckBox
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Govt. financial support"
+                        android:text="Dry ration"
                         android:layout_marginStart="20dp"
                         android:fontFamily="@font/noto_sans"
                         android:id="@+id/c8"/>
                     <CheckBox
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Education for children"
+                        android:text="Cooking fuel"
                         android:layout_marginStart="20dp"
                         android:fontFamily="@font/noto_sans"
                         android:id="@+id/c9"/>
@@ -273,36 +364,99 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="20dp"
                         android:fontFamily="@font/noto_sans"
-                        android:text="Ration/PDS"
+                        android:text="PPE kit(mask/sanitiser)"
                         android:id="@+id/c10"/>
                     <CheckBox
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="20dp"
                         android:fontFamily="@font/noto_sans"
-                        android:text="Any other"
+                        android:text="Medicine/Health check upr"
                         android:id="@+id/c11"/>
-                </LinearLayout>
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Shelter/accomodation"
+                            android:layout_marginStart="20dp"
+                            android:fontFamily="@font/noto_sans"
+                            android:id="@+id/c12"/>
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Money"
+                            android:layout_marginStart="20dp"
+                            android:fontFamily="@font/noto_sans"
+                            android:id="@+id/c13"/>
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Any government scheme support (PM Jan Dhan or any other)"
+                            android:layout_marginStart="20dp"
+                            android:fontFamily="@font/noto_sans"
+                            android:id="@+id/c14"/>
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:fontFamily="@font/noto_sans"
+                            android:text="Some immediate work"
+                            android:id="@+id/c15"/>
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:fontFamily="@font/noto_sans"
+                            android:text="Transport"
+                            android:id="@+id/c16"/>
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Any other information or materials of use"
+                            android:layout_marginStart="20dp"
+                            android:fontFamily="@font/noto_sans"
+                            android:id="@+id/c17"/>
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" Any other (please specify)"
+                            android:layout_marginStart="20dp"
+                            android:fontFamily="@font/noto_sans"
+                            android:id="@+id/c18"/>
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nothing"
+                            android:layout_marginStart="20dp"
+                            android:fontFamily="@font/noto_sans"
+                            android:id="@+id/c19"/>
 
+                </LinearLayout>
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Whom do you need to reach for any support on Corona?"
+                        android:text="Any other support you need right now"
                         android:fontFamily="@font/noto_sans_bold"
                         android:textSize="12sp"
                         android:textStyle="bold"
                         android:layout_marginHorizontal="20dp"
                         android:layout_marginTop="20dp"
-                        android:textColor="@color/gray"></TextView>
+                        android:textColor="@color/black"></TextView>
 
-                    <Spinner
+                    <EditText
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:id="@+id/support_spinner"
-                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content"
+                        android:hint="(please specify here)"                        android:layout_marginHorizontal="20dp"
+                        android:fontFamily="@font/noto_sans"
+                        android:inputType="text"
+                        android:autofillHints=""
                         android:textColor="@color/black"
-                        android:layout_marginHorizontal="20dp"
+                        android:textSize="15sp"
+                        android:layout_marginBottom="20dp"
+                        android:backgroundTint="@color/blue"
+                        android:textCursorDrawable="@drawable/cursor"
+                        android:textColorHint="@color/gray"
                         />
+
 
                     <Button
                         android:layout_width="170dp"

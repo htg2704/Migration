@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -40,7 +41,7 @@ public class AwarenessFragment extends Fragment {
         final AwarenessDB awarenessDB = new AwarenessDB(getActivity().getApplicationContext());
 
         final View root = inflater.inflate(R.layout.fragment_awareness, container, false);
-        final CheckBox c1,c2,c3,c4,c5,c6,c7,c8,c9,c10,c11;
+        final CheckBox c1,c2,c3,c4,c5,c6,c7,c8,c9,c10,c11,c12,c13,c14,c15,c16,c17,c18,c19,c20,c21;
         c1 = root.findViewById(R.id.c1);
         c2 = root.findViewById(R.id.c2);
         c3 = root.findViewById(R.id.c3);
@@ -52,18 +53,41 @@ public class AwarenessFragment extends Fragment {
         c9 = root.findViewById(R.id.c9);
         c10 = root.findViewById(R.id.c10);
         c11 = root.findViewById(R.id.c11);
-        if(c6.isChecked()){
+        c12 = root.findViewById(R.id.c12);
+        c13 = root.findViewById(R.id.c13);
+        c14 = root.findViewById(R.id.c14);
+        c15 = root.findViewById(R.id.c15);
+        c16 = root.findViewById(R.id.c16);
+        c17 = root.findViewById(R.id.c17);
+        c18 = root.findViewById(R.id.c18);
+        c19 = root.findViewById(R.id.c19);
+        c20 = root.findViewById(R.id.c20);
+        c21 = root.findViewById(R.id.c21);
+
+
+        if(c21.isChecked()){
             c1.setChecked(false);
             c2.setChecked(false);
             c3.setChecked(false);
             c4.setChecked(false);
             c5.setChecked(false);
+            c6.setChecked(false);
+            c20.setChecked(false);
         }
-        if(c11.isChecked()){
+        if(c19.isChecked()){
             c7.setChecked(false);
             c8.setChecked(false);
             c9.setChecked(false);
             c10.setChecked(false);
+            c11.setChecked(false);
+            c12.setChecked(false);
+            c13.setChecked(false);
+            c14.setChecked(false);
+            c15.setChecked(false);
+            c16.setChecked(false);
+            c17.setChecked(false);
+            c18.setChecked(false);
+
         }
 
 
@@ -76,26 +100,10 @@ public class AwarenessFragment extends Fragment {
         ArrayAdapter<CharSequence> lcdn_adapter = ArrayAdapter.createFromResource(getContext(), R.array.when_lcdn_array, android.R.layout.simple_spinner_item);
         lcdn_adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         lcdn_spinner.setAdapter(lcdn_adapter);
-        final Spinner resp_spinner = (Spinner) root.findViewById(R.id.employer_response_spinner);
-        ArrayAdapter<CharSequence> resp_adapter = ArrayAdapter.createFromResource(getContext(), R.array.resp_array, android.R.layout.simple_spinner_item);
-        resp_adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        resp_spinner.setAdapter(resp_adapter);
-        final Spinner loc_spinner = (Spinner) root.findViewById(R.id.where_spinner);
-        ArrayAdapter<CharSequence> loc_adapter = ArrayAdapter.createFromResource(getContext(), R.array.loc_array, android.R.layout.simple_spinner_item);
-        loc_adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        loc_spinner.setAdapter(loc_adapter);
-        final Spinner sprt_spinner = (Spinner) root.findViewById(R.id.support_received_spinner);
-        ArrayAdapter<CharSequence> sprt_adapter = ArrayAdapter.createFromResource(getContext(), R.array.sprt_array, android.R.layout.simple_spinner_item);
-        sprt_adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        sprt_spinner.setAdapter(sprt_adapter);
         final Spinner assm_spinner = (Spinner) root.findViewById(R.id.self_assessment_spinner);
         ArrayAdapter<CharSequence> assm_adapter = ArrayAdapter.createFromResource(getContext(), R.array.assmnt_array, android.R.layout.simple_spinner_item);
         assm_adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         assm_spinner.setAdapter(assm_adapter);
-        final Spinner where_spinner = (Spinner) root.findViewById(R.id.support_spinner);
-        ArrayAdapter<CharSequence> where_adapter = ArrayAdapter.createFromResource(getContext(), R.array.wheretogo_array, android.R.layout.simple_spinner_item);
-        where_adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        where_spinner.setAdapter(where_adapter);
 
         final Button save = root.findViewById(R.id.save_awareness);
 
@@ -103,10 +111,46 @@ public class AwarenessFragment extends Fragment {
             @Override
             public void onClick(View view) {
 
-                String s1,s2,s3,s4,s5,s6;
-                String s7,s8,s9,s10,s11;
+                String s1,s2,s3,s4,s5,s6,s20,s21;
+                String s7,s8,s9,s10,s11,s12,s13,s14,s15,s16,s17,s18,s19;
+                EditText schema,otherproblem,suggestion,othersupportreceive,othersupportneed;
 
-                String govt_ben,covid_know,lock_know,support_rec,support_needed,response,current_loc,reach,covid_self;
+                schema = root.findViewById(R.id.schema);
+                String schema_str=schema.getText().toString();
+
+                otherproblem = root.findViewById(R.id.otherproblem);
+                String otherproblem_str =otherproblem.getText().toString();
+
+                suggestion = root.findViewById(R.id.suggestion);
+                String suggestion_str =suggestion.getText().toString();
+
+                othersupportreceive = root.findViewById(R.id.othersupportreceive);
+                String othersupportreceive_str =othersupportreceive.getText().toString();
+
+
+                if(schema_str.isEmpty())
+                {
+                    schema.setError("This can't be empty");
+                    schema.requestFocus();
+                }
+                if(suggestion_str.isEmpty())
+                {
+                    suggestion.setError("This can't be empty");
+                    suggestion.requestFocus();
+                }
+                if(otherproblem_str.isEmpty())
+                {
+                    otherproblem.setError("This can't be empty");
+                    otherproblem.requestFocus();
+                }
+                if(othersupportreceive_str.isEmpty())
+                {
+                    othersupportreceive.setError("This can't be empty");
+                    othersupportreceive.requestFocus();
+                }
+
+                String govt_ben,covid_know,lock_know,support_needed,covid_self;
+
                 if(c1.isChecked()){
                     s1 = c1.getText().toString() + ", ";
                 }
@@ -142,13 +186,21 @@ public class AwarenessFragment extends Fragment {
                 }
                 else{
                     s6 = "";
+                }if(c20.isChecked()){
+                    s20 = c20.getText().toString() + ", ";
                 }
-                govt_ben = s1 + s2 + s3 + s4 +s5 +s6;
+                else{
+                    s20 = "";
+                }if(c21.isChecked()){
+                    s21 = c21.getText().toString() + ", ";
+                }
+                else{
+                    s21 = "";
+                }
+                govt_ben = s1 + s2 + s3 + s4 +s5 +s6 +s20 +s21;
                 covid_know = info_spinner.getSelectedItem().toString();
                 lock_know = lcdn_spinner.getSelectedItem().toString();
-                response = resp_spinner.getSelectedItem().toString();
-                current_loc = loc_spinner.getSelectedItem().toString();
-                support_rec = sprt_spinner.getSelectedItem().toString();
+
                 if(c7.isChecked()){
                     s7 = c7.getText().toString() + ", ";
                 }
@@ -179,15 +231,67 @@ public class AwarenessFragment extends Fragment {
                 else{
                     s11 = "";
                 }
-                support_needed = s7 + s8 + s9 + s10 + s11;
+                if(c12.isChecked()){
+                    s12 = c12.getText().toString() + ", ";
+                }
+                else{
+                    s12 = "";
+                }
+                if(c13.isChecked()){
+                    s13 = c13.getText().toString() + ", ";
+                }
+                else{
+                    s13 = "";
+                }
+                if(c14.isChecked()){
+                    s14 = c14.getText().toString() + ", ";
+                }
+                else{
+                    s14 = "";
+                }
+                if(c15.isChecked()){
+                    s15 = c15.getText().toString() + ", ";
+                }
+                else{
+                    s15 = "";
+                }
+                if(c16.isChecked()){
+                    s16 = c16.getText().toString() + ", ";
+                }
+                else{
+                    s16 = "";
+                }
+                if(c17.isChecked()){
+                    s17 = c17.getText().toString() + ", ";
+                }
+                else{
+                    s17 = "";
+                }
+                if(c18.isChecked()){
+                    s18 = c18.getText().toString() + ", ";
+                }
+                else{
+                    s18 = "";
+                }
+                if(c19.isChecked()){
+                    s19 = c19.getText().toString() + ", ";
+                }
+                else{
+                    s19 = "";
+                }
+                support_needed = s7 + s8 + s9 + s10 + s11 + s12 + s13 + s14 + s15 + s16 + s17 + s18 + s19;
                 covid_self = assm_spinner.getSelectedItem().toString();
-                reach = where_spinner.getSelectedItem().toString();
                 Log.d(TAG, "city " + govt_ben);
-                awarenessDB.addData(govt_ben,covid_know,lock_know,response,current_loc,support_rec,support_needed,covid_self,reach);
+                if(schema_str=="null"||otherproblem_str=="null"||suggestion_str=="null"||othersupportreceive_str=="null"){
+                    Toast.makeText(getActivity().getApplicationContext(),"Data not saved",Toast.LENGTH_SHORT);
+                }else {
+                    awarenessDB.addData(govt_ben,covid_know,lock_know,support_needed,covid_self,schema_str,otherproblem_str,suggestion_str,othersupportreceive_str);
+                    save.setClickable(false);
+                    ((questions)getActivity()).selectTab(3);
+                    Toast.makeText(getActivity(),"Awareness Data added successfully",Toast.LENGTH_SHORT).show();
+                    ((questions)getActivity()).selectTab(3);
 
-                Toast.makeText(getActivity(),"Awareness Data added successfully",Toast.LENGTH_SHORT).show();
-                save.setClickable(false);
-                ((questions)getActivity()).selectTab(3);
+                }
 
             }
         });

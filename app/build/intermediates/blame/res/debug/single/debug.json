@@ -8,16 +8,16 @@
         "source": "C:\\Users\\Divyesh Nabhoya\\Desktop\\Migration\\app\\src\\main\\res\\drawable-v24\\data.png"
     },
     {
-        "merged": "C:\\Users\\Divyesh Nabhoya\\Desktop\\Migration\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_termswebactivity.xml.flat",
-        "source": "C:\\Users\\Divyesh Nabhoya\\Desktop\\Migration\\app\\src\\main\\res\\layout\\activity_termswebactivity.xml"
+        "merged": "C:\\Users\\Divyesh Nabhoya\\Desktop\\Migration\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_arrow_back_black_35dp.xml.flat",
+        "source": "C:\\Users\\Divyesh Nabhoya\\Desktop\\Migration\\app\\src\\main\\res\\drawable\\ic_arrow_back_black_35dp.xml"
     },
     {
         "merged": "C:\\Users\\Divyesh Nabhoya\\Desktop\\Migration\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\Divyesh Nabhoya\\Desktop\\Migration\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\Divyesh Nabhoya\\Desktop\\Migration\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_arrow_back_black_35dp.xml.flat",
-        "source": "C:\\Users\\Divyesh Nabhoya\\Desktop\\Migration\\app\\src\\main\\res\\drawable\\ic_arrow_back_black_35dp.xml"
+        "merged": "C:\\Users\\Divyesh Nabhoya\\Desktop\\Migration\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_termswebactivity.xml.flat",
+        "source": "C:\\Users\\Divyesh Nabhoya\\Desktop\\Migration\\app\\src\\main\\res\\layout\\activity_termswebactivity.xml"
     },
     {
         "merged": "C:\\Users\\Divyesh Nabhoya\\Desktop\\Migration\\app\\build\\intermediates\\res\\merged\\debug\\layout_sample.xml.flat",
@@ -160,12 +160,12 @@
         "source": "C:\\Users\\Divyesh Nabhoya\\Desktop\\Migration\\app\\src\\main\\res\\layout\\fragment_awareness.xml"
     },
     {
-        "merged": "C:\\Users\\Divyesh Nabhoya\\Desktop\\Migration\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_questions.xml.flat",
-        "source": "C:\\Users\\Divyesh Nabhoya\\Desktop\\Migration\\app\\src\\main\\res\\layout\\fragment_questions.xml"
-    },
-    {
         "merged": "C:\\Users\\Divyesh Nabhoya\\Desktop\\Migration\\app\\build\\intermediates\\res\\merged\\debug\\drawable_done.png.flat",
         "source": "C:\\Users\\Divyesh Nabhoya\\Desktop\\Migration\\app\\src\\main\\res\\drawable\\done.png"
+    },
+    {
+        "merged": "C:\\Users\\Divyesh Nabhoya\\Desktop\\Migration\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_questions.xml.flat",
+        "source": "C:\\Users\\Divyesh Nabhoya\\Desktop\\Migration\\app\\src\\main\\res\\layout\\fragment_questions.xml"
     },
     {
         "merged": "C:\\Users\\Divyesh Nabhoya\\Desktop\\Migration\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_home_black_24dp.xml.flat",

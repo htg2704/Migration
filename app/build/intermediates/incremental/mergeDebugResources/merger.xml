@@ -3865,7 +3865,7 @@
     <item name="android:textAllCaps">false</item>
     <item name="android:textSize">14sp</item>
     <item name="android:letterSpacing">0.00714285714</item>
-  </style></file></source></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res"/><source path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\build\generated\res\rs\debug"/><source path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\build\generated\res\resValues\debug"/><source path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\build\generated\res\google-services\debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main" generated-set="main$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res"><file name="btn_draw1" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable\btn_draw1.xml" qualifiers="" type="drawable"/><file name="bulk" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable\bulk.png" qualifiers="" type="drawable"/><file name="button" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable\button.xml" qualifiers="" type="drawable"/><file name="circular_progress_bar" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable\circular_progress_bar.xml" qualifiers="" type="drawable"/><file name="cursor" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable\cursor.xml" qualifiers="" type="drawable"/><file name="download" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable\download.png" qualifiers="" type="drawable"/><file name="drawable" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable\drawable.xml" qualifiers="" type="drawable"/><file name="edit" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable\edit.xml" qualifiers="" type="drawable"/><file name="ic_account_circle_black_24dp" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable\ic_account_circle_black_24dp.xml" qualifiers="" type="drawable"/><file name="ic_arrow_back_black_24dp" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable\ic_arrow_back_black_24dp.xml" qualifiers="" type="drawable"/><file name="ic_arrow_back_black_35dp" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable\ic_arrow_back_black_35dp.xml" qualifiers="" type="drawable"/><file name="ic_email_black_24dp" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable\ic_email_black_24dp.xml" qualifiers="" type="drawable"/><file name="ic_exit_to_app_black_24dp" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable\ic_exit_to_app_black_24dp.xml" qualifiers="" type="drawable"/><file name="ic_filter_none_black_24dp" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable\ic_filter_none_black_24dp.xml" qualifiers="" type="drawable"/><file name="ic_home_black_24dp" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable\ic_home_black_24dp.xml" qualifiers="" type="drawable"/><file name="ic_keyboard_arrow_right_black_24dp" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable\ic_keyboard_arrow_right_black_24dp.xml" qualifiers="" type="drawable"/><file name="ic_launcher_background" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable\ic_launcher_background.xml" qualifiers="" type="drawable"/><file name="ic_lock_black_24dp" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable\ic_lock_black_24dp.xml" qualifiers="" type="drawable"/><file name="ic_lock_open_black_24dp" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable\ic_lock_open_black_24dp.xml" qualifiers="" type="drawable"/><file name="ic_lock_outline_black_24dp" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable\ic_lock_outline_black_24dp.xml" qualifiers="" type="drawable"/><file name="ic_message_black_24dp" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable\ic_message_black_24dp.xml" qualifiers="" type="drawable"/><file name="ic_navigate_next_black_24dp" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable\ic_navigate_next_black_24dp.xml" qualifiers="" type="drawable"/><file name="ic_phone_black_24dp" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable\ic_phone_black_24dp.xml" qualifiers="" type="drawable"/><file name="ic_power_settings_new_black_24dp" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable\ic_power_settings_new_black_24dp.xml" qualifiers="" type="drawable"/><file name="ic_remove_red_eye_black_24dp" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable\ic_remove_red_eye_black_24dp.xml" qualifiers="" type="drawable"/><file name="ic_security_black_24dp" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable\ic_security_black_24dp.xml" qualifiers="" type="drawable"/><file name="kutumb" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable\kutumb.png" qualifiers="" type="drawable"/><file name="logout_background" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable\logout_background.xml" qualifiers="" type="drawable"/><file name="phone" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable\phone.png" qualifiers="" type="drawable"/><file name="upload" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable\upload.png" qualifiers="" type="drawable"/><file name="back" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable-v24\back.xml" qualifiers="v24" type="drawable"/><file name="btn_draw2" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable-v24\btn_draw2.xml" qualifiers="v24" type="drawable"/><file name="card" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable-v24\card.xml" qualifiers="v24" type="drawable"/><file name="community" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable-v24\community.png" qualifiers="v24" type="drawable"/><file name="contact" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable-v24\contact.png" qualifiers="v24" type="drawable"/><file name="contactbutton" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable-v24\contactbutton.xml" qualifiers="v24" type="drawable"/><file name="data" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable-v24\data.png" qualifiers="v24" type="drawable"/><file name="facebook" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable-v24\facebook.png" qualifiers="v24" type="drawable"/><file name="google" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable-v24\google.png" qualifiers="v24" type="drawable"/><file name="ic_launcher_foreground" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable-v24\ic_launcher_foreground.xml" qualifiers="v24" type="drawable"/><file name="ngo" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable-v24\ngo.png" qualifiers="v24" type="drawable"/><file name="register" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable-v24\register.png" qualifiers="v24" type="drawable"/><file name="stats" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable-v24\stats.png" qualifiers="v24" type="drawable"/><file name="tab" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable-v24\tab.xml" qualifiers="v24" type="drawable"/><file name="volunteer" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable-v24\volunteer.png" qualifiers="v24" type="drawable"/><file name="aclonica" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\font\aclonica.xml" qualifiers="" type="font"/><file name="akronim" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\font\akronim.xml" qualifiers="" type="font"/><file name="arizonia" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\font\arizonia.xml" qualifiers="" type="font"/><file name="noto_sans" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\font\noto_sans.xml" qualifiers="" type="font"/><file name="noto_sans_bold" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\font\noto_sans_bold.xml" qualifiers="" type="font"/><file name="activity_after_login" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\layout\activity_after_login.xml" qualifiers="" type="layout"/><file name="activity_bulk_data" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\layout\activity_bulk_data.xml" qualifiers="" type="layout"/><file name="activity_contact" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\layout\activity_contact.xml" qualifiers="" type="layout"/><file name="activity_data_main" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\layout\activity_data_main.xml" qualifiers="" type="layout"/><file name="activity_forgot_pass" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\layout\activity_forgot_pass.xml" qualifiers="" type="layout"/><file name="activity_launcher" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\layout\activity_launcher.xml" qualifiers="" type="layout"/><file name="activity_login_or_register" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\layout\activity_login_or_register.xml" qualifiers="" type="layout"/><file name="activity_main" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\layout\activity_main.xml" qualifiers="" type="layout"/><file name="activity_mobile_auth" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\layout\activity_mobile_auth.xml" qualifiers="" type="layout"/><file name="activity_privacywebactivity" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\layout\activity_privacywebactivity.xml" qualifiers="" type="layout"/><file name="activity_questions" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\layout\activity_questions.xml" qualifiers="" type="layout"/><file name="activity_register_user" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\layout\activity_register_user.xml" qualifiers="" type="layout"/><file name="activity_select_login_type" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\layout\activity_select_login_type.xml" qualifiers="" type="layout"/><file name="activity_slider" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\layout\activity_slider.xml" qualifiers="" type="layout"/><file name="activity_stats" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\layout\activity_stats.xml" qualifiers="" type="layout"/><file name="activity_termswebactivity" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\layout\activity_termswebactivity.xml" qualifiers="" type="layout"/><file name="activity_upload" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\layout\activity_upload.xml" qualifiers="" type="layout"/><file name="activity_verify_mobile" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\layout\activity_verify_mobile.xml" qualifiers="" type="layout"/><file name="fragment_awareness" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\layout\fragment_awareness.xml" qualifiers="" type="layout"/><file name="fragment_migration" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\layout\fragment_migration.xml" qualifiers="" type="layout"/><file name="fragment_plan" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\layout\fragment_plan.xml" qualifiers="" type="layout"/><file name="fragment_questions" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\layout\fragment_questions.xml" qualifiers="" type="layout"/><file name="sample" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\layout\sample.xml" qualifiers="" type="layout"/><file name="ic_launcher" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\mipmap-anydpi-v26\ic_launcher.xml" qualifiers="anydpi-v26" type="mipmap"/><file name="ic_launcher_round" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\mipmap-anydpi-v26\ic_launcher_round.xml" qualifiers="anydpi-v26" type="mipmap"/><file name="ic_launcher" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\mipmap-hdpi\ic_launcher.png" qualifiers="hdpi-v4" type="mipmap"/><file name="ic_launcher_foreground" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\mipmap-hdpi\ic_launcher_foreground.png" qualifiers="hdpi-v4" type="mipmap"/><file name="ic_launcher_round" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\mipmap-hdpi\ic_launcher_round.png" qualifiers="hdpi-v4" type="mipmap"/><file name="ic_launcher" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\mipmap-mdpi\ic_launcher.png" qualifiers="mdpi-v4" type="mipmap"/><file name="ic_launcher_foreground" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\mipmap-mdpi\ic_launcher_foreground.png" qualifiers="mdpi-v4" type="mipmap"/><file name="ic_launcher_round" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\mipmap-mdpi\ic_launcher_round.png" qualifiers="mdpi-v4" type="mipmap"/><file name="ic_launcher" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\mipmap-xhdpi\ic_launcher.png" qualifiers="xhdpi-v4" type="mipmap"/><file name="ic_launcher_foreground" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\mipmap-xhdpi\ic_launcher_foreground.png" qualifiers="xhdpi-v4" type="mipmap"/><file name="ic_launcher_round" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\mipmap-xhdpi\ic_launcher_round.png" qualifiers="xhdpi-v4" type="mipmap"/><file name="ic_launcher" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\mipmap-xxhdpi\ic_launcher.png" qualifiers="xxhdpi-v4" type="mipmap"/><file name="ic_launcher_foreground" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\mipmap-xxhdpi\ic_launcher_foreground.png" qualifiers="xxhdpi-v4" type="mipmap"/><file name="ic_launcher_round" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\mipmap-xxhdpi\ic_launcher_round.png" qualifiers="xxhdpi-v4" type="mipmap"/><file name="ic_launcher" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\mipmap-xxxhdpi\ic_launcher.png" qualifiers="xxxhdpi-v4" type="mipmap"/><file name="ic_launcher_foreground" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\mipmap-xxxhdpi\ic_launcher_foreground.png" qualifiers="xxxhdpi-v4" type="mipmap"/><file name="ic_launcher_round" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\mipmap-xxxhdpi\ic_launcher_round.png" qualifiers="xxxhdpi-v4" type="mipmap"/><file path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\values\age_spinner.xml" qualifiers=""><string-array name="age_array">
+  </style></file></source></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res"/><source path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\build\generated\res\rs\debug"/><source path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\build\generated\res\resValues\debug"/><source path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\build\generated\res\google-services\debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main" generated-set="main$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res"><file name="btn_draw1" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable\btn_draw1.xml" qualifiers="" type="drawable"/><file name="bulk" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable\bulk.png" qualifiers="" type="drawable"/><file name="button" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable\button.xml" qualifiers="" type="drawable"/><file name="circular_progress_bar" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable\circular_progress_bar.xml" qualifiers="" type="drawable"/><file name="cursor" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable\cursor.xml" qualifiers="" type="drawable"/><file name="done" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable\done.png" qualifiers="" type="drawable"/><file name="download" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable\download.png" qualifiers="" type="drawable"/><file name="drawable" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable\drawable.xml" qualifiers="" type="drawable"/><file name="edit" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable\edit.xml" qualifiers="" type="drawable"/><file name="ic_account_circle_black_24dp" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable\ic_account_circle_black_24dp.xml" qualifiers="" type="drawable"/><file name="ic_arrow_back_black_24dp" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable\ic_arrow_back_black_24dp.xml" qualifiers="" type="drawable"/><file name="ic_arrow_back_black_35dp" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable\ic_arrow_back_black_35dp.xml" qualifiers="" type="drawable"/><file name="ic_email_black_24dp" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable\ic_email_black_24dp.xml" qualifiers="" type="drawable"/><file name="ic_exit_to_app_black_24dp" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable\ic_exit_to_app_black_24dp.xml" qualifiers="" type="drawable"/><file name="ic_filter_none_black_24dp" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable\ic_filter_none_black_24dp.xml" qualifiers="" type="drawable"/><file name="ic_home_black_24dp" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable\ic_home_black_24dp.xml" qualifiers="" type="drawable"/><file name="ic_keyboard_arrow_right_black_24dp" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable\ic_keyboard_arrow_right_black_24dp.xml" qualifiers="" type="drawable"/><file name="ic_launcher_background" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable\ic_launcher_background.xml" qualifiers="" type="drawable"/><file name="ic_lock_black_24dp" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable\ic_lock_black_24dp.xml" qualifiers="" type="drawable"/><file name="ic_lock_open_black_24dp" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable\ic_lock_open_black_24dp.xml" qualifiers="" type="drawable"/><file name="ic_lock_outline_black_24dp" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable\ic_lock_outline_black_24dp.xml" qualifiers="" type="drawable"/><file name="ic_message_black_24dp" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable\ic_message_black_24dp.xml" qualifiers="" type="drawable"/><file name="ic_navigate_next_black_24dp" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable\ic_navigate_next_black_24dp.xml" qualifiers="" type="drawable"/><file name="ic_phone_black_24dp" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable\ic_phone_black_24dp.xml" qualifiers="" type="drawable"/><file name="ic_power_settings_new_black_24dp" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable\ic_power_settings_new_black_24dp.xml" qualifiers="" type="drawable"/><file name="ic_remove_red_eye_black_24dp" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable\ic_remove_red_eye_black_24dp.xml" qualifiers="" type="drawable"/><file name="ic_security_black_24dp" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable\ic_security_black_24dp.xml" qualifiers="" type="drawable"/><file name="kutumb" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable\kutumb.png" qualifiers="" type="drawable"/><file name="logout_background" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable\logout_background.xml" qualifiers="" type="drawable"/><file name="phone" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable\phone.png" qualifiers="" type="drawable"/><file name="plus" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable\plus.png" qualifiers="" type="drawable"/><file name="upload" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable\upload.png" qualifiers="" type="drawable"/><file name="back" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable-v24\back.xml" qualifiers="v24" type="drawable"/><file name="btn_draw2" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable-v24\btn_draw2.xml" qualifiers="v24" type="drawable"/><file name="card" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable-v24\card.xml" qualifiers="v24" type="drawable"/><file name="community" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable-v24\community.png" qualifiers="v24" type="drawable"/><file name="contact" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable-v24\contact.png" qualifiers="v24" type="drawable"/><file name="contactbutton" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable-v24\contactbutton.xml" qualifiers="v24" type="drawable"/><file name="data" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable-v24\data.png" qualifiers="v24" type="drawable"/><file name="facebook" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable-v24\facebook.png" qualifiers="v24" type="drawable"/><file name="google" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable-v24\google.png" qualifiers="v24" type="drawable"/><file name="ic_launcher_foreground" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable-v24\ic_launcher_foreground.xml" qualifiers="v24" type="drawable"/><file name="ngo" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable-v24\ngo.png" qualifiers="v24" type="drawable"/><file name="register" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable-v24\register.png" qualifiers="v24" type="drawable"/><file name="stats" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable-v24\stats.png" qualifiers="v24" type="drawable"/><file name="tab" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable-v24\tab.xml" qualifiers="v24" type="drawable"/><file name="volunteer" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable-v24\volunteer.png" qualifiers="v24" type="drawable"/><file name="aclonica" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\font\aclonica.xml" qualifiers="" type="font"/><file name="akronim" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\font\akronim.xml" qualifiers="" type="font"/><file name="arizonia" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\font\arizonia.xml" qualifiers="" type="font"/><file name="noto_sans" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\font\noto_sans.xml" qualifiers="" type="font"/><file name="noto_sans_bold" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\font\noto_sans_bold.xml" qualifiers="" type="font"/><file name="activity_after_login" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\layout\activity_after_login.xml" qualifiers="" type="layout"/><file name="activity_bulk_data" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\layout\activity_bulk_data.xml" qualifiers="" type="layout"/><file name="activity_contact" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\layout\activity_contact.xml" qualifiers="" type="layout"/><file name="activity_data_main" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\layout\activity_data_main.xml" qualifiers="" type="layout"/><file name="activity_forgot_pass" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\layout\activity_forgot_pass.xml" qualifiers="" type="layout"/><file name="activity_launcher" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\layout\activity_launcher.xml" qualifiers="" type="layout"/><file name="activity_login_or_register" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\layout\activity_login_or_register.xml" qualifiers="" type="layout"/><file name="activity_main" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\layout\activity_main.xml" qualifiers="" type="layout"/><file name="activity_mobile_auth" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\layout\activity_mobile_auth.xml" qualifiers="" type="layout"/><file name="activity_privacywebactivity" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\layout\activity_privacywebactivity.xml" qualifiers="" type="layout"/><file name="activity_questions" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\layout\activity_questions.xml" qualifiers="" type="layout"/><file name="activity_register_user" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\layout\activity_register_user.xml" qualifiers="" type="layout"/><file name="activity_select_login_type" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\layout\activity_select_login_type.xml" qualifiers="" type="layout"/><file name="activity_slider" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\layout\activity_slider.xml" qualifiers="" type="layout"/><file name="activity_stats" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\layout\activity_stats.xml" qualifiers="" type="layout"/><file name="activity_termswebactivity" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\layout\activity_termswebactivity.xml" qualifiers="" type="layout"/><file name="activity_upload" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\layout\activity_upload.xml" qualifiers="" type="layout"/><file name="activity_verify_mobile" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\layout\activity_verify_mobile.xml" qualifiers="" type="layout"/><file name="fragment_awareness" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\layout\fragment_awareness.xml" qualifiers="" type="layout"/><file name="fragment_migration" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\layout\fragment_migration.xml" qualifiers="" type="layout"/><file name="fragment_plan" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\layout\fragment_plan.xml" qualifiers="" type="layout"/><file name="fragment_questions" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\layout\fragment_questions.xml" qualifiers="" type="layout"/><file name="sample" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\layout\sample.xml" qualifiers="" type="layout"/><file name="ic_launcher" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\mipmap-anydpi-v26\ic_launcher.xml" qualifiers="anydpi-v26" type="mipmap"/><file name="ic_launcher_round" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\mipmap-anydpi-v26\ic_launcher_round.xml" qualifiers="anydpi-v26" type="mipmap"/><file name="ic_launcher" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\mipmap-hdpi\ic_launcher.png" qualifiers="hdpi-v4" type="mipmap"/><file name="ic_launcher_foreground" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\mipmap-hdpi\ic_launcher_foreground.png" qualifiers="hdpi-v4" type="mipmap"/><file name="ic_launcher_round" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\mipmap-hdpi\ic_launcher_round.png" qualifiers="hdpi-v4" type="mipmap"/><file name="ic_launcher" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\mipmap-mdpi\ic_launcher.png" qualifiers="mdpi-v4" type="mipmap"/><file name="ic_launcher_foreground" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\mipmap-mdpi\ic_launcher_foreground.png" qualifiers="mdpi-v4" type="mipmap"/><file name="ic_launcher_round" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\mipmap-mdpi\ic_launcher_round.png" qualifiers="mdpi-v4" type="mipmap"/><file name="ic_launcher" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\mipmap-xhdpi\ic_launcher.png" qualifiers="xhdpi-v4" type="mipmap"/><file name="ic_launcher_foreground" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\mipmap-xhdpi\ic_launcher_foreground.png" qualifiers="xhdpi-v4" type="mipmap"/><file name="ic_launcher_round" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\mipmap-xhdpi\ic_launcher_round.png" qualifiers="xhdpi-v4" type="mipmap"/><file name="ic_launcher" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\mipmap-xxhdpi\ic_launcher.png" qualifiers="xxhdpi-v4" type="mipmap"/><file name="ic_launcher_foreground" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\mipmap-xxhdpi\ic_launcher_foreground.png" qualifiers="xxhdpi-v4" type="mipmap"/><file name="ic_launcher_round" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\mipmap-xxhdpi\ic_launcher_round.png" qualifiers="xxhdpi-v4" type="mipmap"/><file name="ic_launcher" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\mipmap-xxxhdpi\ic_launcher.png" qualifiers="xxxhdpi-v4" type="mipmap"/><file name="ic_launcher_foreground" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\mipmap-xxxhdpi\ic_launcher_foreground.png" qualifiers="xxxhdpi-v4" type="mipmap"/><file name="ic_launcher_round" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\mipmap-xxxhdpi\ic_launcher_round.png" qualifiers="xxxhdpi-v4" type="mipmap"/><file path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\values\age_spinner.xml" qualifiers=""><string-array name="age_array">
         <item>Less than 18 years</item>
         <item>18-25 years</item>
         <item>26-35 years</item>
@@ -3890,6 +3890,12 @@
         <item>Graduate</item>
         <item>Above Graduate</item>
         <item>ITI/ Skill Training Certificate</item>
+    </string-array><string-array name="maritial_status">
+        <item>Unmarried/Single</item>
+        <item>Married</item>
+        <item>Widow/er</item>
+        <item>Divorced/Seperated</item>
+        <item>Any other</item>
     </string-array><string-array name="india_cities">
         <item>Agartala</item>
         <item>Agra</item>
@@ -4087,25 +4093,37 @@
         <item>Ration/PDS</item>
         <item>Any other</item>
 
-    <item>Cooked food/ Ration</item>
-        <item>  Health Check up and treatment</item>
+        <item>Cooked food/ Ration</item>
+        <item>Health Check up and treatment</item>
         <item>  Govt. financial support</item>
         <item>  Education for children</item>
         <item> Ration / PDS  </item>
          <item>Any other</item>
     </string-array><string-array name="source_info_array">
-        <item>Employer/Contractor</item>
-        <item>Mobile</item>
-        <item>TV/ Radio</item>
-        <item>Relatives</item>
-        <item>Any other</item>
-        <item>Not aware</item>
+        <item>Loss of livelihood (lack of work/income or could not do any work)</item>
+        <item>Shelter (for example: shelter was Closed down/ Evicted by the house owner/ any other)</item>
+        <item>Was quarantined</item>
+        <item>health problem (self/ any family member)</item>
+        <item>Didn’t have access to information for any government help</item>
+        <item>Unaware about any organization or office where I could possibly approach for immediate help</item>
+        <item>Not having a cell phone/money to recharge my phone</item>  
+        <item>Could not reach out to the local ward member/corporator/municipal counselor/ Government officials</item>  
+        <item>No/ negligible savings to depend upon for our living</item>  
+        <item>No one was of immediate help to protect my/ our needs of maintaining the daily life (Money, Food, Shelter etc)</item>  
+        <item>Unable to go back home</item>  
+        <item>Any other (Please specify)</item>  
+        <item>Cannot say</item>    
+
+
+
+
+
     </string-array><string-array name="when_lcdn_array">
-        <item> Watching TV  Prime Minister</item>
-        <item> Same day from employer</item>
-        <item> Same day from relative</item>
-        <item> After 1 to 3 Days  </item>
-        <item> Did not know - What is lockdown</item>
+        <item>Yes</item>
+        <item>No</item>
+        <item>Some support</item>
+        <item>Requested support but did not get any</item>
+       
     </string-array><string-array name="resp_array">
         <item>Company Supported - gave advance, food, accommodation</item>
         <item>Company asked to leave the job and place</item>
@@ -4116,26 +4134,25 @@
         <item>Home/ Native</item>
         <item>Any other place (please mention)</item>
     </string-array><string-array name="sprt_array">
-        <item>  Cooked food/Ration</item>
+        <item>Cooked food/Ration</item>
         <item>Medicine</item>
         <item>Shelter/Accommodation</item>
         <item>Transportation  </item>
         <item>Shared details but no support received</item>
-        <item> Nobody responded to our call</item>
-        <item> Do not have contact of support agency</item>
-        <item> Any other</item>
+        <item>Nobody responded to our call</item>
+        <item>Do not have contact of support agency</item>
+        <item>Any other</item>
    </string-array><string-array name="need_array">
-        <item> Cooked food/Ration</item>
+        <item>Cooked food/Ration</item>
         <item>Money/Cash</item>
         <item>Medicine</item>
         <item>Shelter/Accommodation</item>
         <item>Any other</item>
     </string-array><string-array name="assmnt_array">
-        <item>Cough/Fever/Breathing difficulty</item>
-        <item>Diabetes/ Hypertension/ Lung disease/ Heart Disease</item>
-        <item>Travelled in last 14 days</item>
-        <item>Interacted with someone tested positive</item>
-        <item>Nothing</item>
+        <item>Yes</item>
+        <item>No</item>
+            <item>Some support</item>
+            <item>Requested support but did not get any</item>
     </string-array><string-array name="wheretogo_array">
         <item>Govt. Hospital</item>
         <item>Local Health Worker</item>  
@@ -4153,60 +4170,99 @@
             MIIEQzCCAyugAwIBAgIJAMLgh0ZkSjCNMA0GCSqGSIb3DQEBBAUAMHQxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtHb29nbGUgSW5jLjEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDAeFw0wODA4MjEyMzEzMzRaFw0zNjAxMDcyMzEzMzRaMHQxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtHb29nbGUgSW5jLjEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDCCASAwDQYJKoZIhvcNAQEBBQADggENADCCAQgCggEBAKtWLgDYO6IIrgqWbxJOKdoR8qtW0I9Y4sypEwPpt1TTcvZApxsdyxMJZ2JORland2qSGT2y5b+3JKkedxiLDmpHpDsz2WCbdxgxRczfey5YZnTJ4VZbH0xqWVW/8lGmPav5xVwnIiJS6HXk+BVKZF+JcWjAsb/GEuq/eFdpuzSqeYTcfi6idkyugwfYwXFU1+5fZKUaRKYCwkkFQVfcAs1fXA5V+++FGfvjJ/CxURaSxaBvGdGDhfXE28LWuT9ozCl5xw4Yq5OGazvV24mZVSoOO0yZ31j7kYvtwYK6NeADwbSxDdJEqO4k//0zOHKrUiGYXtqw/A0LFFtqoZKFjnkCAQOjgdkwgdYwHQYDVR0OBBYEFMd9jMIhF1Ylmn/Tgt9r45jk14alMIGmBgNVHSMEgZ4wgZuAFMd9jMIhF1Ylmn/Tgt9r45jk14aloXikdjB0MQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLR29vZ2xlIEluYy4xEDAOBgNVBAsTB0FuZHJvaWQxEDAOBgNVBAMTB0FuZHJvaWSCCQDC4IdGZEowjTAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBBAUAA4IBAQBt0lLO74UwLDYKqs6Tm8/yzKkEu116FmH4rkaymUIE0P9KaMftGlMexFlaYjzmB2OxZyl6euNXEsQH8gjwyxCUKRJNexBiGcCEyj6z+a1fuHHvkiaai+KL8W1EyNmgjmyy8AW7P+LLlkR+ho5zEHatRbM/YAnqGcFh5iZBqpknHf1SKMXFh4dd239FJ1jWYfbMDMy3NS5CTMQ2XFI1MvcyUTdZPErjQfTbQe3aDQsQcafEQPD+nqActifKZ0Np0IS9L9kR/wbNvyz6ENwPiTrjV2KRkEjH78ZMcUQXg0L3BYHJ3lc69Vs5Ddf9uUGGMYldX3WfMBEmh/9iFBDAaTCK
         </item>
     </string-array></file><file path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\values\ic_launcher_background.xml" qualifiers=""><color name="ic_launcher_background">#F5F5F5</color></file><file path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\values\logout_background.xml" qualifiers=""><color name="logout_background">#6200EE</color></file><file path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\values\migration_spinner.xml" qualifiers=""><string-array name="work_array">
-        <item>Daily wage labour</item>
-        <item>Contract Worker in Company</item>
-        <item>Full time worker in Company</item>
-        <item>Self-employed</item>  
-        <item>Small Business  </item>
+        <item>Casual/Daily wage</item>
+        <item>Temporary/Contractual Job</item>
+        <item>Permanent</item>
+        <item>Self-employed/Self-business</item>  
         <item>Any other</item>
     </string-array><string-array name="work_duration_array">
-        <item>Daily</item>
-            <item>Less than four months</item>
-            <item>5 to 9 months</item>  
-            <item>More than 9 months</item>
+        <item>Below one year</item>
+            <item>1 to 4 years</item>
+            <item>5 to 10 months</item>  
+            <item>Above 10 years</item>
+    </string-array><string-array name="reason_array">
+        <item>Lack of empl/Job</item>
+            <item>Empl oppurtunity</item>
+        <item>income oppurtuinity</item>  
+            <item>better education/skill training</item>
+        <item>education for children</item>
+            <item>health facilites</item>
+        <item>safety/security</item>  
+            <item>any other</item>
     </string-array><string-array name="day_wage_array">
-        <item>Below Rs 250</item>
-    <item>Rs 250 to 350  </item>
-    <item>Rs 350 to 500  </item>
-    <item>Rs 500 and above</item>
+        <item>Upto Rs 5000</item>
+    <item>5001-10000</item>
+    <item>10001-15000</item>
+    <item>15001 and above</item>
     </string-array><string-array name="benefits_array">
-    <item>Shelter/Accommodation</item>
-     
-        <item>Food</item>
-        <item>Creche for children</item>  
-        <item>Education for children</item>
-
-     
-       <item> Health/ Medical Care</item>  
-      <item>  Getting ration in new city</item>
-
-     
-        <item>Leave  </item>
-        <item>Any other</item>
+    <item>Free/Low cost accomodation</item>
+        <item>free/low cost food</item>
+        <item>PF/ESIC/Pension/gratuity</item>  
+        <item>Paid Leave</item>
+       <item>Bonus</item>  
+      <item>Annual wage Increase</item>
+        <item>skill training</item>
+        <item>health benefits</item>
+        <item>ration</item>
+        <item>any other</item>
+        <item>Nothing</item>
 </string-array><string-array name="challenges_array">
-    <item>Lack of regular work</item>
-      <item>  Wages - not timely/ with holding</item>
-        <item>Poor living standard</item>  
-        <item>Low quality Food  </item>
-        <item>No career growth  </item>
-        <item>Engaging children in work</item>
-      <item>  Exploitation / Misbehaviour of Employer</item>
-        <item>Remittance </item> 
+    <item>Lack of availability of regular work</item>
+      <item>Low wages/wages are not upto expectation</item>
+        <item>Irregular payments</item>  
+        <item>Exploitation and Misbehaviour</item>
+        <item>No increase in wages(above 1 year)</item>
+        <item>no career growth</item>
+      <item>deduction of wages without reasons</item>
         <item>Any other   </item>
 </string-array></file><file path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\values\plan_spinner.xml" qualifiers=""><string-array name="sprt_needed_array">
-        <item>Financial Support to start business</item>
-        <item> Financial Support to travel, accommodation</item>
-        <item>  Support for job</item>
+        <item>Go back to hometown/village/local area and do some work</item>
+        <item>Migrate to another city for work/continue living in the current migrated city</item>
+        <item>Don\'t know/No immediate plans</item>
     </string-array><string-array name="cur_options_array">
-        <item>NO OPTION</item>
-        <item>WE ARE PAID BY COMPANY</item>
-        <item>OTHERS</item>
+        <item>Skill upgradation</item>
+        <item>Information on what type of business to start</item>
+        <item>Guidance on how to start a business</item>
+        <item>Financial support</item>
+        <item>Market linkage</item>
+        <item>Don\'t know</item>
+        <item>Any other (please specify below)</item>
+
+
+    </string-array><string-array name="migrate_plan_array">
+        <item>Immediately</item>
+        <item>After normal condition</item>
+        <item>After three months</item>
+        <item>Any other</item>
+        <item>Don\'t know</item>
+
+
+    </string-array><string-array name="migrate_support_array">
+        <item>Assured job</item>
+        <item>Higher wages</item>
+        <item>Travel support</item>
+        <item>Affordable accomodation</item>
+        <item>Affordable healthcare</item>
+        <item>Social security benefits like provident fund</item>
+        <item>Skill upgradation</item>
+        <item>Any other (please specify below)</item>
+
     </string-array><string-array name="train_array">
-        <item>During Lockdown</item>
-        <item>After Lockdown</item>
+        <item>Skill upgradation</item>
+        <item>Enrollment in MGREGS</item>
+        <item>Market support/linkage</item>
+        <item>Inputs for agriculture or traditional livelihood</item>
+        <item>Any other (Please specify below)</item>
+        <item>Don\'t know</item>
+
+
     </string-array><string-array name="interest_array">
-        <item>Interested</item>
-        <item>Not Interested</item>
+        <item>Farming on own land in local area</item>
+        <item>Daily wage in local area</item>
+        <item>Want to start or revive your traditional work with some support</item>
+        <item>Start some small business in local area by myself or with my family</item>
+        <item>Want to start small business with other people in the community</item>
+        <item>No immediate plans</item>
     </string-array></file><file path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\values\preloaded_fonts.xml" qualifiers=""><array name="preloaded_fonts" translatable="false">
         <item>@font/aclonica</item>
         <item>@font/akronim</item>
@@ -4221,7 +4277,7 @@
     </style><style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
-    </style><style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/><style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/></file><file path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\values-w820dp\dimens.xml" qualifiers="w820dp-v13"><dimen name="activity_horizontal_margin">64dp</dimen></file><file name="plus" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable\plus.png" qualifiers="" type="drawable"/><file name="done" path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\drawable\done.png" qualifiers="" type="drawable"/></source><source path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\build\generated\res\rs\debug"/><source path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\build\generated\res\resValues\debug"/><source path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\build\generated\res\google-services\debug"><file path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\build\generated\res\google-services\debug\values\values.xml" qualifiers=""><string name="default_web_client_id" translatable="false">811469435111-i56t0apc9cdghedlcp8u17o09bolu69r.apps.googleusercontent.com</string><string name="firebase_database_url" translatable="false">https://kutumb-migration.firebaseio.com</string><string name="gcm_defaultSenderId" translatable="false">811469435111</string><string name="google_api_key" translatable="false">AIzaSyAQKazoNZfyd470nuQhJDe2mpQu2kH091M</string><string name="google_app_id" translatable="false">1:811469435111:android:52f2238658f489d62f7242</string><string name="google_crash_reporting_api_key" translatable="false">AIzaSyAQKazoNZfyd470nuQhJDe2mpQu2kH091M</string><string name="google_storage_bucket" translatable="false">kutumb-migration.appspot.com</string><string name="project_id" translatable="false">kutumb-migration</string></file></source></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\debug\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\debug\res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="AlertDialog">
+    </style><style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/><style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/></file><file path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\res\values-w820dp\dimens.xml" qualifiers="w820dp-v13"><dimen name="activity_horizontal_margin">64dp</dimen></file></source><source path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\build\generated\res\rs\debug"/><source path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\build\generated\res\resValues\debug"/><source path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\build\generated\res\google-services\debug"><file path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\build\generated\res\google-services\debug\values\values.xml" qualifiers=""><string name="default_web_client_id" translatable="false">811469435111-i56t0apc9cdghedlcp8u17o09bolu69r.apps.googleusercontent.com</string><string name="firebase_database_url" translatable="false">https://kutumb-migration.firebaseio.com</string><string name="gcm_defaultSenderId" translatable="false">811469435111</string><string name="google_api_key" translatable="false">AIzaSyAQKazoNZfyd470nuQhJDe2mpQu2kH091M</string><string name="google_app_id" translatable="false">1:811469435111:android:52f2238658f489d62f7242</string><string name="google_crash_reporting_api_key" translatable="false">AIzaSyAQKazoNZfyd470nuQhJDe2mpQu2kH091M</string><string name="google_storage_bucket" translatable="false">kutumb-migration.appspot.com</string><string name="project_id" translatable="false">kutumb-migration</string></file></source></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\debug\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\debug\res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="AlertDialog">
         <attr name="android:layout"/>
         <attr format="reference" name="buttonPanelSideLayout"/>
         <attr format="reference" name="listLayout"/>

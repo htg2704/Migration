@@ -20,9 +20,8 @@
             android:orientation="vertical"
             android:layout_height="wrap_content">
 
-
             <androidx.cardview.widget.CardView
-                android:id="@+id/card3"
+                android:id="@+id/card1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#FFFFFF"
@@ -62,225 +61,10 @@
 
                     </LinearLayout>
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:weightSum="5">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Do you need any skills to\nget job ?"
-                            android:fontFamily="@font/noto_sans_bold"
-                            android:textSize="15sp"
-                            android:layout_marginStart="20dp"
-                            android:layout_marginVertical="20dp"
-                            android:textColor="@color/black"
-                            android:layout_weight="3"></TextView>
-
-                        <Switch
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/skill_switch"
-                            android:layout_marginVertical="20dp"
-                            android:layout_marginHorizontal="10dp"
-                            android:layout_weight="2"
-                            />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:weightSum="5">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Are you aspiring to subscribe to\nsafety net like ESI,\nlow premium insurance ? "                            android:fontFamily="@font/noto_sans_bold"
-                            android:textSize="15sp"
-                            android:layout_marginStart="20dp"
-                            android:layout_marginVertical="20dp"
-                            android:textColor="@color/black"
-                            android:layout_weight="4"></TextView>
-
-                        <Switch
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/safety_switch"
-                            android:layout_marginVertical="20dp"
-                            android:layout_marginHorizontal="10dp"
-                            android:layout_weight="1"
-                            />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:weightSum="5">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="If individual is an urban poor,\ndo they need a one stop\ninformation Centre ?"
-                            android:fontFamily="@font/noto_sans_bold"
-                            android:textSize="15sp"
-                            android:layout_marginStart="20dp"
-                            android:layout_marginVertical="20dp"
-                            android:textColor="@color/black"
-                            android:layout_weight="4"></TextView>
-
-                        <Switch
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/one_stop_switch"
-                            android:layout_marginVertical="20dp"
-                            android:layout_marginHorizontal="10dp"
-                            android:layout_weight="1"
-                            />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:weightSum="5">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Is the individual willing to\nwork in distant place to ensure\ndisposable income ?"
-                            android:fontFamily="@font/noto_sans_bold"
-                            android:textSize="15sp"
-                            android:layout_marginStart="20dp"
-                            android:layout_marginVertical="20dp"
-                            android:textColor="@color/black"
-                            android:layout_weight="4"></TextView>
-
-                        <Switch
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/distant_switch"
-                            android:layout_marginVertical="20dp"
-                            android:layout_marginHorizontal="10dp"
-                            android:layout_weight="1"
-                            />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:weightSum="5">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Does the individual seeks\ninformation about affordable\nhousing in working place or\nstate or country by agencies ?"
-                            android:fontFamily="@font/noto_sans_bold"
-                            android:textSize="15sp"
-                            android:layout_marginStart="20dp"
-                            android:layout_marginVertical="20dp"
-                            android:textColor="@color/black"
-                            android:layout_weight="4"></TextView>
-
-                        <Switch
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/housing_switch"
-                            android:layout_marginVertical="20dp"
-                            android:layout_marginHorizontal="10dp"
-                            android:layout_weight="1"
-                            />
-
-                    </LinearLayout>
-
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:weightSum="5">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Does the migrant needs\naccess to affordable health\ncare facilities ?"
-                            android:fontFamily="@font/noto_sans_bold"
-                            android:textSize="15sp"
-                            android:layout_marginStart="20dp"
-                            android:layout_marginVertical="20dp"
-                            android:textColor="@color/black"
-                            android:layout_weight="4"></TextView>
-
-                        <Switch
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/healthcare_switch"
-                            android:layout_marginVertical="20dp"
-                            android:layout_marginHorizontal="10dp"
-                            android:layout_weight="1"
-                            />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:weightSum="5">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Does the worker needs\naffordable educational\nfacilities for her/his children?"
-                            android:fontFamily="@font/noto_sans_bold"
-                            android:textSize="15sp"
-                            android:layout_marginStart="20dp"
-                            android:layout_marginVertical="20dp"
-                            android:textColor="@color/black"
-                            android:layout_weight="4"></TextView>
-
-                        <Switch
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/school_switch"
-                            android:layout_marginVertical="20dp"
-                            android:layout_marginHorizontal="10dp"
-                            android:layout_weight="1"
-                            />
-
-                    </LinearLayout>
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/card2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#FFFFFF"
-                android:layout_marginTop="10dp"
-                app:cardCornerRadius="6dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    >
-
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="What support do you need after Lockdown ?"
+                        android:text="Do you want to go back and work or migrate for work once the lockdown is lifted ?"
                         android:fontFamily="@font/noto_sans_bold"
                         android:textSize="12sp"
                         android:textStyle="bold"
@@ -300,7 +84,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Are you interested in upgrading your skill ?"
+                        android:text="What is your livelihood plan after lockdown in the local area?"
                         android:fontFamily="@font/noto_sans_bold"
                         android:textSize="12sp"
                         android:textStyle="bold"
@@ -314,13 +98,30 @@
                         android:id="@+id/skill_upgrade_spinner"
                         android:layout_marginTop="10dp"
                         android:textColor="@color/black"
+                        android:layout_marginBottom="20dp"
                         android:layout_marginHorizontal="20dp"
                         />
 
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="If provided,When are you available for training ?"
+                        android:text="If you want to pursue daily wage or farming or traditional work in local area what support do you need ? "
                         android:fontFamily="@font/noto_sans_bold"
                         android:textSize="12sp"
                         android:textStyle="bold"
@@ -335,12 +136,40 @@
                         android:layout_marginTop="10dp"
                         android:textColor="@color/black"
                         android:layout_marginHorizontal="20dp"
+                        android:layout_marginBottom="10dp"
                         />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="What option are you practicing at present for livelihood ?"
+                        android:text="Any other please specify"
+                        android:fontFamily="@font/noto_sans_bold"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"></TextView>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/other_avaibility"
+                        android:hint="(please specify here)"
+                        android:layout_marginHorizontal="20dp"
+                        android:fontFamily="@font/noto_sans"
+                        android:inputType="text"
+                        android:autofillHints=""
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:backgroundTint="@color/blue"
+                        android:textCursorDrawable="@drawable/cursor"
+                        android:textColorHint="@color/gray"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="If you want to start business or group enterprise in local area what support need? "
                         android:fontFamily="@font/noto_sans_bold"
                         android:textSize="12sp"
                         android:textStyle="bold"
@@ -354,10 +183,148 @@
                         android:id="@+id/livelihhod_spinner"
                         android:layout_marginTop="10dp"
                         android:textColor="@color/black"
-                        android:layout_marginBottom="40dp"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginBottom="10dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Any other please specify"
+                        android:fontFamily="@font/noto_sans_bold"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"></TextView>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/other_livelihood"
+                        android:hint="(please specify here)"
+                        android:layout_marginHorizontal="20dp"
+                        android:fontFamily="@font/noto_sans"
+                        android:inputType="text"
+                        android:autofillHints=""
+                        android:layout_marginBottom="20dp"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:backgroundTint="@color/blue"
+                        android:textCursorDrawable="@drawable/cursor"
+                        android:textColorHint="@color/gray"
+                        />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="If you wish to migrate, when do you plan to do so? "
+                        android:fontFamily="@font/noto_sans_bold"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="20dp"
+                        android:textColor="@color/gray"></TextView>
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/migrateplan"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginHorizontal="20dp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="What kind of support do you need to migrate? (same city or any other)?"
+                        android:fontFamily="@font/noto_sans_bold"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="20dp"
+                        android:textColor="@color/gray"></TextView>
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/migratesupport"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="10dp"
                         android:layout_marginHorizontal="20dp"
                         />
 
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Any other please specify"
+                        android:fontFamily="@font/noto_sans_bold"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"></TextView>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/other_support"
+                        android:hint="(please specify here)"
+                        android:layout_marginHorizontal="20dp"
+                        android:fontFamily="@font/noto_sans"
+                        android:inputType="text"
+                        android:autofillHints=""
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:backgroundTint="@color/blue"
+                        android:textCursorDrawable="@drawable/cursor"
+                        android:textColorHint="@color/gray"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Any other comments/recommendation that you would like to share. Here please"
+                        android:fontFamily="@font/noto_sans_bold"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="20dp"
+                        android:textColor="@color/black"></TextView>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/comment"
+                        android:hint="(please specify here)"
+                        android:layout_marginHorizontal="20dp"
+                        android:fontFamily="@font/noto_sans"
+                        android:inputType="text"
+                        android:autofillHints=""
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:backgroundTint="@color/blue"
+                        android:textCursorDrawable="@drawable/cursor"
+                        android:textColorHint="@color/gray"
+                        />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -371,6 +338,7 @@
                     android:layout_width="170dp"
                     android:layout_height="50dp"
                     android:text="Save"
+                    android:layout_marginTop="30dp"
                     android:textColor="@color/white"
                     android:layout_gravity="center_horizontal"
                     android:fontFamily="@font/noto_sans_bold"

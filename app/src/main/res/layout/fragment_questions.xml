@@ -294,6 +294,8 @@
                         android:textColorHint="@color/gray"
                         />
 
+
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -333,22 +335,23 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Education"
+                        android:text="Current maritial status"
                         android:fontFamily="@font/noto_sans_bold"
                         android:textSize="12sp"
                         android:textStyle="bold"
                         android:layout_marginHorizontal="20dp"
                         android:layout_marginTop="20dp"
                         android:textColor="@color/gray"></TextView>
-
                     <Spinner
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:id="@+id/education_spinner"
+                        android:id="@+id/maritial_spinner"
                         android:layout_marginTop="10dp"
                         android:textColor="@color/black"
                         android:layout_marginHorizontal="20dp"
                         />
+
+
 
                     <TextView
                         android:layout_width="match_parent"
@@ -373,7 +376,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Goverment ID"
+                        android:text="Education"
                         android:fontFamily="@font/noto_sans_bold"
                         android:textSize="12sp"
                         android:textStyle="bold"
@@ -384,11 +387,94 @@
                     <Spinner
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:id="@+id/govt_id_spinner"
+                        android:id="@+id/education_spinner"
                         android:layout_marginTop="10dp"
                         android:textColor="@color/black"
                         android:layout_marginHorizontal="20dp"
                         />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Goverment ID"
+                        android:fontFamily="@font/noto_sans_bold"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="20dp"
+                        android:textColor="@color/gray"></TextView>
+
+
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NREGA Job Card"
+                        android:id="@+id/a1"
+                        android:layout_marginStart="20dp"
+                        android:fontFamily="@font/noto_sans"/>
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Disability Certificate"
+                        android:layout_marginStart="20dp"
+                        android:fontFamily="@font/noto_sans"
+                        android:id="@+id/a2"/>
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PAN Card"
+                        android:layout_marginStart="20dp"
+                        android:fontFamily="@font/noto_sans"
+                        android:id="@+id/a3"/>
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="BOCW / Labour Card"
+                        android:layout_marginStart="20dp"
+                        android:fontFamily="@font/noto_sans"
+                        android:id="@+id/a4"/>
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:fontFamily="@font/noto_sans"
+                        android:text="Ration Card"
+                        android:id="@+id/a5"/>
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:fontFamily="@font/noto_sans"
+                        android:text="Bank Passbook"
+                        android:id="@+id/a6"/>
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:fontFamily="@font/noto_sans"
+                        android:text="No Document"
+                        android:layout_marginBottom="20dp"
+                        android:id="@+id/a7"/>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -399,7 +485,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/is_the_applicant_a_pwd"
+                            android:text="Any person within your\nfamily with any kind\ndisability ? "
                             android:fontFamily="@font/noto_sans_bold"
                             android:textSize="15sp"
                             android:layout_marginHorizontal="20dp"
@@ -417,6 +503,35 @@
                             />
 
                     </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="What are your skills(including special skills)?"
+                        android:fontFamily="@font/noto_sans_bold"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"></TextView>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/skill"
+                        android:hint="(DO NOT LEAVE THIS BLANK)"
+                        android:layout_marginHorizontal="20dp"
+                        android:fontFamily="@font/noto_sans"
+                        android:inputType="text"
+                        android:autofillHints=""
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:layout_marginBottom="30dp"
+                        android:backgroundTint="@color/blue"
+                        android:textCursorDrawable="@drawable/cursor"
+                        android:textColorHint="@color/gray"
+                        />
+
 
                 </LinearLayout>
 

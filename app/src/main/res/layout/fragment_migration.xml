@@ -105,6 +105,57 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="What kind of work do you do/occupation engaged with ?"
+                        android:fontFamily="@font/noto_sans_bold"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"></TextView>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/kind_work"
+                        android:hint="(Kind Of Work)"
+                        android:layout_marginHorizontal="20dp"
+                        android:fontFamily="@font/noto_sans"
+                        android:inputType="text"
+                        android:autofillHints=""
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:backgroundTint="@color/blue"
+                        android:textCursorDrawable="@drawable/cursor"
+                        android:textColorHint="@color/gray"
+                        />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="What made you to migrate ?"
+                        android:fontFamily="@font/noto_sans_bold"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/gray"></TextView>
+
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/reason"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginHorizontal="20dp"
+                        />
+
+
 
                     <TextView
                         android:layout_width="match_parent"
@@ -152,7 +203,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Period of Migration"
+                        android:text="How long have you been Migrating ?"
                         android:fontFamily="@font/noto_sans_bold"
                         android:textSize="12sp"
                         android:textStyle="bold"
@@ -172,7 +223,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Daily Wage"
+                        android:text="Monthly Income from all sources of livelihood"
                         android:fontFamily="@font/noto_sans_bold"
                         android:textSize="12sp"
                         android:textStyle="bold"
@@ -186,7 +237,7 @@
                         android:id="@+id/wage_spinner"
                         android:layout_marginTop="10dp"
                         android:textColor="@color/black"
-                        android:layout_marginBottom="15dp"
+                        android:layout_marginBottom="20dp"
                         android:layout_marginHorizontal="20dp"
                         />
                 </LinearLayout>
@@ -198,37 +249,43 @@
                 android:layout_height="wrap_content"
                 android:background="#FFFFFF"
                 android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
                 app:cardCornerRadius="6dp">
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
-
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Other benefits in Cities"
+                        android:text="What are the challenges that you have been facing in the city migrated to workplace ?"
                         android:fontFamily="@font/noto_sans_bold"
                         android:textSize="12sp"
                         android:textStyle="bold"
                         android:layout_marginHorizontal="20dp"
-                        android:layout_marginTop="20dp"
-                        android:textColor="@color/gray"></TextView>
-
-                    <Spinner
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:id="@+id/other_benefit_spinner"
                         android:layout_marginTop="10dp"
-                        android:textColor="@color/black"
+                        android:textColor="@color/black"></TextView>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/challenge"
+                        android:hint="(Challenges that you faced)"
                         android:layout_marginHorizontal="20dp"
+                        android:fontFamily="@font/noto_sans"
+                        android:inputType="text"
+                        android:autofillHints=""
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:backgroundTint="@color/blue"
+                        android:textCursorDrawable="@drawable/cursor"
+                        android:textColorHint="@color/gray"
                         />
+
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Challenges in the new place"
+                        android:text="Challenges related to work life"
                         android:fontFamily="@font/noto_sans_bold"
                         android:textSize="12sp"
                         android:textStyle="bold"
@@ -244,21 +301,271 @@
                         android:textColor="@color/black"
                         android:layout_marginHorizontal="20dp"
                         />
-                    <Button
-                        android:layout_width="170dp"
-                        android:layout_height="50dp"
-                        android:text="Save and Next"
-                        android:textColor="@color/white"
-                        android:layout_gravity="center_horizontal"
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Benefits from government and employers that\nyou receive currently or was receiving at work "
                         android:fontFamily="@font/noto_sans_bold"
-                        android:background="@drawable/button"
                         android:textSize="12sp"
-                        android:layout_marginVertical="30dp"
-                        android:id="@+id/save_migration"/>
+                        android:textStyle="bold"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="20dp"
+                        android:textColor="@color/gray"></TextView>
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/other_benefit_spinner"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginHorizontal="20dp"
+                        />
+
 
 
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="6dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What is the amount you spend every month on the following ?"
+                android:fontFamily="@font/noto_sans_bold"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"></TextView>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/amount"
+                android:hint="Amount"
+                android:layout_marginHorizontal="20dp"
+                android:fontFamily="@font/noto_sans"
+                android:inputType="number"
+                android:autofillHints=""
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:backgroundTint="@color/blue"
+                android:textCursorDrawable="@drawable/cursor"
+                android:textColorHint="@color/gray"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Shelter/House rent with electricity bill and others"
+                android:fontFamily="@font/noto_sans_bold"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"></TextView>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/amounthouse"
+                android:hint="Amount"
+                android:layout_marginHorizontal="20dp"
+                android:fontFamily="@font/noto_sans"
+                android:inputType="number"
+                android:autofillHints=""
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:backgroundTint="@color/blue"
+                android:textCursorDrawable="@drawable/cursor"
+                android:textColorHint="@color/gray"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Other daily needs(alchohal,tobacco,beverages,movies,others)"
+                android:fontFamily="@font/noto_sans_bold"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"></TextView>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/amountother"
+                android:hint="Amount"
+                android:layout_marginHorizontal="20dp"
+                android:fontFamily="@font/noto_sans"
+                android:inputType="number"
+                android:autofillHints=""
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:backgroundTint="@color/blue"
+                android:textCursorDrawable="@drawable/cursor"
+                android:textColorHint="@color/gray"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Food"
+                android:fontFamily="@font/noto_sans_bold"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"></TextView>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/amountfood"
+                android:hint="Amount"
+                android:layout_marginHorizontal="20dp"
+                android:fontFamily="@font/noto_sans"
+                android:inputType="number"
+                android:autofillHints=""
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:backgroundTint="@color/blue"
+                android:textCursorDrawable="@drawable/cursor"
+                android:textColorHint="@color/gray"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Transport/daily conveyance"
+                android:fontFamily="@font/noto_sans_bold"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"></TextView>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/amounttransport"
+                android:hint="Amount"
+                android:layout_marginHorizontal="20dp"
+                android:fontFamily="@font/noto_sans"
+                android:inputType="number"
+                android:autofillHints=""
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:backgroundTint="@color/blue"
+                android:textCursorDrawable="@drawable/cursor"
+                android:textColorHint="@color/gray"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Healthcare/medicines/doctor fees"
+                android:fontFamily="@font/noto_sans_bold"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"></TextView>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/amounthealth"
+                android:hint="Amount"
+                android:layout_marginHorizontal="20dp"
+                android:fontFamily="@font/noto_sans"
+                android:inputType="number"
+                android:autofillHints=""
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:backgroundTint="@color/blue"
+                android:textCursorDrawable="@drawable/cursor"
+                android:textColorHint="@color/gray"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Education on self and children"
+                android:fontFamily="@font/noto_sans_bold"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"></TextView>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/amounteducation"
+                android:hint="Amount"
+                android:layout_marginHorizontal="20dp"
+                android:fontFamily="@font/noto_sans"
+                android:inputType="number"
+                android:autofillHints=""
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:backgroundTint="@color/blue"
+                android:textCursorDrawable="@drawable/cursor"
+                android:textColorHint="@color/gray"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Loan repayment (in place of origin or destination)"
+                android:fontFamily="@font/noto_sans_bold"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"></TextView>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/amountloan"
+                android:hint="Amount"
+                android:layout_marginHorizontal="20dp"
+                android:fontFamily="@font/noto_sans"
+                android:inputType="number"
+                android:autofillHints=""
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:backgroundTint="@color/blue"
+                android:textCursorDrawable="@drawable/cursor"
+                android:textColorHint="@color/gray"
+                />
+
+
+
+            <Button
+                android:layout_width="170dp"
+                android:layout_height="50dp"
+                android:text="Save and Next"
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/noto_sans_bold"
+                android:background="@drawable/button"
+                android:textSize="12sp"
+                android:layout_marginVertical="30dp"
+                android:id="@+id/save_migration"/>
+        </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
         </LinearLayout>
 
 

@@ -1,52 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="work_array">
-        <item>Daily wage labour</item>
-        <item>Contract Worker in Company</item>
-        <item>Full time worker in Company</item>
-        <item>Self-employed</item>  
-        <item>Small Business  </item>
+        <item>Casual/Daily wage</item>
+        <item>Temporary/Contractual Job</item>
+        <item>Permanent</item>
+        <item>Self-employed/Self-business</item>  
         <item>Any other</item>
     </string-array>
 
     <string-array name="work_duration_array">
-        <item>Daily</item>
-            <item>Less than four months</item>
-            <item>5 to 9 months</item>  
-            <item>More than 9 months</item>
+        <item>Below one year</item>
+            <item>1 to 4 years</item>
+            <item>5 to 10 months</item>  
+            <item>Above 10 years</item>
     </string-array>
 
+    <string-array name="reason_array">
+        <item>Lack of empl/Job</item>
+            <item>Empl oppurtunity</item>
+        <item>income oppurtuinity</item>  
+            <item>better education/skill training</item>
+        <item>education for children</item>
+            <item>health facilites</item>
+        <item>safety/security</item>  
+            <item>any other</item>
+    </string-array>
     <string-array name="day_wage_array">
-        <item>Below Rs 250</item>
-    <item>Rs 250 to 350  </item>
-    <item>Rs 350 to 500  </item>
-    <item>Rs 500 and above</item>
+        <item>Upto Rs 5000</item>
+    <item>5001-10000</item>
+    <item>10001-15000</item>
+    <item>15001 and above</item>
     </string-array>
 
 <string-array name="benefits_array">
-    <item>Shelter/Accommodation</item>
-     
-        <item>Food</item>
-        <item>Creche for children</item>  
-        <item>Education for children</item>
-
-     
-       <item> Health/ Medical Care</item>  
-      <item>  Getting ration in new city</item>
-
-     
-        <item>Leave  </item>
-        <item>Any other</item>
+    <item>Free/Low cost accomodation</item>
+        <item>free/low cost food</item>
+        <item>PF/ESIC/Pension/gratuity</item>  
+        <item>Paid Leave</item>
+       <item>Bonus</item>  
+      <item>Annual wage Increase</item>
+        <item>skill training</item>
+        <item>health benefits</item>
+        <item>ration</item>
+        <item>any other</item>
+        <item>Nothing</item>
 </string-array>
 <string-array name="challenges_array">
-    <item>Lack of regular work</item>
-      <item>  Wages - not timely/ with holding</item>
-        <item>Poor living standard</item>  
-        <item>Low quality Food  </item>
-        <item>No career growth  </item>
-        <item>Engaging children in work</item>
-      <item>  Exploitation / Misbehaviour of Employer</item>
-        <item>Remittance </item> 
+    <item>Lack of availability of regular work</item>
+      <item>Low wages/wages are not upto expectation</item>
+        <item>Irregular payments</item>  
+        <item>Exploitation and Misbehaviour</item>
+        <item>No increase in wages(above 1 year)</item>
+        <item>no career growth</item>
+      <item>deduction of wages without reasons</item>
         <item>Any other   </item>
 </string-array>
 </resources>

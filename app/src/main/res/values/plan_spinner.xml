@@ -1,21 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="sprt_needed_array">
-        <item>Financial Support to start business</item>
-        <item> Financial Support to travel, accommodation</item>
-        <item>  Support for job</item>
+        <item>Go back to hometown/village/local area and do some work</item>
+        <item>Migrate to another city for work/continue living in the current migrated city</item>
+        <item>Don\'t know/No immediate plans</item>
     </string-array>
     <string-array name="cur_options_array">
-        <item>NO OPTION</item>
-        <item>WE ARE PAID BY COMPANY</item>
-        <item>OTHERS</item>
+        <item>Skill upgradation</item>
+        <item>Information on what type of business to start</item>
+        <item>Guidance on how to start a business</item>
+        <item>Financial support</item>
+        <item>Market linkage</item>
+        <item>Don\'t know</item>
+        <item>Any other (please specify below)</item>
+
+
+    </string-array>
+    <string-array name="migrate_plan_array">
+        <item>Immediately</item>
+        <item>After normal condition</item>
+        <item>After three months</item>
+        <item>Any other</item>
+        <item>Don\'t know</item>
+
+
+    </string-array>
+    <string-array name="migrate_support_array">
+        <item>Assured job</item>
+        <item>Higher wages</item>
+        <item>Travel support</item>
+        <item>Affordable accomodation</item>
+        <item>Affordable healthcare</item>
+        <item>Social security benefits like provident fund</item>
+        <item>Skill upgradation</item>
+        <item>Any other (please specify below)</item>
+
     </string-array>
     <string-array name="train_array">
-        <item>During Lockdown</item>
-        <item>After Lockdown</item>
+        <item>Skill upgradation</item>
+        <item>Enrollment in MGREGS</item>
+        <item>Market support/linkage</item>
+        <item>Inputs for agriculture or traditional livelihood</item>
+        <item>Any other (Please specify below)</item>
+        <item>Don\'t know</item>
+
+
     </string-array>
     <string-array name="interest_array">
-        <item>Interested</item>
-        <item>Not Interested</item>
+        <item>Farming on own land in local area</item>
+        <item>Daily wage in local area</item>
+        <item>Want to start or revive your traditional work with some support</item>
+        <item>Start some small business in local area by myself or with my family</item>
+        <item>Want to start small business with other people in the community</item>
+        <item>No immediate plans</item>
     </string-array>
 </resources>

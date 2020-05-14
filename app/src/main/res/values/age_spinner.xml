@@ -29,6 +29,13 @@
         <item>Above Graduate</item>
         <item>ITI/ Skill Training Certificate</item>
     </string-array>
+    <string-array name="maritial_status">
+        <item>Unmarried/Single</item>
+        <item>Married</item>
+        <item>Widow/er</item>
+        <item>Divorced/Seperated</item>
+        <item>Any other</item>
+    </string-array>
     <string-array name="india_cities">
         <item>Agartala</item>
         <item>Agra</item>

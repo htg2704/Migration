@@ -1,14 +1,19 @@
 package com.example.migration;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Toast;
+
+import com.example.migration.Register.select_login_type;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class Contact extends AppCompatActivity {
 
@@ -24,6 +29,35 @@ public class Contact extends AppCompatActivity {
         faq = findViewById(R.id.faq);
         terms = findViewById(R.id.terms);
         privacy = findViewById(R.id.privacy);
+
+
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
+
+        bottomNavigationView.setSelectedItemId(R.id.nav_contact);
+
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+                switch (menuItem.getItemId()){
+                    case R.id.nav_home:
+                        startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                        overridePendingTransition(0,0);
+                        return true;
+                    case R.id.nav_reg:
+                        startActivity(new Intent(getApplicationContext(), select_login_type.class));
+                        overridePendingTransition(0,0);
+                        return true;
+                    case R.id.nav_services:
+                        startActivity(new Intent(getApplicationContext(), Services.class));
+                        overridePendingTransition(0,0);
+                        return true;
+                    case R.id.nav_contact:
+                        return true;
+
+                }
+                return false;
+            }
+        });
 
 
 

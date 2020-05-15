@@ -46,6 +46,10 @@
     <string name="fb_login_protocol_scheme">fb694615541300824</string>
     <string name="default_g_web_client_id">811469435111-i56t0apc9cdghedlcp8u17o09bolu69r.apps.googleusercontent.com</string>
     <string name="default_g_web_client_id1"> 811469435111-22nu4uvm3rl394athj3lljmv77600tp6.apps.googleusercontent.com</string>
+    <string name="home">Home</string>
+    <string name="reg">Reg</string>
+    <string name="service">Service</string>
+    <string name="contact">Contact</string>
 
 
 </resources>

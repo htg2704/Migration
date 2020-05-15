@@ -718,6 +718,7 @@ color cardview_shadow_start_color
 color colorAccent
 color colorPrimary
 color colorPrimaryDark
+color colorWhite
 color com_facebook_blue
 color com_facebook_button_background_color
 color com_facebook_button_background_color_disabled
@@ -1243,6 +1244,8 @@ drawable googleg_standard_color_18
 drawable ic_account_circle_black_24dp
 drawable ic_arrow_back_black_24dp
 drawable ic_arrow_back_black_35dp
+drawable ic_contact
+drawable ic_dashboard
 drawable ic_email_black_24dp
 drawable ic_exit_to_app_black_24dp
 drawable ic_filter_none_black_24dp
@@ -1260,8 +1263,10 @@ drawable ic_mtrl_chip_close_circle
 drawable ic_navigate_next_black_24dp
 drawable ic_phone_black_24dp
 drawable ic_power_settings_new_black_24dp
+drawable ic_reg
 drawable ic_remove_red_eye_black_24dp
 drawable ic_security_black_24dp
+drawable ic_services
 drawable kutumb
 drawable logout_background
 drawable mtrl_snackbar_background
@@ -1283,6 +1288,7 @@ drawable notify_panel_notification_icon_bg
 drawable phone
 drawable plus
 drawable register
+drawable selector
 drawable stats
 drawable tab
 drawable tooltip_frame_dark
@@ -1385,6 +1391,7 @@ id barrier
 id beginning
 id blocking
 id bottom
+id bottom_navigation
 id box_count
 id browser_actions_header_text
 id browser_actions_menu_item_icon
@@ -1566,6 +1573,10 @@ id mtrl_internal_children_alpha_tag
 id multiply
 id name
 id nature_of_work_spinner
+id nav_contact
+id nav_home
+id nav_reg
+id nav_services
 id navigation_header_container
 id never
 id never_display
@@ -1799,6 +1810,7 @@ layout activity_privacywebactivity
 layout activity_questions
 layout activity_register_user
 layout activity_select_login_type
+layout activity_services
 layout activity_slider
 layout activity_stats
 layout activity_termswebactivity
@@ -1854,6 +1866,7 @@ layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout slider_layout
 layout support_simple_spinner_dropdown_item
+menu menu_navigation
 mipmap ic_launcher
 mipmap ic_launcher_foreground
 mipmap ic_launcher_round
@@ -1936,6 +1949,7 @@ string common_google_play_services_wear_update_text
 string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
+string contact
 string default_g_web_client_id
 string default_g_web_client_id1
 string default_web_client_id
@@ -1959,6 +1973,7 @@ string google_crash_reporting_api_key
 string google_storage_bucket
 string government_id
 string hide_bottom_view_on_scroll_behavior
+string home
 string invalid_password
 string invalid_username
 string is_the_applicant_a_pwd
@@ -1983,8 +1998,10 @@ string pin_code_n_permanent_address
 string project_id
 string prompt_email
 string prompt_password
+string reg
 string sc
 string search_menu_title
+string service
 string st
 string status_bar_notification_info_overflow
 string tab_text_1

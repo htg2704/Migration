@@ -17,8 +17,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="LockedOrientationActivity">
-        <activity android:name=".Register.upload"></activity>
-        <activity android:name=".after_login"></activity>
+        <activity android:name=".Services"></activity>
+        <activity android:name=".Register.upload" />
+        <activity android:name=".after_login" />
         <activity android:name=".Register.bulk_data" />
         <activity
             android:name=".Register.VerifyMobile"

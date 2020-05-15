@@ -4,18 +4,23 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
+import com.example.migration.Contact;
 import com.example.migration.MainActivity;
 import com.example.migration.R;
+import com.example.migration.Services;
 import com.example.migration.common.User;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class select_login_type extends AppCompatActivity {
 
@@ -27,6 +32,37 @@ public class select_login_type extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select_login_type);
+
+
+
+
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
+
+        bottomNavigationView.setSelectedItemId(R.id.nav_reg);
+
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+                switch (menuItem.getItemId()){
+                    case R.id.nav_home:
+                        startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                        overridePendingTransition(0,0);
+                        return true;
+                    case R.id.nav_reg:
+                        return true;
+                    case R.id.nav_services:
+                        startActivity(new Intent(getApplicationContext(), Services.class));
+                        overridePendingTransition(0,0);
+                        return true;
+                    case R.id.nav_contact:
+                        startActivity(new Intent(getApplicationContext(), Contact.class));
+                        overridePendingTransition(0,0);
+                        return true;
+
+                }
+                return false;
+            }
+        });
 
 
         User.type=0;

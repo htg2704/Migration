@@ -46,6 +46,7 @@ array com_google_android_gms_fonts_certs_dev
 array com_google_android_gms_fonts_certs_prod
 array cur_options_array
 array day_wage_array
+array description
 array edu_lvl
 array govt_id
 array gvbenefits_array
@@ -58,6 +59,7 @@ array migrate_support_array
 array need_array
 array no_of_dep
 array preloaded_fonts
+array programming_language
 array reason_array
 array resp_array
 array source_info_array
@@ -1241,11 +1243,11 @@ drawable facebook
 drawable google
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable graphic
 drawable ic_account_circle_black_24dp
 drawable ic_arrow_back_black_24dp
 drawable ic_arrow_back_black_35dp
 drawable ic_contact
-drawable ic_dashboard
 drawable ic_email_black_24dp
 drawable ic_exit_to_app_black_24dp
 drawable ic_filter_none_black_24dp
@@ -1263,7 +1265,6 @@ drawable ic_mtrl_chip_close_circle
 drawable ic_navigate_next_black_24dp
 drawable ic_phone_black_24dp
 drawable ic_power_settings_new_black_24dp
-drawable ic_reg
 drawable ic_remove_red_eye_black_24dp
 drawable ic_security_black_24dp
 drawable ic_services
@@ -1285,16 +1286,20 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable people
+drawable pharmacy
 drawable phone
+drawable picnicbasket
 drawable plus
 drawable register
-drawable selector
+drawable rescue
 drawable stats
 drawable tab
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable upload
 drawable volunteer
+drawable wheather
 font aclonica
 font akronim
 font arizonia
@@ -1403,12 +1408,10 @@ id btnForgotPass
 id btnMobAuth
 id btnVerifyMobotp
 id btn_cmob
-id btn_data
 id btn_login
 id btn_logout
 id btn_ngo
 id btn_register
-id btn_stats
 id btn_vol
 id bulk
 id button
@@ -1472,7 +1475,6 @@ id com_facebook_tooltip_bubble_view_text_body
 id com_facebook_tooltip_bubble_view_top_pointer
 id comment
 id confirmation_code
-id contact
 id container
 id content
 id contentPanel
@@ -1558,6 +1560,7 @@ id log_mail
 id log_pwd
 id lottie_layer_name
 id mail
+id mainLayout
 id maritial_spinner
 id masked
 id media_actions
@@ -1571,6 +1574,9 @@ id mobile_no
 id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
 id multiply
+id myImageView
+id myText1
+id myText2
 id name
 id nature_of_work_spinner
 id nav_contact
@@ -1613,6 +1619,7 @@ id progress_horizontal
 id pwd_switch
 id radio
 id reason
+id recyclerView
 id reg_adrs
 id reg_mail
 id reg_name
@@ -1653,7 +1660,6 @@ id search_voice_btn
 id select_dialog_listview
 id selected
 id self_assessment_spinner
-id service
 id shortcut
 id showCustom
 id showHome
@@ -1845,6 +1851,7 @@ layout fragment_questions
 layout image_slider_layout_item
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
+layout my_row
 layout notification_action
 layout notification_action_tombstone
 layout notification_media_action

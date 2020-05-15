@@ -16,15 +16,23 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.LinearSnapHelper;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.migration.Register.select_login_type;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import java.util.Timer;
+import java.util.TimerTask;
+
 public class MainActivity extends AppCompatActivity {
-    boolean doubleBackToExitPressedOnce = false;
-    CardView enter_register,enter_data,enter_stats,enter_contact;
-    ProgressDialog dialog;
     private long backPressedTime = 0;
+    RecyclerView recyclerView;
+
+    String s1[],s2[];
+    int images[]={R.drawable.kutumb,R.drawable.register,R.drawable.stats,R.drawable.data};
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,20 +45,20 @@ public class MainActivity extends AppCompatActivity {
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-                switch (menuItem.getItemId()){
+                switch (menuItem.getItemId()) {
                     case R.id.nav_home:
                         return true;
                     case R.id.nav_reg:
                         startActivity(new Intent(getApplicationContext(), select_login_type.class));
-                        overridePendingTransition(0,0);
+                        overridePendingTransition(0, 0);
                         return true;
                     case R.id.nav_services:
-                        startActivity(new Intent(getApplicationContext(),Services.class));
-                        overridePendingTransition(0,0);
+                        startActivity(new Intent(getApplicationContext(), Services.class));
+                        overridePendingTransition(0, 0);
                         return true;
                     case R.id.nav_contact:
-                        startActivity(new Intent(getApplicationContext(),Contact.class));
-                        overridePendingTransition(0,0);
+                        startActivity(new Intent(getApplicationContext(), Contact.class));
+                        overridePendingTransition(0, 0);
                         return true;
 
                 }
@@ -58,94 +66,37 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        enter_register = findViewById(R.id.btn_register);
-        enter_data = findViewById(R.id.btn_data);
-        enter_stats = findViewById(R.id.btn_stats);
-        enter_contact = findViewById(R.id.contact);
 
-        enter_register.setOnClickListener(new View.OnClickListener() {
+        recyclerView = findViewById(R.id.recyclerView);
+
+
+        s1 = getResources().getStringArray(R.array.programming_language);
+        s2 = getResources().getStringArray(R.array.description);
+        final int time = 4000;
+        final MyAdapter  myAdapter = new MyAdapter(this,s1,s2,images);
+        recyclerView.setAdapter(myAdapter);
+        final LinearLayoutManager linearLayoutManager = new LinearLayoutManager(recyclerView.getContext(), LinearLayoutManager.HORIZONTAL, false);
+        recyclerView.setLayoutManager(linearLayoutManager);
+        final LinearSnapHelper linearSnapHelper = new LinearSnapHelper();
+        linearSnapHelper.attachToRecyclerView(recyclerView);
+
+        final Timer timer = new Timer();
+        timer.schedule(new TimerTask() {
             @Override
-            public void onClick(View view) {
-                AlertDialog.Builder alertadd = new AlertDialog.Builder(MainActivity.this);
-                LayoutInflater factory = LayoutInflater.from(MainActivity.this);
-                view = factory.inflate(R.layout.sample, null);
-                alertadd.setView(view);
-                alertadd.show();
-                new Handler().postDelayed(new Runnable() {
+            public void run() {
 
-                    @Override
-                    public void run() {
+                if (linearLayoutManager.findLastCompletelyVisibleItemPosition() < (myAdapter.getItemCount() - 1)) {
 
-                        Intent intent = new Intent(getApplicationContext(),com.example.migration.Register.select_login_type.class);
-                        startActivity(intent);
-                    }
-                }, 1100);
+                    linearLayoutManager.smoothScrollToPosition(recyclerView, new RecyclerView.State(), linearLayoutManager.findLastCompletelyVisibleItemPosition() + 1);
+                }
 
+                else if (linearLayoutManager.findLastCompletelyVisibleItemPosition() == (myAdapter.getItemCount() - 1)) {
 
+                    linearLayoutManager.smoothScrollToPosition(recyclerView, new RecyclerView.State(), 0);
+                }
             }
-        });
-        enter_data.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                AlertDialog.Builder alertadd = new AlertDialog.Builder(MainActivity.this);
-                LayoutInflater factory = LayoutInflater.from(MainActivity.this);
-                view = factory.inflate(R.layout.sample, null);
-                alertadd.setView(view);
-                alertadd.show();
-                new Handler().postDelayed(new Runnable() {
+        }, 0, time);
 
-                    @Override
-                    public void run() {
-
-                        Intent i = new Intent(getApplicationContext(), com.example.migration.data.data_main.class);
-                        startActivity(i);
-                    }
-                }, 1500);
-            }
-        });
-
-        enter_stats.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                AlertDialog.Builder alertadd = new AlertDialog.Builder(MainActivity.this);
-                LayoutInflater factory = LayoutInflater.from(MainActivity.this);
-                view = factory.inflate(R.layout.sample, null);
-                alertadd.setView(view);
-                alertadd.show();
-                new Handler().postDelayed(new Runnable() {
-
-                    @Override
-                    public void run() {
-
-                        Intent i=new Intent(getApplicationContext(),com.example.migration.Stats.stats_main.class);
-                        startActivity(i);
-                    }
-                }, 1500);
-
-            }
-        });
-        enter_contact.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                AlertDialog.Builder alertadd = new AlertDialog.Builder(MainActivity.this);
-                LayoutInflater factory = LayoutInflater.from(MainActivity.this);
-                view = factory.inflate(R.layout.sample, null);
-                alertadd.setView(view);
-                alertadd.show();
-                new Handler().postDelayed(new Runnable() {
-
-                    @Override
-                    public void run() {
-
-                        Intent intent = new Intent(getApplicationContext(),Contact.class);
-                        startActivity(intent);
-                    }
-                }, 1100);
-
-
-            }
-        });
 
 
     }

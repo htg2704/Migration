@@ -33,6 +33,8 @@ public class Services extends AppCompatActivity {
                         overridePendingTransition(0,0);
                         return true;
                     case R.id.nav_services:
+                        startActivity(new Intent(getApplicationContext(), Services.class));
+                        overridePendingTransition(0,0);
                         return true;
                     case R.id.nav_contact:
                         startActivity(new Intent(getApplicationContext(),Contact.class));

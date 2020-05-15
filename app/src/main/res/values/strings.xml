@@ -47,9 +47,25 @@
     <string name="default_g_web_client_id">811469435111-i56t0apc9cdghedlcp8u17o09bolu69r.apps.googleusercontent.com</string>
     <string name="default_g_web_client_id1"> 811469435111-22nu4uvm3rl394athj3lljmv77600tp6.apps.googleusercontent.com</string>
     <string name="home">Home</string>
-    <string name="reg">Reg</string>
-    <string name="service">Service</string>
-    <string name="contact">Contact</string>
+    <string name="reg">Register</string>
+    <string name="service">Services</string>
+    <string name="contact">Contact Us</string>
 
 
+    <string-array name="programming_language">
+        <item>item1</item>
+        <item>item2</item>
+        <item>item3</item>
+        <item>item4</item>
+
+
+    </string-array>
+
+    <string-array name="description">
+        <item>description1</item>
+        <item>description2</item>
+        <item>description3</item>
+        <item>description4</item>
+
+    </string-array>
 </resources>

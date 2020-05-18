@@ -18,9 +18,7 @@
         android:theme="@style/AppTheme"
         tools:ignore="LockedOrientationActivity">
         <activity android:name=".Services"></activity>
-        <activity android:name=".Register.upload" />
         <activity android:name=".after_login" />
-        <activity android:name=".Register.bulk_data" />
         <activity
             android:name=".Register.VerifyMobile"
             android:screenOrientation="portrait" />
@@ -42,9 +40,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".SliderActivity"
-            android:screenOrientation="portrait" />
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait" />

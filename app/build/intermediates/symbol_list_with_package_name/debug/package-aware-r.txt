@@ -1171,6 +1171,7 @@ drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
 drawable back
+drawable back_24dp
 drawable bg_overlay
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
@@ -1270,6 +1271,9 @@ drawable ic_security_black_24dp
 drawable ic_services
 drawable kutumb
 drawable logout_background
+drawable migrant
+drawable migrant2
+drawable migrantworker3
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
@@ -1291,8 +1295,13 @@ drawable pharmacy
 drawable phone
 drawable picnicbasket
 drawable plus
+drawable power_24dp
 drawable register
 drawable rescue
+drawable roundbutton
+drawable shade
+drawable shade2
+drawable sign
 drawable stats
 drawable tab
 drawable tooltip_frame_dark
@@ -1391,9 +1400,9 @@ id askb
 id async
 id auto
 id automatic
-id back
 id barrier
 id beginning
+id bgLayout
 id blocking
 id bottom
 id bottom_navigation
@@ -1485,6 +1494,7 @@ id customPanel
 id dark
 id decor_content_parent
 id default_activity_button
+id desc
 id design_bottom_sheet
 id design_menu_item_action_area
 id design_menu_item_action_area_stub
@@ -1529,12 +1539,12 @@ id groups
 id home
 id homeAsUp
 id horizontal
+id i
 id icon
 id icon_group
 id icon_only
 id ifRoom
 id image
-id imageSlider
 id imageView2
 id info
 id inline
@@ -1620,6 +1630,7 @@ id pwd_switch
 id radio
 id reason
 id recyclerView
+id reg
 id reg_adrs
 id reg_mail
 id reg_name
@@ -1734,6 +1745,7 @@ id up
 id upload
 id useLogo
 id usreml
+id ver
 id vertical
 id view_offset_helper
 id view_pager
@@ -1741,7 +1753,6 @@ id visible
 id vp_slider_layout
 id wage_spinner
 id web
-id wel
 id where_to_go_switch
 id wide
 id withText
@@ -1804,7 +1815,6 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_after_login
-layout activity_bulk_data
 layout activity_contact
 layout activity_data_main
 layout activity_forgot_pass
@@ -1817,11 +1827,10 @@ layout activity_questions
 layout activity_register_user
 layout activity_select_login_type
 layout activity_services
-layout activity_slider
 layout activity_stats
 layout activity_termswebactivity
-layout activity_upload
 layout activity_verify_mobile
+layout bottom_sheet_layout
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
 layout com_facebook_activity_layout
@@ -1852,6 +1861,7 @@ layout image_slider_layout_item
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
 layout my_row
+layout my_row_register
 layout notification_action
 layout notification_action_tombstone
 layout notification_media_action

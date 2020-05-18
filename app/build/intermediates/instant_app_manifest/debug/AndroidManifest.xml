@@ -29,9 +29,7 @@
         android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity android:name="com.example.migration.Services" />
-        <activity android:name="com.example.migration.Register.upload" />
         <activity android:name="com.example.migration.after_login" />
-        <activity android:name="com.example.migration.Register.bulk_data" />
         <activity
             android:name="com.example.migration.Register.VerifyMobile"
             android:screenOrientation="portrait" />
@@ -53,9 +51,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="com.example.migration.SliderActivity"
-            android:screenOrientation="portrait" />
         <activity
             android:name="com.example.migration.MainActivity"
             android:screenOrientation="portrait" />

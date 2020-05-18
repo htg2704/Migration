@@ -8,24 +8,33 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.LinearSnapHelper;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.migration.Contact;
 import com.example.migration.MainActivity;
+import com.example.migration.MyAdapter;
 import com.example.migration.R;
 import com.example.migration.Services;
 import com.example.migration.common.User;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import java.util.Timer;
+import java.util.TimerTask;
+
 public class select_login_type extends AppCompatActivity {
 
-    CardView btn_volunteer, btn_mobiliser, btn_agency;
-    ImageButton back;
+    RecyclerView recyclerView;
+    String s1[],s2[];
+    int images[]={R.drawable.migrant,R.drawable.migrant2,R.drawable.migrantworker3};
 
 
     @Override
@@ -34,6 +43,14 @@ public class select_login_type extends AppCompatActivity {
         setContentView(R.layout.activity_select_login_type);
 
 
+        Button buttonOpenBottomSheet = findViewById(R.id.btn_vol);
+        buttonOpenBottomSheet.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                BottomSheetDialog bottomSheetDialog =new BottomSheetDialog();
+                bottomSheetDialog.show(getSupportFragmentManager(),"BottomSheet");
+            }
+        });
 
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
@@ -65,84 +82,38 @@ public class select_login_type extends AppCompatActivity {
         });
 
 
-        User.type=0;
 
-        btn_mobiliser=findViewById(R.id.btn_cmob);
-        btn_volunteer=findViewById(R.id.btn_vol);
-        btn_agency=findViewById(R.id.btn_ngo);
-        back=findViewById(R.id.back);
+        recyclerView = findViewById(R.id.recyclerView);
 
-        btn_volunteer.setOnClickListener(new View.OnClickListener() {
+
+        s1 = getResources().getStringArray(R.array.programming_language);
+        s2 = getResources().getStringArray(R.array.description);
+        final int time = 2000;
+        final MyAdapterRegister myAdapter = new MyAdapterRegister(this,s1,s2,images);
+        recyclerView.setAdapter(myAdapter);
+        final LinearLayoutManager linearLayoutManager = new LinearLayoutManager(recyclerView.getContext(), LinearLayoutManager.HORIZONTAL, false);
+        recyclerView.setLayoutManager(linearLayoutManager);
+        final LinearSnapHelper linearSnapHelper = new LinearSnapHelper();
+        linearSnapHelper.attachToRecyclerView(recyclerView);
+
+        final Timer timer = new Timer();
+        timer.schedule(new TimerTask() {
             @Override
-            public void onClick(View view) {
-                User.type=1;
-                AlertDialog.Builder alertadd = new AlertDialog.Builder(select_login_type.this);
-                LayoutInflater factory = LayoutInflater.from(select_login_type.this);
-                view = factory.inflate(R.layout.sample, null);
-                alertadd.setView(view);
-                alertadd.show();
-                new Handler().postDelayed(new Runnable() {
+            public void run() {
 
-                    @Override
-                    public void run() {
+                if (linearLayoutManager.findLastCompletelyVisibleItemPosition() < (myAdapter.getItemCount() - 1)) {
 
-                        Intent intent = new Intent(select_login_type.this,com.example.migration.Questions.questions.class);
-                        startActivity(intent);
-                    }
-                }, 1200);
+                    linearLayoutManager.smoothScrollToPosition(recyclerView, new RecyclerView.State(), linearLayoutManager.findLastCompletelyVisibleItemPosition() + 1);
+                }
+
+                else if (linearLayoutManager.findLastCompletelyVisibleItemPosition() == (myAdapter.getItemCount() - 1)) {
+
+                    linearLayoutManager.smoothScrollToPosition(recyclerView, new RecyclerView.State(), 0);
+                }
             }
-        });
-        btn_mobiliser.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                User.type=2;
-                AlertDialog.Builder alertadd = new AlertDialog.Builder(select_login_type.this);
-                LayoutInflater factory = LayoutInflater.from(select_login_type.this);
-                view = factory.inflate(R.layout.sample, null);
-                alertadd.setView(view);
-                alertadd.show();
-                new Handler().postDelayed(new Runnable() {
-
-                    @Override
-                    public void run() {
-
-                        Intent intent = new Intent(select_login_type.this,com.example.migration.Register.LoginOrRegister.class);
-                        startActivity(intent);
-                    }
-                }, 1200);
+        }, 0, time);
 
 
-            }
-        });
-        btn_agency.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                User.type=3;
-                AlertDialog.Builder alertadd = new AlertDialog.Builder(select_login_type.this);
-                LayoutInflater factory = LayoutInflater.from(select_login_type.this);
-                view = factory.inflate(R.layout.sample, null);
-                alertadd.setView(view);
-                alertadd.show();
-                new Handler().postDelayed(new Runnable() {
-
-                    @Override
-                    public void run() {
-
-                        Intent intent = new Intent(select_login_type.this,com.example.migration.Register.LoginOrRegister.class);
-                        startActivity(intent);
-                    }
-                }, 1200);
-
-            }
-        });
-        back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(select_login_type.this, MainActivity.class);
-                startActivity(intent);
-
-            }
-        });
 
 
     }
@@ -154,4 +125,6 @@ public class select_login_type extends AppCompatActivity {
         Intent intent = new Intent(select_login_type.this, MainActivity.class);
         startActivity(intent);
     }
+
+
 }

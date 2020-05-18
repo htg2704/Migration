@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:2:1-111:12
-INJECTED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:2:1-111:12
-INJECTED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:2:1-111:12
-INJECTED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:2:1-111:12
+ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:2:1-106:12
+INJECTED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:2:1-106:12
+INJECTED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:2:1-106:12
+INJECTED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:2:1-106:12
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\Divyesh Nabhoya\.gradle\caches\transforms-2\files-2.1\e4c94517633779d14a48ea36e0c77d1c\material-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.facebook.android:facebook-login:5.15.3] C:\Users\Divyesh Nabhoya\.gradle\caches\transforms-2\files-2.1\a5ccc7ea2f0e82c8e29880128262d541\jetified-facebook-login-5.15.3\AndroidManifest.xml:21:1-31:12
 MERGED from [com.airbnb.android:lottie:2.8.0] C:\Users\Divyesh Nabhoya\.gradle\caches\transforms-2\files-2.1\2f5efe27132c04a5d1393f89f8ed36bc\jetified-lottie-2.8.0\AndroidManifest.xml:2:1-13:12
@@ -81,22 +81,22 @@ MERGED from [com.github.smarteist:autoimageslider:1.2.0] C:\Users\Divyesh Nabhoy
 MERGED from [com.google.firebase:protolite-well-known-types:17.0.0] C:\Users\Divyesh Nabhoya\.gradle\caches\transforms-2\files-2.1\7f369fc91de48fbea319a2914c6b8e26\jetified-protolite-well-known-types-17.0.0\AndroidManifest.xml:2:1-11:12
 MERGED from [io.grpc:grpc-android:1.21.0] C:\Users\Divyesh Nabhoya\.gradle\caches\transforms-2\files-2.1\d0a4ba356d9b36ed975ea94e4dd5104e\jetified-grpc-android-1.21.0\AndroidManifest.xml:2:1-13:12
 MERGED from [com.android.installreferrer:installreferrer:1.0] C:\Users\Divyesh Nabhoya\.gradle\caches\transforms-2\files-2.1\3f02d1c67b6c911c648211e3763751f1\jetified-installreferrer-1.0\AndroidManifest.xml:2:1-13:12
-INJECTED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:2:1-111:12
-INJECTED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:2:1-111:12
-INJECTED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:2:1-111:12
+INJECTED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:2:1-106:12
+INJECTED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:2:1-106:12
+INJECTED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:2:1-106:12
 	package
 		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:4:5-36
 		INJECTED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:2:1-111:12
+		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:2:1-106:12
 		INJECTED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:2:1-111:12
+		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:2:1-106:12
 		INJECTED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:2:11-69
@@ -151,7 +151,7 @@ ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManife
 	android:name
 		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:10:22-77
 application
-ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:12:5-109:19
+ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:12:5-104:19
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\Divyesh Nabhoya\.gradle\caches\transforms-2\files-2.1\e4c94517633779d14a48ea36e0c77d1c\material-1.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\Divyesh Nabhoya\.gradle\caches\transforms-2\files-2.1\e4c94517633779d14a48ea36e0c77d1c\material-1.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.facebook.android:facebook-login:5.15.3] C:\Users\Divyesh Nabhoya\.gradle\caches\transforms-2\files-2.1\a5ccc7ea2f0e82c8e29880128262d541\jetified-facebook-login-5.15.3\AndroidManifest.xml:28:5-29:19
@@ -240,190 +240,176 @@ activity#com.example.migration.Services
 ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:20:9-55
 	android:name
 		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:20:19-43
-activity#com.example.migration.Register.upload
-ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:21:9-53
-	android:name
-		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:21:19-50
 activity#com.example.migration.after_login
-ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:22:9-49
+ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:21:9-49
 	android:name
-		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:22:19-46
-activity#com.example.migration.Register.bulk_data
-ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:23:9-56
-	android:name
-		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:23:19-53
+		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:21:19-46
 activity#com.example.migration.Register.VerifyMobile
-ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:24:9-26:52
+ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:22:9-24:52
 	android:screenOrientation
-		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:26:13-49
+		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:24:13-49
 	android:name
-		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:25:13-50
+		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:23:13-50
 activity#com.example.migration.Register.MobileAuth
-ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:27:9-29:52
+ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:25:9-27:52
 	android:screenOrientation
-		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:29:13-49
+		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:27:13-49
 	android:name
-		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:28:13-48
+		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:26:13-48
 activity#com.example.migration.privacywebactivity
-ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:30:9-32:52
+ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:28:9-30:52
 	android:screenOrientation
-		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:32:13-49
+		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:30:13-49
 	android:name
-		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:31:13-47
+		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:29:13-47
 activity#com.example.migration.termswebactivity
-ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:33:9-35:52
+ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:31:9-33:52
 	android:screenOrientation
-		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:35:13-49
+		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:33:13-49
 	android:name
-		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:34:13-45
+		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:32:13-45
 activity#com.example.migration.Launcher
-ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:36:9-44:20
+ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:34:9-42:20
 	android:screenOrientation
-		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:38:13-49
+		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:36:13-49
 	android:name
-		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:37:13-37
+		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:35:13-37
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:39:13-43:29
+ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:37:13-41:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:40:17-69
+ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:38:17-69
 	android:name
-		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:40:25-66
+		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:38:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:42:17-77
+ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:40:17-77
 	android:name
-		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:42:27-74
-activity#com.example.migration.SliderActivity
-ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:45:9-47:52
-	android:screenOrientation
-		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:47:13-49
-	android:name
-		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:46:13-43
+		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:40:27-74
 activity#com.example.migration.MainActivity
-ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:48:9-50:52
+ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:43:9-45:52
 	android:screenOrientation
-		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:50:13-49
+		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:45:13-49
 	android:name
-		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:49:13-41
+		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:44:13-41
 activity#com.example.migration.data.data_main
-ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:51:9-53:52
+ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:46:9-48:52
 	android:screenOrientation
-		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:53:13-49
+		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:48:13-49
 	android:name
-		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:52:13-43
+		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:47:13-43
 activity#com.example.migration.Stats.stats_main
-ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:54:9-56:52
+ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:49:9-51:52
 	android:screenOrientation
-		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:56:13-49
+		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:51:13-49
 	android:name
-		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:55:13-45
+		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:50:13-45
 activity#com.example.migration.Contact
-ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:57:9-59:52
+ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:52:9-54:52
 	android:screenOrientation
-		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:59:13-49
+		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:54:13-49
 	android:name
-		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:58:13-36
+		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:53:13-36
 activity#com.example.migration.Register.select_login_type
-ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:60:9-62:52
+ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:55:9-57:52
+	android:screenOrientation
+		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:57:13-49
+	android:name
+		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:56:13-55
+activity#com.example.migration.Questions.questions
+ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:58:9-63:59
 	android:screenOrientation
 		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:62:13-49
+	android:parentActivityName
+		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:61:13-69
+	android:label
+		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:60:13-61
+	android:theme
+		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:63:13-56
 	android:name
-		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:61:13-55
-activity#com.example.migration.Questions.questions
-ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:63:9-68:59
+		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:59:13-48
+activity#com.example.migration.Register.LoginOrRegister
+ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:64:9-67:52
 	android:screenOrientation
 		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:67:13-49
 	android:parentActivityName
 		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:66:13-69
-	android:label
-		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:65:13-61
-	android:theme
-		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:68:13-56
 	android:name
-		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:64:13-48
-activity#com.example.migration.Register.LoginOrRegister
-ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:69:9-72:52
-	android:screenOrientation
-		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:72:13-49
-	android:parentActivityName
-		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:71:13-69
-	android:name
-		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:70:13-53
+		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:65:13-53
 activity#com.example.migration.Register.RegisterUser
-ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:73:9-76:52
+ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:68:9-71:52
 	android:screenOrientation
-		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:76:13-49
+		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:71:13-49
 	android:parentActivityName
-		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:75:13-67
+		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:70:13-67
 	android:name
-		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:74:13-50
+		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:69:13-50
 activity#com.example.migration.Register.ForgotPass
-ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:77:9-79:52
+ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:72:9-74:52
 	android:screenOrientation
-		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:79:13-49
+		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:74:13-49
 	android:name
-		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:78:13-48
+		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:73:13-48
 meta-data#com.google.android.actions
-ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:81:9-83:51
+ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:76:9-78:51
 	android:resource
-		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:83:13-48
+		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:78:13-48
 	android:name
-		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:82:13-54
+		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:77:13-54
 meta-data#preloaded_fonts
-ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:84:9-86:57
+ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:79:9-81:57
 	android:resource
-		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:86:13-54
+		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:81:13-54
 	android:name
-		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:85:13-43
+		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:80:13-43
 meta-data#com.facebook.sdk.ApplicationId
-ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:87:9-89:55
+ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:82:9-84:55
 	android:value
-		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:89:13-52
+		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:84:13-52
 	android:name
-		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:88:13-58
+		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:83:13-58
 activity#com.facebook.FacebookActivity
-ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:91:9-95:52
+ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:86:9-90:52
 MERGED from [com.facebook.android:facebook-common:5.15.3] C:\Users\Divyesh Nabhoya\.gradle\caches\transforms-2\files-2.1\c282becd7071a28d2def011b5da5ca89\jetified-facebook-common-5.15.3\AndroidManifest.xml:30:9-33:66
 MERGED from [com.facebook.android:facebook-common:5.15.3] C:\Users\Divyesh Nabhoya\.gradle\caches\transforms-2\files-2.1\c282becd7071a28d2def011b5da5ca89\jetified-facebook-common-5.15.3\AndroidManifest.xml:30:9-33:66
 	android:screenOrientation
-		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:95:13-49
+		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:90:13-49
 	android:label
-		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:94:13-45
+		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:89:13-45
 	android:configChanges
-		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:93:13-96
+		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:88:13-96
 	android:theme
 		ADDED from [com.facebook.android:facebook-common:5.15.3] C:\Users\Divyesh Nabhoya\.gradle\caches\transforms-2\files-2.1\c282becd7071a28d2def011b5da5ca89\jetified-facebook-common-5.15.3\AndroidManifest.xml:33:13-63
 	android:name
-		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:92:13-57
+		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:87:13-57
 activity#com.facebook.CustomTabActivity
-ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:96:9-108:20
+ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:91:9-103:20
 MERGED from [com.facebook.android:facebook-common:5.15.3] C:\Users\Divyesh Nabhoya\.gradle\caches\transforms-2\files-2.1\c282becd7071a28d2def011b5da5ca89\jetified-facebook-common-5.15.3\AndroidManifest.xml:35:9-49:20
 MERGED from [com.facebook.android:facebook-common:5.15.3] C:\Users\Divyesh Nabhoya\.gradle\caches\transforms-2\files-2.1\c282becd7071a28d2def011b5da5ca89\jetified-facebook-common-5.15.3\AndroidManifest.xml:35:9-49:20
 	tools:node
 		ADDED from [com.facebook.android:facebook-common:5.15.3] C:\Users\Divyesh Nabhoya\.gradle\caches\transforms-2\files-2.1\c282becd7071a28d2def011b5da5ca89\jetified-facebook-common-5.15.3\AndroidManifest.xml:38:13-31
 	android:screenOrientation
-		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:99:13-49
+		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:94:13-49
 	android:exported
-		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:98:13-36
+		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:93:13-36
 	android:name
-		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:97:13-58
+		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:92:13-58
 intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:@string/fb_login_protocol_scheme
-ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:100:13-107:29
+ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:95:13-102:29
 action#android.intent.action.VIEW
-ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:101:17-69
+ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:96:17-69
 	android:name
-		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:101:25-66
+		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:96:25-66
 category#android.intent.category.DEFAULT
-ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:103:17-76
+ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:98:17-76
 	android:name
-		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:103:27-73
+		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:98:27-73
 category#android.intent.category.BROWSABLE
-ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:104:17-78
+ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:99:17-78
 	android:name
-		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:104:27-75
+		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:99:27-75
 data
-ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:106:17-75
+ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:101:17-75
 	android:scheme
-		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:106:23-72
+		ADDED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml:101:23-72
 uses-sdk
 INJECTED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Divyesh Nabhoya\Desktop\Migration\app\src\main\AndroidManifest.xml

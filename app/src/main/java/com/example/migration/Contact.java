@@ -114,15 +114,6 @@ public class Contact extends AppCompatActivity {
 
             }
         });
-        logout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(Contact.this, MainActivity.class);
-                startActivity(intent);
-
-            }
-        });
-
 
 
     }

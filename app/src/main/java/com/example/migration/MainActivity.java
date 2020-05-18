@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
     RecyclerView recyclerView;
 
     String s1[],s2[];
-    int images[]={R.drawable.kutumb,R.drawable.register,R.drawable.stats,R.drawable.data};
+    int images[]={R.drawable.kutumb,R.drawable.register,R.drawable.people,R.drawable.upload};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

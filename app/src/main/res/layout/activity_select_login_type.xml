@@ -56,14 +56,14 @@
         android:layout_height="200dp"
         android:id="@+id/i"
         android:layout_above="@id/bottom_navigation"
-        android:background="@drawable/shade2"></ImageView>
+        android:background="@drawable/shade"></ImageView>
 
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_above="@id/bottom_navigation"
-        android:background="@drawable/shade2"></ImageView>
+        android:background="@drawable/shade"></ImageView>
 
     <TextView
         android:layout_width="match_parent"

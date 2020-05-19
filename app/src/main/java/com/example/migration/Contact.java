@@ -17,13 +17,14 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class Contact extends AppCompatActivity {
 
-    ImageButton logout;
+    ImageButton notification;
+    private long backPressedTime = 0;
     Button call,mail,faq,terms,privacy;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contact);
-        logout=findViewById(R.id.btn_logout);
         call=findViewById(R.id.call);
         mail=findViewById(R.id.mail);
         faq = findViewById(R.id.faq);
@@ -114,16 +115,28 @@ public class Contact extends AppCompatActivity {
 
             }
         });
-
+        notification  = (ImageButton) findViewById(R.id.btn_notify);
+        notification.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Contact.this,notifcation.class);
+                startActivity(intent);
+            }
+        });
 
     }
-
 
     @Override
     public void onBackPressed() {
-
-        finish();
-        Intent intent = new Intent(Contact.this, MainActivity.class);
-        startActivity(intent);
+        long t = System.currentTimeMillis();
+        if (t - backPressedTime > 2000) {
+            backPressedTime = t;
+            Toast.makeText(this, "Press back again to Exit ", Toast.LENGTH_SHORT).show();
+        } else {
+            moveTaskToBack(true);
+            android.os.Process.killProcess(android.os.Process.myPid());
+            System.exit(1);
+        }
     }
+
 }

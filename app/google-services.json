@@ -23,14 +23,6 @@
           }
         },
         {
-          "client_id": "811469435111-8kpj93c64gnp25ajn36i8bt8t3m9lvj3.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.migration",
-            "certificate_hash": "ec81562755c517f529d767f3931d2c883fc0efb3"
-          }
-        },
-        {
           "client_id": "811469435111-22nu4uvm3rl394athj3lljmv77600tp6.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
@@ -67,6 +59,30 @@
         }
       },
       "oauth_client": [
+        {
+          "client_id": "811469435111-hbgmjpq8u9s7tndvi46jgq6372q5ifif.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kutumb.migration",
+            "certificate_hash": "d8edb1d4535869f375f517dbe49ae61d1338dcc0"
+          }
+        },
+        {
+          "client_id": "811469435111-drgofoagg25s48a8u07vmf9peokg7roc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kutumb.migration",
+            "certificate_hash": "43bf74cef90486340b4e2aa427fe81f1d7300094"
+          }
+        },
+        {
+          "client_id": "811469435111-t1mekfjkk0o35rrbom6u8qp7fedik2qn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kutumb.migration",
+            "certificate_hash": "ec81562755c517f529d767f3931d2c883fc0efb3"
+          }
+        },
         {
           "client_id": "811469435111-50e5fkf8fm0f25jju3k0lqhh8tjdsbm3.apps.googleusercontent.com",
           "client_type": 1,

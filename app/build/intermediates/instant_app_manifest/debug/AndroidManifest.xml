@@ -28,8 +28,13 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.example.migration.Services" />
-        <activity android:name="com.example.migration.after_login" />
+        <activity android:name="com.example.migration.notifcation" />
+        <activity
+            android:name="com.example.migration.Services"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.migration.after_login"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.example.migration.Register.VerifyMobile"
             android:screenOrientation="portrait" />
@@ -53,12 +58,6 @@
         </activity>
         <activity
             android:name="com.example.migration.MainActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name="com.example.migration.data.data_main"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name="com.example.migration.Stats.stats_main"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.example.migration.Contact"

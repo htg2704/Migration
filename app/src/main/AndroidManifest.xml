@@ -17,8 +17,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="LockedOrientationActivity">
-        <activity android:name=".Services"></activity>
-        <activity android:name=".after_login" />
+        <activity android:name=".notifcation"></activity>
+        <activity
+            android:name=".Services"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".after_login"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Register.VerifyMobile"
             android:screenOrientation="portrait" />
@@ -42,12 +47,6 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".data.data_main"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".Stats.stats_main"
             android:screenOrientation="portrait" />
         <activity
             android:name=".Contact"

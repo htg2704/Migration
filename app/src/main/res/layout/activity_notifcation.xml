@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back">
+
+    <com.google.android.material.appbar.AppBarLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:id="@+id/app"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="5"
+            android:orientation="horizontal">
+
+
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back_24dp"
+                android:background="@null"
+                android:layout_marginVertical="15dp"
+                android:layout_marginHorizontal="15dp"
+                android:id="@+id/btn"></ImageButton>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="15dp"
+                android:layout_marginHorizontal="10dp"
+                android:fontFamily="@font/aclonica"
+                android:layout_weight="4"
+                android:text="Notificatons"
+                android:textColor="@color/blue"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+
+
+
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:id="@+id/parentScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/app">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textnotify"
+                    android:fontFamily="@font/noto_sans"
+                    android:textSize="25sp"
+                    android:layout_centerVertical="true"
+                    android:textAlignment="center"
+                    android:text="No Notification"
+                    android:textColor="@color/gray"
+                    ></TextView>
+
+</RelativeLayout>
+
+
+
+</RelativeLayout>

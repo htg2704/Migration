@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -25,6 +26,7 @@ import com.example.migration.MyAdapter;
 import com.example.migration.R;
 import com.example.migration.Services;
 import com.example.migration.common.User;
+import com.example.migration.notifcation;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.Timer;
@@ -33,6 +35,8 @@ import java.util.TimerTask;
 public class select_login_type extends AppCompatActivity {
 
     RecyclerView recyclerView;
+    ImageButton notification;
+    private long backPressedTime = 0;
     String s1[],s2[];
     int images[]={R.drawable.migrant,R.drawable.migrant2,R.drawable.migrantworker3};
 
@@ -113,18 +117,29 @@ public class select_login_type extends AppCompatActivity {
             }
         }, 0, time);
 
-
-
+        notification  = (ImageButton) findViewById(R.id.btn_notify);
+        notification.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(select_login_type.this,notifcation.class);
+                startActivity(intent);
+            }
+        });
 
     }
-
     @Override
     public void onBackPressed() {
-
-        finish();
-        Intent intent = new Intent(select_login_type.this, MainActivity.class);
-        startActivity(intent);
+        long t = System.currentTimeMillis();
+        if (t - backPressedTime > 2000) {
+            backPressedTime = t;
+            Toast.makeText(this, "Press back again to Exit ", Toast.LENGTH_SHORT).show();
+        } else {
+            moveTaskToBack(true);
+            android.os.Process.killProcess(android.os.Process.myPid());
+            System.exit(1);
+        }
     }
+
 
 
 }

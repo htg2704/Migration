@@ -9,6 +9,8 @@ import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.Toolbar;
 
@@ -30,8 +32,9 @@ public class MainActivity extends AppCompatActivity {
     private long backPressedTime = 0;
     RecyclerView recyclerView;
 
+    ImageButton notification;
     String s1[],s2[];
-    int images[]={R.drawable.kutumb,R.drawable.register,R.drawable.people,R.drawable.upload};
+    int images[]={R.drawable.migrant,R.drawable.migrant2,R.drawable.migrantworker3,R.drawable.upload};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -98,6 +101,14 @@ public class MainActivity extends AppCompatActivity {
         }, 0, time);
 
 
+        notification  = (ImageButton) findViewById(R.id.btn_notify);
+        notification.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,notifcation.class);
+                startActivity(intent);
+            }
+        });
 
     }
 

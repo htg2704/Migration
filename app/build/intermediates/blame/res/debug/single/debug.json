@@ -88,12 +88,12 @@
         "source": "C:\\Users\\Divyesh Nabhoya\\Downloads\\Migration\\app\\src\\main\\res\\drawable\\king.png"
     },
     {
-        "merged": "C:\\Users\\Divyesh Nabhoya\\Downloads\\Migration\\app\\build\\intermediates\\res\\merged\\debug\\drawable_drawable.xml.flat",
-        "source": "C:\\Users\\Divyesh Nabhoya\\Downloads\\Migration\\app\\src\\main\\res\\drawable\\drawable.xml"
-    },
-    {
         "merged": "C:\\Users\\Divyesh Nabhoya\\Downloads\\Migration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_pharmacy.png.flat",
         "source": "C:\\Users\\Divyesh Nabhoya\\Downloads\\Migration\\app\\src\\main\\res\\drawable-v24\\pharmacy.png"
+    },
+    {
+        "merged": "C:\\Users\\Divyesh Nabhoya\\Downloads\\Migration\\app\\build\\intermediates\\res\\merged\\debug\\drawable_drawable.xml.flat",
+        "source": "C:\\Users\\Divyesh Nabhoya\\Downloads\\Migration\\app\\src\\main\\res\\drawable\\drawable.xml"
     },
     {
         "merged": "C:\\Users\\Divyesh Nabhoya\\Downloads\\Migration\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_meal_provider.xml.flat",

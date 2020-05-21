@@ -16,7 +16,7 @@ public class privacywebactivity extends AppCompatActivity {
 
         WebSettings setting=web.getSettings();
         setting.setJavaScriptEnabled(true);
-        web.loadUrl("http://kutumb.mywebcommunity.org/privacy.html");
+        web.loadUrl("https://firebasestorage.googleapis.com/v0/b/kutumb-migration.appspot.com/o/policies%2Fprivacy.html?alt=media&token=e5279a00-2431-4bdc-bc21-1e48eb72b1f5");
 
 
     }

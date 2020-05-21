@@ -16,7 +16,7 @@ public class termswebactivity extends AppCompatActivity {
 
         WebSettings setting=web.getSettings();
         setting.setJavaScriptEnabled(true);
-        web.loadUrl("http://kutumb.mywebcommunity.org/terms.html");
+        web.loadUrl("https://firebasestorage.googleapis.com/v0/b/kutumb-migration.appspot.com/o/policies%2Fterms.html?alt=media&token=88997647-396c-4d50-ab15-01d8d7e230f6");
 
 
     }

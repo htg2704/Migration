@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back">
+
+    <com.google.android.material.appbar.AppBarLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:id="@+id/app"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="5"
+            android:orientation="horizontal">
+
+
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back_24dp"
+                android:background="@null"
+                android:layout_marginVertical="15dp"
+                android:layout_marginHorizontal="15dp"
+                android:id="@+id/btn"></ImageButton>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="15dp"
+                android:layout_marginHorizontal="10dp"
+                android:fontFamily="@font/aclonica"
+                android:layout_weight="4"
+                android:text="Happy Meal"
+                android:textColor="@color/blue"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+
+
+
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:id="@+id/parentScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/app">
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/food"
+            android:id="@+id/food"
+            android:scaleType="centerCrop"></ImageView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/i"
+            android:background="@drawable/shade"></ImageView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/shade"></ImageView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/shade"></ImageView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/shade"></ImageView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/shade"></ImageView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/shade"></ImageView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/shade"></ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Happy Meal"
+            android:id="@+id/m"
+            android:textColor="@color/white"
+            android:layout_marginHorizontal="20dp"
+            android:fontFamily="@font/noto_sans"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="We are helping migrant workers to  connect with meal provider organizations.Here you can select your state and then you will find list of meal providers in your state.For selecting your state click below..."
+            android:textColor="@color/white"
+            android:layout_below="@id/m"
+            android:layout_marginHorizontal="20dp"
+            android:fontFamily="@font/noto_sans"
+            android:textSize="12sp"
+            >
+
+        </TextView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_alignBottom="@+id/i"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/state"
+                app:cardCornerRadius="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Happy Meal Providers"
+                    android:fontFamily="@font/noto_sans"
+                    android:layout_marginVertical="10dp"
+                    android:textSize="17dp"
+                    android:textColor="@color/black"
+                    android:layout_marginHorizontal="10dp"
+                    android:drawableEnd="@drawable/ic_keyboard_arrow_right_black_24dp"
+                    ></TextView>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

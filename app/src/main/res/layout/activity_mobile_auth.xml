@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/back"
-    tools:context="com.example.migration.Register.MobileAuth">
+    tools:context="com.kutumb.migration.Register.MobileAuth">
 
     <ImageView
         android:layout_width="60dp"

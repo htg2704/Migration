@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.migration">
+    package="com.kutumb.migration">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -15,29 +15,36 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:hardwareAccelerated="false"
+        android:largeHeap="true"
         android:theme="@style/AppTheme"
         tools:ignore="LockedOrientationActivity">
-        <activity android:name=".notifcation"></activity>
+        <activity android:name="com.kutumb.migration.meal_provider"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="com.kutumb.migration.meal_activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.kutumb.migration.notifcation"
+            android:screenOrientation="portrait"/>
         <activity
-            android:name=".Services"
+            android:name="com.kutumb.migration.Services"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".after_login"
+            android:name="com.kutumb.migration.after_login"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Register.VerifyMobile"
+            android:name="com.kutumb.migration.Register.VerifyMobile"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Register.MobileAuth"
+            android:name="com.kutumb.migration.Register.MobileAuth"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".privacywebactivity"
+            android:name="com.kutumb.migration.privacywebactivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".termswebactivity"
+            android:name="com.kutumb.migration.termswebactivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Launcher"
+            android:name="com.kutumb.migration.Launcher"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -46,35 +53,32 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name="com.kutumb.migration.MainActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Contact"
+            android:name="com.kutumb.migration.Contact"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Register.select_login_type"
+            android:name="com.kutumb.migration.Register.select_login_type"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Questions.questions"
+            android:name="com.kutumb.migration.Questions.questions"
             android:label="@string/title_activity_questions"
-            android:parentActivityName=".Register.select_login_type"
+            android:parentActivityName="com.kutumb.migration.Register.select_login_type"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Register.LoginOrRegister"
-            android:parentActivityName=".Register.select_login_type"
+            android:name="com.kutumb.migration.Register.LoginOrRegister"
+            android:parentActivityName="com.kutumb.migration.Register.select_login_type"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Register.RegisterUser"
-            android:parentActivityName=".Register.LoginOrRegister"
+            android:name="com.kutumb.migration.Register.RegisterUser"
+            android:parentActivityName="com.kutumb.migration.Register.LoginOrRegister"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Register.ForgotPass"
+            android:name="com.kutumb.migration.Register.ForgotPass"
             android:screenOrientation="portrait" />
 
-        <meta-data
-            android:name="com.google.android.actions"
-            android:resource="@drawable/button" />
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

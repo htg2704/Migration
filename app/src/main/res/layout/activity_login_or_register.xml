@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@color/back"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.migration.Register.LoginOrRegister"
+    tools:context="com.kutumb.migration.Register.LoginOrRegister"
     >
 
     <LinearLayout

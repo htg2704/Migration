@@ -53,19 +53,26 @@
 
 
     <string-array name="programming_language">
-        <item>item1</item>
-        <item>item2</item>
-        <item>item3</item>
-        <item>item4</item>
+        <item>Rescue &amp; Relief</item>
+        <item>Dignified Livelihoods</item>
+        <item>Welfare</item>
 
 
     </string-array>
 
     <string-array name="description">
-        <item>description1</item>
-        <item>description2</item>
-        <item>description3</item>
-        <item>description4</item>
+        <item>During COVID-19 panadamic we are helping migrant workers through our Rescue &amp; Relief service.</item>
+        <item>We are helping migrant workers to improve their skills through our Dignified Livelihoods service.</item>
+        <item>We are helping migrant workers to achieve their goals through our Welfare service.</item>
 
     </string-array>
+
+    <string-array name="register1">
+        <item></item>
+        <item></item>
+        <item></item>
+
+
+    </string-array>
+
 </resources>

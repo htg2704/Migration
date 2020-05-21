@@ -23,30 +23,43 @@
             android:src="@drawable/ic_launcher_background"
             android:layout_width="match_parent"
             android:scaleType="centerCrop"
-            android:layout_height="150dp"/>
+            android:layout_height="200dp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/shade"
+            android:layout_alignBottom="@+id/myImageView"
+            android:scaleType="centerCrop"></ImageView>
+
+
+
+
 
         <TextView
             android:id="@+id/myText1"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="10sp"
+            android:textSize="17sp"
             android:text="Amul"
-            android:layout_marginTop="80dp"
+            android:layout_above="@id/myText2"
             android:layout_marginHorizontal="10dp"
             android:fontFamily="@font/noto_sans"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textStyle="bold"/>
+
 
         <TextView
             android:id="@+id/myText2"
-            android:layout_width="wrap_content"
-            android:layout_height="32dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/myImageView"
             android:layout_marginHorizontal="10dp"
-            android:layout_marginTop="100dp"
             android:fontFamily="@font/noto_sans"
             android:text="Amul Gold"
-            android:textColor="@color/black"
-            android:textSize="10sp" />
+            android:textColor="@color/white"
+            android:layout_marginBottom="10dp"
+            android:textSize="12sp" />
 
 
 

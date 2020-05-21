@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.kutumb.migration"
     android:targetSandboxVersion="2"
-    android:versionCode="2"
-    android:versionName="1.0.0" >
+    android:versionCode="3"
+    android:versionName="2.0.0" >
 
     <uses-sdk
         android:minSdkVersion="21"
@@ -22,33 +22,43 @@
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
+        android:hardwareAccelerated="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.example.migration.notifcation" />
         <activity
-            android:name="com.example.migration.Services"
+            android:name="com.kutumb.migration.meal_provider"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.migration.after_login"
+            android:name="com.kutumb.migration.meal_activity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.migration.Register.VerifyMobile"
+            android:name="com.kutumb.migration.notifcation"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.migration.Register.MobileAuth"
+            android:name="com.kutumb.migration.Services"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.migration.privacywebactivity"
+            android:name="com.kutumb.migration.after_login"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.migration.termswebactivity"
+            android:name="com.kutumb.migration.Register.VerifyMobile"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.migration.Launcher"
+            android:name="com.kutumb.migration.Register.MobileAuth"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kutumb.migration.privacywebactivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kutumb.migration.termswebactivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kutumb.migration.Launcher"
             android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -57,35 +67,32 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.migration.MainActivity"
+            android:name="com.kutumb.migration.MainActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.migration.Contact"
+            android:name="com.kutumb.migration.Contact"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.migration.Register.select_login_type"
+            android:name="com.kutumb.migration.Register.select_login_type"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.migration.Questions.questions"
+            android:name="com.kutumb.migration.Questions.questions"
             android:label="@string/title_activity_questions"
-            android:parentActivityName="com.example.migration.Register.select_login_type"
+            android:parentActivityName="com.kutumb.migration.Register.select_login_type"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.example.migration.Register.LoginOrRegister"
-            android:parentActivityName="com.example.migration.Register.select_login_type"
+            android:name="com.kutumb.migration.Register.LoginOrRegister"
+            android:parentActivityName="com.kutumb.migration.Register.select_login_type"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.migration.Register.RegisterUser"
-            android:parentActivityName="com.example.migration.Register.LoginOrRegister"
+            android:name="com.kutumb.migration.Register.RegisterUser"
+            android:parentActivityName="com.kutumb.migration.Register.LoginOrRegister"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.migration.Register.ForgotPass"
+            android:name="com.kutumb.migration.Register.ForgotPass"
             android:screenOrientation="portrait" />
 
-        <meta-data
-            android:name="com.google.android.actions"
-            android:resource="@drawable/button" />
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

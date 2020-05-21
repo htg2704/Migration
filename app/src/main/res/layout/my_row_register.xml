@@ -27,18 +27,6 @@
             android:textColor="@color/black"
             android:textStyle="bold"/>
 
-        <TextView
-            android:id="@+id/myText2"
-            android:layout_width="wrap_content"
-            android:layout_height="32dp"
-            android:layout_below="@+id/myText1"
-            android:layout_marginHorizontal="10dp"
-            android:layout_marginTop="0dp"
-            android:fontFamily="@font/noto_sans"
-            android:text="Amul Gold"
-            android:textColor="@color/black"
-            android:textSize="10sp" />
-
 
 
     </RelativeLayout>
